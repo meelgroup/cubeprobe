@@ -769,6 +769,11 @@ def bias(x, j, indVarList, tempFile, samplerType, nsamp, seed, bsize):
 #     return tempIndVarList
 
 
+def inthread(sampleSet, UserIndVarList, UserInputFile, tempFile, samplerType, seed, k, out, est):
+    for x in sampleSet:
+        est.append(estimate(x, UserIndVarList, UserInputFile, tempFile, samplerType, seed, k, out))
+
+
 def flash():
 
     start_time = time.time()
@@ -873,19 +878,32 @@ def flash():
     out = open(outputFile, "a")
     count = 0
     t = []
-    # for x in sampleSet:
+    
     out.write(str(count) + " of " + str(len(sampleSet)) + "\t")
     out.flush()
     
     ncores = 20
+    eachthread = [numSolutions // ncores for i in range(ncores)]
+    rem = numSolutions % ncores
+    for i in range(ncores):
+        eachthread[i] += 1
+        rem -= 1
+        if rem == 0 : break
+    for i in range(1, ncores):
+        eachthread[i] += eachthread[i-1]
+
+    print(eachthread) 
+
+    massarray = []
 
     for i in range(ncores):
         tempFile_th= "thread_" + str(i) + "_" + tempFile
         cmd = "cp " + UserInputFile + " ./" + tempFile_th 
         os.system(cmd)
-        t.append(threading.Thread(target=estimate, args=(sampleSet[i], UserIndVarList, tempFile_th, tempFile_th, samplerType, seed, k, out)))
+        t.append(threading.Thread(target=inthread, args=(sampleSet[eachthread[max(0, i-1)]: eachthread[i]], UserIndVarList, tempFile_th, tempFile_th, samplerType, seed, k, out, massarray)))
     
-    # est = estimate(x, UserIndVarList, UserInputFile, tempFile, samplerType, seed, k, out)
+    # for x in sampleSet:
+    #   est = estimate(x, UserIndVarList, UserInputFile, tempFile, samplerType, seed, k, out)
 
     for i in range(ncores):
         t[i].start()
