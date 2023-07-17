@@ -312,7 +312,7 @@ def getSolutionFromSTS(seed, inputFile, numSolutions, indVarList):
     cmd += ' > '+str(outputFile)
     #if args.verbose:
     #    print("cmd: ", cmd)
-    print(cmd)
+    # print(cmd)
     os.system(cmd)
 
     with open(outputFile, 'r') as f:
@@ -710,6 +710,58 @@ def constructNewFile2(inputFile, tempFile, var, indVarList):
     f.close()
     return indVarList
 
+def addClique(inputFile, indVarList):
+    f = open(inputFile, "r")
+    lines = f.readlines()
+    f.close()
+    nnewnodes = 7
+
+    oldClauseStr = ""
+    for line in lines:
+        if line.strip().startswith("p cnf"):
+            numVar = int(line.strip().split()[2])
+            numClause = int(line.strip().split()[3])
+        else:
+            if line.strip().startswith("w"):
+                oldClauseStr += line.strip()+"\n"
+            elif not (line.strip().startswith("c")):
+                oldClauseStr += line.strip()+"\n"
+    indStr = "c ind "
+    indIter = 1
+    for i in indVarList:
+        if indIter % 10 == 0:
+            indStr += " 0\nc ind "
+        indStr += str(i) + " "
+        indIter += 1
+    indStr += " 0\n"
+
+    numVarOrig = numVar
+    newClause = ""
+    varCount = 1
+    # for i in range(nnewnodes):
+    for j in range(20):
+        node_1 = numVarOrig + varCount
+        node_2 = numVarOrig + varCount + 1
+        edge = numVarOrig + varCount + 2
+        varCount += 3
+        newClause += str(-node_1) + " " + str(-edge) + " " + str(node_2) + " 0\n"
+        newClause += str(node_1) + " " + str(-edge) + " " + str(-node_2) + " 0\n"    
+        numClause += 2
+        numVar += 3
+    
+    headStr = "p cnf " + str(numVar) + " " + str(numClause) + "\n"
+    writeStr = headStr + indStr
+    writeStr += oldClauseStr
+    writeStr += newClause
+    
+    inputFile = inputFile[:-4] + ".ext.cnf"
+    f = open(inputFile, "w")
+    f.write(writeStr)
+    f.close()
+
+    return
+
+
 def gbas(x, i, indVarList, tempfile, samplerType, seed, k, outfp):
     s, r = 0, 0
     k_ = int(k)
@@ -721,10 +773,10 @@ def gbas(x, i, indVarList, tempfile, samplerType, seed, k, outfp):
             if not (samp[i] > 0) ^ (x[i] > 0): 
                 # print("test ##############################gbas gbas gbas", x[i], " and ", samp[i])
                 s += 1
-                r += _exp(1)
+            r += _exp(1)
         seed += 1
         k_ = k - s
-        # outfp.write(" current heads : " + str(s) + " " + str(k_))
+        # outfp.write(" current heads : " + str(s) + " " + str(k_)+ " " + str(r))
         # outfp.flush()
 
     return (k - 1) / r
@@ -733,21 +785,21 @@ def estimate(x, indVarList, inputFile, tempFile, samplerType, seed, k, outfp, th
     n = len(indVarList)
     assert len(x) == len(indVarList)
     est = 1  
-    outfp.write("\n " + str(threadid) + "##### estimating dimension " +  str(0) + " of " + str(n))
+    # outfp.write("\n " + str(threadid) + "##### estimating dimension " +  str(0) + " of " + str(n))
     outfp.flush()
     start_time = time.time()
-    est *= gbas(x, 0, indVarList, inputFile, samplerType, seed, k, outfp)
+    est *= min(1, gbas(x, 0, indVarList, inputFile, samplerType, seed, k, outfp))
     end_time = time.time()
-    outfp.write("\n " + str(threadid) + " estimated dimension " +  str(0) + " of " + str(n) + "  | time taken : " + str(end_time - start_time))
+    outfp.write("\n Thread " + str(threadid) + " estimated dimension " +  str(0) + " of " + str(n) + " : " + str(est) + "  | time taken : " + str(end_time - start_time))
     outfp.flush()
     indVarList = constructNewFile2(inputFile, tempFile, x[0], indVarList)
     for i in range(1, n):
-        outfp.write("\n " + str(threadid) + "###### estimating dimension " +  str(i) + " of " + str(n))
+        # outfp.write("\n " + str(threadid) + "###### estimating dimension " +  str(i) + " of " + str(n))
         outfp.flush()
         start_time = time.time()
-        est *= gbas(x, i, indVarList, tempFile, samplerType, seed, k, outfp)
+        est *= min(1, gbas(x, i, indVarList, tempFile, samplerType, seed, k, outfp))
         end_time = time.time()
-        outfp.write("\n " + str(threadid) + " estimated dimension " +  str(0) + " of " + str(n) + "  | time taken : " + str(end_time - start_time))
+        outfp.write("\n Thread " + str(threadid) + " estimated dimension " +  str(i) + " of " + str(n) + " : " + str(est) + "  | time taken : " + str(end_time - start_time))
         outfp.flush()
         indVarList = constructNewFile2(tempFile, tempFile, x[i], indVarList)
     return est
@@ -866,6 +918,9 @@ def flash():
     sampleSet = []
 
     sampleSet = getSolutionFromSampler(UserInputFile, numSolutions, samplerType, UserIndVarList, seed)
+
+    addClique(UserInputFile, UserIndVarList)
+    UserInputFile = UserInputFile[:-4] + ".ext.cnf"
 
     # for i in range(1):
     #     indVarList = UserIndVarList.copy()
