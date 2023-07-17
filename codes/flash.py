@@ -724,30 +724,30 @@ def gbas(x, i, indVarList, tempfile, samplerType, seed, k, outfp):
                 r += _exp(1)
         seed += 1
         k_ = k - s
-        outfp.write(" current heads : " + str(s) + " " + str(k_))
-        outfp.flush()
+        # outfp.write(" current heads : " + str(s) + " " + str(k_))
+        # outfp.flush()
 
     return (k - 1) / r
     
-def estimate(x, indVarList, inputFile, tempFile, samplerType, seed, k, outfp):
+def estimate(x, indVarList, inputFile, tempFile, samplerType, seed, k, outfp, threadid):
     n = len(indVarList)
     assert len(x) == len(indVarList)
     est = 1  
-    outfp.write("\n ##### estimating dimension " +  str(0) + " of " + str(n))
+    outfp.write("\n " + str(threadid) + "##### estimating dimension " +  str(0) + " of " + str(n))
     outfp.flush()
     start_time = time.time()
     est *= gbas(x, 0, indVarList, inputFile, samplerType, seed, k, outfp)
     end_time = time.time()
-    outfp.write("  | time taken : " + str(end_time - start_time))
+    outfp.write("\n " + str(threadid) + " estimated dimension " +  str(0) + " of " + str(n) + "  | time taken : " + str(end_time - start_time))
     outfp.flush()
     indVarList = constructNewFile2(inputFile, tempFile, x[0], indVarList)
     for i in range(1, n):
-        outfp.write("\n ###### estimating dimension " +  str(i) + " of " + str(n))
+        outfp.write("\n " + str(threadid) + "###### estimating dimension " +  str(i) + " of " + str(n))
         outfp.flush()
         start_time = time.time()
         est *= gbas(x, i, indVarList, tempFile, samplerType, seed, k, outfp)
         end_time = time.time()
-        outfp.write("  | time taken : " + str(end_time - start_time))
+        outfp.write("\n " + str(threadid) + " estimated dimension " +  str(0) + " of " + str(n) + "  | time taken : " + str(end_time - start_time))
         outfp.flush()
         indVarList = constructNewFile2(tempFile, tempFile, x[i], indVarList)
     return est
@@ -769,9 +769,9 @@ def bias(x, j, indVarList, tempFile, samplerType, nsamp, seed, bsize):
 #     return tempIndVarList
 
 
-def inthread(sampleSet, UserIndVarList, UserInputFile, tempFile, samplerType, seed, k, out, est):
+def inthread(sampleSet, UserIndVarList, UserInputFile, tempFile, samplerType, seed, k, out, est, threadid):
     for x in sampleSet:
-        est.append(estimate(x, UserIndVarList, UserInputFile, tempFile, samplerType, seed, k, out))
+        est.append(estimate(x, UserIndVarList, UserInputFile, tempFile, samplerType, seed, k, out, threadid))
 
 
 def flash():
@@ -882,7 +882,8 @@ def flash():
     out.write(str(count) + " of " + str(len(sampleSet)) + "\t")
     out.flush()
     
-    ncores = 20
+    total_cores = 20
+    ncores = total_cores - 1
     eachthread = [numSolutions // ncores for i in range(ncores)]
     rem = numSolutions % ncores
     for i in range(ncores):
@@ -900,7 +901,7 @@ def flash():
         tempFile_th= "thread_" + str(i) + "_" + tempFile
         cmd = "cp " + UserInputFile + " ./" + tempFile_th 
         os.system(cmd)
-        t.append(threading.Thread(target=inthread, args=(sampleSet[eachthread[max(0, i-1)]: eachthread[i]], UserIndVarList, tempFile_th, tempFile_th, samplerType, seed, k, out, massarray)))
+        t.append(threading.Thread(target=inthread, args=(sampleSet[eachthread[max(0, i-1)]: eachthread[i]], UserIndVarList, tempFile_th, tempFile_th, samplerType, seed, k, out, massarray, i)))
     
     # for x in sampleSet:
     #   est = estimate(x, UserIndVarList, UserInputFile, tempFile, samplerType, seed, k, out)
@@ -910,7 +911,7 @@ def flash():
     for i in range(ncores):
         t[i].join()
         
-    out.write("estimated weight : " + str(est) + "\n")
+    out.write("estimated weight : " + str(massarray) + "\n")
     out.flush()
     val = val + abs(1 - 1 / est )
     count += 1
