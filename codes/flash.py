@@ -304,47 +304,52 @@ def getSolutionFromSampler(inputFile, numSolutions, samplerType, indVarList, see
 
 
 def getSolutionFromSTS(seed, inputFile, numSolutions, indVarList):
-    kValue = 100
-    samplingRounds = numSolutions/kValue + 1
-    inputFileSuffix = inputFile.split('/')[-1][:-4]
-    outputFile = tempfile.gettempdir()+'/'+inputFileSuffix+"sts.out"
-    cmd = './samplers/STS -k='+str(kValue)+' -nsamples='+str(samplingRounds)+' '+str(inputFile)
-    cmd += ' > '+str(outputFile)
-    #if args.verbose:
-    #    print("cmd: ", cmd)
-    # print(cmd)
-    os.system(cmd)
+    kValue = 50
 
-    with open(outputFile, 'r') as f:
-        lines = f.readlines()
+    while True:
+        samplingRounds = int(numSolutions/kValue) + 1
+        inputFileSuffix = inputFile.split('/')[-1][:-4]
+        outputFile = tempfile.gettempdir()+'/'+inputFileSuffix+"sts.out"
+        cmd = './samplers/STS -k='+str(kValue)+' -nsamples='+str(samplingRounds)+' -rnd-seed=' + str(seed) +' '+str(inputFile)
+        cmd += ' > '+str(outputFile)
+        #if args.verbose:
+        #    print("cmd: ", cmd)
+        # print(cmd)
+        os.system(cmd)
 
-    solList = []
-    shouldStart = False
-    for j in range(len(lines)):
-        if(lines[j].strip() == 'Outputting samples:' or lines[j].strip() == 'start'):
-            shouldStart = True
-            continue
-        if (lines[j].strip().startswith('Log') or lines[j].strip() == 'end'):
-            shouldStart = False
-        if (shouldStart):
-            i = 0
-            sol = []
-            # valutions are 0 and 1 and in the same order as c ind.
-            for x in list(lines[j].strip()):
-                if (x == '0'):
-                    sol.append(-1*indVarList[i])
-                else:
-                    sol.append(indVarList[i])
-                i += 1
-            solList.append(sol)
+        with open(outputFile, 'r') as f:
+            lines = f.readlines()
+            
+        solList = []
+        shouldStart = False
+        for j in range(len(lines)):
+            if(lines[j].strip() == 'Outputting samples:' or lines[j].strip() == 'start'):
+                shouldStart = True
+                continue
+            if (lines[j].strip().startswith('Log') or lines[j].strip() == 'end'):
+                shouldStart = False
+            if (shouldStart):
+                i = 0
+                sol = []
+                # valutions are 0 and 1 and in the same order as c ind.
+                for x in list(lines[j].strip()):
+                    if (x == '0'):
+                        sol.append(-1*indVarList[i])
+                    else:
+                        sol.append(indVarList[i])
+                    i += 1
+                solList.append(sol)
 
-    solreturnList = solList
-    if len(solList) > numSolutions:
-        solreturnList = random.sample(solList, numSolutions)
-    elif len(solList) < numSolutions:
-        print(len(solList))
-        print("STS Did not find required number of solutions")
-        sys.exit(1)
+        solreturnList = solList
+        if len(solList) > numSolutions:
+            solreturnList = random.sample(solList, numSolutions)
+            break
+        elif len(solList) < numSolutions:
+            # print(len(solList))
+            print("STS Did not find required number of solutions")
+            # sys.exit(1)
+            kValue = int(kValue / 5) + 1
+
 
     os.unlink(outputFile)
     return solreturnList
@@ -740,7 +745,7 @@ def addClique(inputFile, indVarList, newFile):
     varCount = 1
 
     #-----------------------new Clique Clause (NetRel problem)--------------------#
-    for j in range(16):
+    for j in range(18):
         node_1 = numVarOrig + varCount
         node_2 = numVarOrig + varCount + 1
         edge = numVarOrig + varCount + 2
@@ -777,8 +782,8 @@ def gbas(x, i, indVarList, tempfile, samplerType, seed, k, outfp):
             r += _exp(1)
         seed += 1
         k_ = k - s
-        # outfp.write(" current heads : " + str(s) + " " + str(k_)+ " " + str(r))
-        # outfp.flush()
+        outfp.write(" current heads : " + str(s) + " " + str(k_)+ " " + str(r))
+        outfp.flush()
 
     return (k - 1) / r
     
@@ -912,14 +917,17 @@ def flash():
     f.flush()
     f.close()
     
+    #---------------------------------------------main begins---------------------------------------
+    
+    # cmd = "approxmc " + UserInputFile
+    # os.system(cmd)
     sampleSet = []
     sampleSet = getSolutionFromSampler(UserInputFile, numSolutions, samplerType, UserIndVarList, seed)
-
 
     val = 0
     out = open(outputFile, "a")
     
-    if isthread:
+    if isthread == 1:
         
         t = []
         total_cores = 20            # tofix
