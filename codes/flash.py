@@ -894,7 +894,20 @@ def flash():
     inputFilePrefix = "sampler_" + str(samplerType) + "_" + UserInputFile.split("/")[-1][:-4]
     inputFile = inputFilePrefix + ".cnf"
     indVarList = addClique(UserInputFile, UserIndVarList, inputFile)
-    
+
+    # get the model count
+    mcFile = "sampler_" + str(samplerType) + "_mc.out"
+    cmd = "approxmc " + UserInputFile + " > "  + mcFile
+    os.system(cmd)
+
+    with open(mcFile) as fp:
+        lines = fp.readlines()
+
+    mc = 0
+    for line in lines:
+        if line.strip().startswith('s mc') :
+            mc = line.strip().split(' ')[-1]
+    mc = int(mc)
 
     # set up the parameters
     isthread = args.thread
@@ -979,7 +992,7 @@ def flash():
         out.flush()
 
         for est in massarray:
-            val += abs(1 - 1/ est)
+            val += abs(1 - 1 /(est * mc))
     
         
     else:
@@ -991,7 +1004,7 @@ def flash():
             out.write(str(count) + " of " + str(len(sampleSet)) + "\t")
             out.flush()
             est = estimate(x, indVarList, inputFile, samplerType, seed, k, out, 1)
-            val = val + abs(1 - 1 / est )
+            val = val + abs(1 - 1 / (est * mc) )
             count += 1
         
     out.close()
