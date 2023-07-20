@@ -345,7 +345,8 @@ def getSolutionFromSTS(seed, inputFile, numSolutions, indVarList):
             solreturnList = random.sample(solList, numSolutions)
             break
         elif len(solList) < numSolutions:
-            # print(len(solList))
+            print(len(solList))
+            # print(solList)
             print("STS Did not find required number of solutions")
             # sys.exit(1)
             kValue = int(kValue / 5) + 1
@@ -743,6 +744,7 @@ def addClique(inputFile, indVarList, newFile):
     numVarOrig = numVar
     newClause = ""
     varCount = 1
+    newVar = []
 
     #-----------------------new Clique Clause (NetRel problem)--------------------#
     for j in range(18):
@@ -754,7 +756,16 @@ def addClique(inputFile, indVarList, newFile):
         newClause += str(node_1) + " " + str(-edge) + " " + str(-node_2) + " 0\n"    
         numClause += 2
         numVar += 3
+        newVar.append(edge)
     #------------------------------------------------------------------------------#
+    indStr += "c ind "
+    indIter = 1
+    for i in newVar:
+        if indIter % 10 == 0:
+            indStr += " 0\nc ind "
+        indStr += str(i) + " "
+        indIter += 1
+    indStr += " 0\n"
 
     headStr = "p cnf " + str(numVar) + " " + str(numClause) + "\n"
     writeStr = headStr + indStr
@@ -765,14 +776,17 @@ def addClique(inputFile, indVarList, newFile):
     f.write(writeStr)
     f.close()
 
-    return
+    return indVarList + newVar
 
 
 def gbas(x, i, indVarList, tempfile, samplerType, seed, k, outfp):
     s, r = 0, 0
     k_ = int(k)
     k = k_
+    cut_thresh = 40
+    nloops = 0
     while s < k:
+        nloops += 1
         sampSet = getSolutionFromSampler(tempfile, k_, samplerType, indVarList, seed)
         for samp in sampSet:
             # print("##############################gbas gbas gbas", x[i], " and ", samp[i])
@@ -782,14 +796,17 @@ def gbas(x, i, indVarList, tempfile, samplerType, seed, k, outfp):
             r += _exp(1)
         seed += 1
         k_ = k - s
-        outfp.write(" current heads : " + str(s) + " " + str(k_)+ " " + str(r))
-        outfp.flush()
+        if nloops > cut_thresh:
+            outfp.write("exiting with current heads : " + str(s) + " out of " + str(k)+ " | exp rv: " + str(r) + "\n")
+            outfp.flush()
+            break
+        # outfp.write(" current heads : " + str(s) + " " + str(k_)+ " " + str(r))
+        # outfp.flush()
 
     return (k - 1) / r
     
 def estimate(x, indVarList, tempFile, samplerType, seed, k, outfp, threadid):
-    n = len(indVarList)
-    assert len(x) == len(indVarList)
+    n = len(x)
     est = 1  
     # outfp.write("\n " + str(threadid) + "##### estimating dimension " +  str(0) + " of " + str(n))
     outfp.flush()
@@ -827,9 +844,12 @@ def bias(x, j, indVarList, tempFile, samplerType, nsamp, seed, bsize):
 #     return tempIndVarList
 
 
-def inthread(sampleSet, UserIndVarList, tempFile, samplerType, seed, k, out, est, threadid):
+def inthread(sampleSet, indVarList, inputFile, samplerType, seed, k, out, est, threadid):
+    tempFile_th= "thread_" + str(threadid) + "_" + inputFile
+    cmd = "cp " + inputFile + " ./" + tempFile_th 
     for x in sampleSet:
-        est.append(estimate(x, UserIndVarList, tempFile, samplerType, seed, k, out, threadid))
+        os.system(cmd)
+        est.append(estimate(x, indVarList, tempFile_th, samplerType, seed, k, out, threadid))
 
 
 def flash():
@@ -873,7 +893,7 @@ def flash():
     # Current Working File
     inputFilePrefix = "sampler_" + str(samplerType) + "_" + UserInputFile.split("/")[-1][:-4]
     inputFile = inputFilePrefix + ".cnf"
-    addClique(UserInputFile, UserIndVarList, inputFile)
+    indVarList = addClique(UserInputFile, UserIndVarList, inputFile)
     
 
     # set up the parameters
@@ -945,10 +965,10 @@ def flash():
         massarray = []
 
         for i in range(ncores):
-            tempFile_th= "thread_" + str(i) + "_" + inputFile
-            cmd = "cp " + inputFile + " ./" + tempFile_th 
-            os.system(cmd)
-            t.append(threading.Thread(target=inthread, args=(sampleSet[eachthread[max(0, i-1)]: eachthread[i]], UserIndVarList, tempFile_th, samplerType, seed, k, out, massarray, i)))
+            # tempFile_th= "thread_" + str(i) + "_" + inputFile
+            # cmd = "cp " + inputFile + " ./" + tempFile_th 
+            # os.system(cmd)
+            t.append(threading.Thread(target=inthread, args=(sampleSet[eachthread[max(0, i-1)]: eachthread[i]], indVarList, inputFile, samplerType, seed, k, out, massarray, i)))
         
         for i in range(ncores):
             t[i].start()
@@ -970,7 +990,7 @@ def flash():
         for x in sampleSet:
             out.write(str(count) + " of " + str(len(sampleSet)) + "\t")
             out.flush()
-            est = estimate(x, UserIndVarList, inputFile, samplerType, seed, k, out, 1)
+            est = estimate(x, indVarList, inputFile, samplerType, seed, k, out, 1)
             val = val + abs(1 - 1 / est )
             count += 1
         
