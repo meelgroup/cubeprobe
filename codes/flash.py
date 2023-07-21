@@ -114,13 +114,15 @@ def parseIndSupport(indSupportFile):  # returns List of Independent Variables
     return indList
 
 
-def getSolutionFromSpur(inputFile, numSolutions, indVarList, seed):
+def getSolutionFromSpur(seed, inputFile, numSolutions, indVarList):
     # inputFileSuffix = inputFile.split('/')[-1][:-4]
-    tempOutputFile = inputFile + ".txt"
-    cmd = './samplers/spur -seed %d -q -s %d -out %s -cnf %s' % (
+    # tempOutputFile = inputFile + ".txt"
+    inputFileSuffix = inputFile.split('/')[-1][:-4]
+    tempOutputFile = tempfile.gettempdir()+'/'+inputFileSuffix+"spur.out"
+    cmd = './samplers/spur -seed %d -s %d -out %s -cnf %s' % (
         seed, numSolutions, tempOutputFile, inputFile)
     # if args.verbose:
-    #     print("cmd: ", cmd)
+    print("cmd: ", cmd)
     os.system(cmd)
 
     with open(tempOutputFile, 'r') as f:
@@ -292,6 +294,8 @@ def getSolutionFromSampler(inputFile, numSolutions, samplerType, indVarList, see
         return getSolutionFromQuickSampler(inputFile, numSolutions, indVarList, seed)
     if samplerType == SAMPLER_STS:
         return getSolutionFromSTS(seed, inputFile, numSolutions, indVarList)
+    if samplerType == SAMPLER_SPUR:
+        return getSolutionFromSpur(seed, inputFile, numSolutions, indVarList)
     if samplerType == SAMPLER_CMS:
         return getSolutionFromCMSsampler(inputFile, numSolutions, indVarList, seed)
     if samplerType == SAMPLER_APPMC3:
@@ -800,15 +804,15 @@ def gbas(x, i, indVarList, tempfile, samplerType, seed, k, outfp):
             outfp.write("exiting with current heads : " + str(s) + " out of " + str(k)+ " | exp rv: " + str(r) + "\n")
             outfp.flush()
             break
-        # outfp.write(" current heads : " + str(s) + " " + str(k_)+ " " + str(r))
-        # outfp.flush()
+        outfp.write(" current heads : " + str(s) + " " + str(k_)+ " " + str(r))
+        outfp.flush()
 
     return (k - 1) / r
     
 def estimate(x, indVarList, tempFile, samplerType, seed, k, outfp, threadid):
     n = len(x)
     est = 1  
-    # outfp.write("\n " + str(threadid) + "##### estimating dimension " +  str(0) + " of " + str(n))
+    outfp.write("\n " + str(threadid) + "##### estimating dimension " +  str(0) + " of " + str(n))
     outfp.flush()
     start_time = time.time()
     est *= min(1, gbas(x, 0, indVarList, tempFile, samplerType, seed, k, outfp))
@@ -817,7 +821,7 @@ def estimate(x, indVarList, tempFile, samplerType, seed, k, outfp, threadid):
     outfp.flush()
     indVarList = constructNewFile2(tempFile, x[0], indVarList)
     for i in range(1, n):
-        # outfp.write("\n " + str(threadid) + "###### estimating dimension " +  str(i) + " of " + str(n))
+        outfp.write("\n " + str(threadid) + "###### estimating dimension " +  str(i) + " of " + str(n))
         outfp.flush()
         start_time = time.time()
         est *= min(1, gbas(x, i, indVarList, tempFile, samplerType, seed, k, outfp))
