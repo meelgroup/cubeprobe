@@ -3,7 +3,7 @@
 #          Set the name of the job (up to 15 characters,
 #          no blank spaces, start with alphanumeric character)
 
-#PBS -N verifier
+#PBS -N GST
 
 #          By default, the standard output and error streams are sent
 #          to files in the current working directory with names:
@@ -59,10 +59,10 @@
 #          You should also specify the email address to which the
 #          message should be send via the -M option.
 
-#PBS -m abe
+#	#PBS -m abe
 #   #PBS -m ae
 
-#PBS -M dcsksm@nus.edu.sg
+#	#PBS -M uddaloksarkar@gmail.com
 
 #          Declare the time after which the job is eligible for execution.
 #          If you wish the job to be immediately eligible for execution,
@@ -85,7 +85,7 @@
 #          number of processors per node.
 
 #  #PBS -l select=1:ncpus=24:mpiprocs=10:mem=40G
-#PBS -l select=28:ncpus=24:mpiprocs=24:mem=96G
+#PBS -l select=12:ncpus=24:ompthreads=24:mpiprocs=1:mem=96G
 #          Define the interval at which the job will be checkpointed,
 #          if checkpointing is desired, in terms of an integer number
 #          of minutes of CPU time.
@@ -94,7 +94,7 @@
 
 
 #          Use project number
-#PBS -P 11000744
+#PBS -P Personal
 module load openmpi/intel/1.10.2
 cd  ${PBS_O_WORKDIR}
-mpirun python run_verifier.py
+mpirun python3 run_verifier.py
