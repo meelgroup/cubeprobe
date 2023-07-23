@@ -17,8 +17,8 @@ f = open(all_file_name,'r')
 lines = f.readlines()
 f.close()
 
-samplerType = 4-(processrank/len(lines))
-#samplerType = 2
+#samplerType = 2-(processrank//len(lines))
+samplerType = 2
 if (samplerType < 1):
     exit(-1)
     

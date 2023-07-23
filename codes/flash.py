@@ -17,13 +17,14 @@ sys.path.append(cwd)
 # from waps import sampler as samp
 # import weightcount.WeightCount as chainform
 
-SAMPLER_UNIGEN3 = 1
-SAMPLER_QUICKSAMPLER = 2
-SAMPLER_STS = 3
+
+SAMPLER_UNIGEN3 = 7
+SAMPLER_QUICKSAMPLER = 1
+SAMPLER_STS = 2
 SAMPLER_CMS = 4
 SAMPLER_APPMC3 = 5
 SAMPLER_CUSTOM = 6
-SAMPLER_SPUR = 7
+SAMPLER_SPUR = 3
 SAMPLER_WAPS = 8
 
 
@@ -967,8 +968,8 @@ def flash():
     if isthread == 1:
         
         t = []
-        total_cores = 20            # tofix
-        ncores = total_cores - 1    # tofix
+        total_cores = 22            # tofix
+        ncores = total_cores    # tofix
 
         eachthread = [numSolutions // ncores for i in range(ncores)]
         rem = numSolutions % ncores

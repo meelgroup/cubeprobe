@@ -32,6 +32,7 @@
 
 #          #PBS -l     cput=00:20:00
 #PBS -l walltime=24:00:00
+#	#PBS -l walltime=00:30:00
 
 #          Specify the queue.  The CMU cluster currently has three queues:
 #          "green", "blue", and "red".  Jobs submitted to these queues
@@ -59,10 +60,10 @@
 #          You should also specify the email address to which the
 #          message should be send via the -M option.
 
-#	#PBS -m abe
-#   #PBS -m ae
+#PBS -m abe
+#	#PBS -m n
 
-#	#PBS -M uddaloksarkar@gmail.com
+#PBS -M uddaloksarkar@gmail.com
 
 #          Declare the time after which the job is eligible for execution.
 #          If you wish the job to be immediately eligible for execution,
@@ -84,8 +85,8 @@
 #          Specify the number of nodes requested and the
 #          number of processors per node.
 
-#  #PBS -l select=1:ncpus=24:mpiprocs=10:mem=40G
-#PBS -l select=12:ncpus=24:ompthreads=24:mpiprocs=1:mem=96G
+#	#PBS -l select=1:ncpus=24:ompthreads=24:mpiprocs=1:mem=40G
+#PBS -l select=4:ncpus=66:mpiprocs=3:ompthreads=22:mem=96G
 #          Define the interval at which the job will be checkpointed,
 #          if checkpointing is desired, in terms of an integer number
 #          of minutes of CPU time.
@@ -95,6 +96,7 @@
 
 #          Use project number
 #PBS -P Personal
-module load openmpi/intel/1.10.2
+
+module load openmpi/4.1.5-gcc11
 cd  ${PBS_O_WORKDIR}
 mpirun python3 run_verifier.py
