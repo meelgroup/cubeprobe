@@ -86,7 +86,7 @@
 #          number of processors per node.
 
 #	#PBS -l select=1:ncpus=24:ompthreads=24:mpiprocs=1:mem=40G
-#PBS -l select=4:ncpus=66:mpiprocs=3:ompthreads=22:mem=96G
+#PBS -l select=44:ncpus=91:mpiprocs=91:mem=96G
 #          Define the interval at which the job will be checkpointed,
 #          if checkpointing is desired, in terms of an integer number
 #          of minutes of CPU time.
