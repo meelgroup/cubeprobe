@@ -31,8 +31,8 @@
 #          the job is terminated.
 
 #          #PBS -l     cput=00:20:00
-#PBS -l walltime=24:00:00
-#	#PBS -l walltime=00:30:00
+#   #PBS -l walltime=24:00:00
+#PBS -l walltime=00:30:00
 
 #          Specify the queue.  The CMU cluster currently has three queues:
 #          "green", "blue", and "red".  Jobs submitted to these queues
