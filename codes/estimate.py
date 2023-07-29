@@ -333,8 +333,8 @@ def estimate():
 
     # print("estimating dimenstion ", str(dims[dim]), est)
 
-    fp = open(DirName + "/estimates.out", "w")
-    fp.write("dim_" + str(dims[dim]) + " " + str(est))
+    fp = open(DirName + "/" + str(sampID) + "/estimates.out", "a")
+    fp.write("dim_" + str(dims[dim]) + " " + str(est) + "\n")
     fp.close()
 
 if __name__ == "__main__":
