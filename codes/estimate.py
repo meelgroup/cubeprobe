@@ -265,7 +265,7 @@ def getParameters(parameterFile):
     return k, dims
 
 
-def gbas(x_i, i, indVarList, tempfile, samplerType, seed, k):
+def gbas(x_i, i, alias_i, indVarList, tempfile, samplerType, seed, k):
     s, r = 0, 0
     k_ = int(k)
     k = k_
@@ -275,6 +275,7 @@ def gbas(x_i, i, indVarList, tempfile, samplerType, seed, k):
         nloops += 1
         sampSet = getSolutionFromSampler(tempfile, k_, samplerType, indVarList, seed)
         for samp in sampSet:
+            assert abs(samp[i]) == alias_i
             # print("##############################gbas gbas gbas", x[i], " and ", samp[i])
             if not (samp[i] > 0) ^ (x_i > 0): 
                 # print("test ##############################gbas gbas gbas", x[i], " and ", samp[i])
@@ -320,7 +321,7 @@ def estimate():
     seed = args.seed
     samplerType = args.samplertype
     UserInputFile = args.input
-    outputFile = args.output
+    # outputFile = args.output
 
     DirName = "sampler_" + str(samplerType) + "_" + UserInputFile.split("/")[-1][:-4] 
     fileName = DirName + "/" + str(sampID) + "/" + DirName +  "_" + str(dim) + ".cnf"
@@ -329,7 +330,7 @@ def estimate():
 
     indVarList, x_i = parseIndSupport(fileName)
 
-    est = min(1, gbas(x_i, dims[dim], indVarList, fileName, samplerType, seed, k))
+    est = min(1, gbas(x_i, dim, dims[dim], indVarList, fileName, samplerType, seed, k))
 
     # print("estimating dimenstion ", str(dims[dim]), est)
 
