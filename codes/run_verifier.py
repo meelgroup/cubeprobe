@@ -18,7 +18,7 @@ lines = f.readlines()
 f.close()
 
 #samplerType = 2-(processrank//len(lines))
-samplerType = 2
+samplerType = 1
 if (samplerType < 1):
     exit(-1)
     
@@ -30,5 +30,5 @@ os.system(cmd)
 
 #cmd = 'ulimit -v 4000000; python Verifier.py --sampler '+str(samplerType)+' --inverted 1 --reverse 0 --seed 0 --exp 1000 '+filepos+'  outDir/sampler_'+str(samplerType)+'_'+fileSuffix+'.out'
 #print(cmd)
-cmd = 'python3 flash.py --sampler '+str(samplerType)+' --seed 420 '+filepos+'  outDir/sampler_'+str(samplerType)+'_'+fileSuffix+'.out'
+cmd = 'python3 netfix.py --sampler '+str(samplerType)+' --seed 420 --input '+filepos+' --output outDir/sampler_'+str(samplerType)+'_'+fileSuffix+'.out'
 os.system(cmd)
