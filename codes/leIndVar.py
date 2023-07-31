@@ -24,11 +24,11 @@ for line in lines:
         elif not (line.strip().startswith("c")):
             oldClauseStr += line.strip()+"\n"
     if len(line.strip().split()) == 2:
-        dependentVars.append(abs(int(line.strip().split()[0])))
+        dependentVars.append(abs(int(line.strip().split()[0])))	# already set values are not considered as a dependent variables
 
 indVarList = list(range(1 , numVar+1))
 
-print(dependentVars)
+#print(dependentVars)
 for var in dependentVars:
     indVarList.remove(var)
 
