@@ -36,10 +36,12 @@ for line in lines:
 # os.unlink(mcFile)
 
 # get the model count [approxmc]
-inputFilePrefix = args.input.split(".")[0]
+inputFilePrefix = args.input.strip().split("/")[-1][10:-4]
+print(inputFilePrefix)
 mcFile = inputFilePrefix + ".mc"
 cmd = "./samplers/sharpSAT -decot 1 -decow 100 -tmpdir . -cs 3500 bench/" + inputFilePrefix + ".cnf > "  + mcFile
 os.system(cmd)
+print(cmd)
 
 with open(mcFile) as fp:
     lines = fp.readlines()
@@ -52,9 +54,11 @@ mc = int(mc)
 print(mc)
 os.unlink(mcFile)
 
-dTV = sum(estwgts) / len(estwgts)
+dTV = 0
+for wgt in estwgts:
+    dTV += abs( 1 - 1 / (mc * wgt))
 
-if dTV > 1.1:
+if dTV < 1.1:
     result = "ACCEPT"
 else:
     result = "REJECT"
