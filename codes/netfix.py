@@ -679,7 +679,7 @@ def flash():
         "--epsilon", type=float, help="default = 0.1", default=0.1, dest="epsilon"
     )
     parser.add_argument(
-        "--delta", type=float, help="default = 0.1", default=0.1, dest="delta"
+        "--delta", type=float, help="default = 0.1", default=0.2, dest="delta"
     )
     parser.add_argument(
         "--sampler",
@@ -724,7 +724,7 @@ def flash():
         if line.strip().startswith('s mc') :
             mc = line.strip().split(' ')[-1]
     mc = int(mc)
-    print(mc)
+    # print(mc)
     os.unlink(mcFile)
 
     # set up the parameters
@@ -759,10 +759,10 @@ def flash():
     numSolutions = math.ceil(24 * (2 * eta + epsilon) / (eta - epsilon )**2 * math.log(2 / delta))
     delta_m = delta / (2 * numSolutions)
     K = (epsilon + eta) / 2
-    gamma = (eta - epsilon) / 2
+    gamma = min(1/3 , (eta - epsilon) / 2)
     epsilon_ = gamma / 1.107
     k = math.ceil(2 * n / epsilon_**2 * (1 /( 1 - 4 / 3 * epsilon_ / math.sqrt(n))) * math.log(2 * n / delta_m))
-    # print(k, numSolutions, n, epsilon, (eta - epsilon) / 2)
+    print(k, numSolutions, n, epsilon, (eta - epsilon) / 2)
     # exit(-1)
     #--------------------------------------------------------------------------------------------------------------
     
