@@ -5,5 +5,5 @@ FILES="./outDir/*.out"
 for FILE in $FILES
 do 
 	echo $FILE
-	python3 dtvfromwgts.py $FILE dtv.out
+	python3 dtvfromwgts.py $FILE dtv_quick.out
 done

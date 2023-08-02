@@ -287,12 +287,12 @@ def getSolutionFromCustomSampler(inputFile, numSolutions, indVarList):
     return solreturnList
 
 
-def getSolutionFromSampler(inputFile, numSolutions, samplerType, indVarList, seed):
+def getSolutionFromSampler(inputFile, numSolutions, samplerType, indVarList, seed, thread, outfp):
 
     if samplerType == SAMPLER_UNIGEN3:
         return getSolutionFromUniGen3(inputFile, numSolutions, indVarList)
     if samplerType == SAMPLER_QUICKSAMPLER:
-        return getSolutionFromQuickSampler(inputFile, numSolutions, indVarList, seed)
+        return getSolutionFromQuickSampler(inputFile, numSolutions, indVarList, seed, thread, outfp)
     if samplerType == SAMPLER_STS:
         return getSolutionFromSTS(seed, inputFile, numSolutions, indVarList)
     if samplerType == SAMPLER_SPUR:
@@ -315,7 +315,7 @@ def getSolutionFromSTS(seed, inputFile, numSolutions, indVarList):
         samplingRounds = int(numSolutions/kValue) + 1
         inputFileSuffix = inputFile.split('/')[-1][:-4]
         outputFile = tempfile.gettempdir()+'/'+inputFileSuffix+"sts.out"
-        cmd = './samplers/STS -k='+str(kValue)+' -nsamples='+str(samplingRounds)+' -rnd-seed=' + str(seed) +' '+str(inputFile)
+        cmd = './samplers/STSnew -k='+str(kValue)+' -nsamples='+str(samplingRounds)+' -rnd-seed=' + str(seed) +' '+str(inputFile)
         cmd += ' > '+str(outputFile)
         #if args.verbose:
         #    print("cmd: ", cmd)
@@ -337,20 +337,28 @@ def getSolutionFromSTS(seed, inputFile, numSolutions, indVarList):
                 i = 0
                 sol = []
                 # valutions are 0 and 1 and in the same order as c ind.
-                for x in list(lines[j].strip()):
-                    if (x == '0'):
-                        sol.append(-1*indVarList[i])
+                # for x in list(lines[j].strip()):
+                #     if (x == '0'):
+                #         sol.append(-1*indVarList[i])
+                #     else:
+                #         sol.append(indVarList[i])
+                #     i += 1
+                # solList.append(sol)
+                line = lines[j].strip().split(',')
+                for x in indVarList: 
+                    if (line[x-1] == '0'):
+                        sol.append(-1*x)
                     else:
-                        sol.append(indVarList[i])
+                        sol.append(x)
                     i += 1
                 solList.append(sol)
-
+                
         solreturnList = solList
         if len(solList) > numSolutions:
             solreturnList = random.sample(solList, numSolutions)
             break
         elif len(solList) < numSolutions:
-            print(len(solList))
+            print(len(solList), numSolutions)
             # print(solList)
             print("STS Did not find required number of solutions")
             # sys.exit(1)
@@ -361,49 +369,62 @@ def getSolutionFromSTS(seed, inputFile, numSolutions, indVarList):
     return solreturnList
 
 
-def getSolutionFromQuickSampler(inputFile, numSolutions, indVarList, seed):
-    cmd = (
-        "./samplers/quicksampler -n "
-        + str(numSolutions * 5)
-        + " "
-        + str(inputFile)
-        #+ " > /dev/null 2>&1"
-        )
-    print(cmd)
-    os.system(cmd)
-    cmd = "./samplers/z3 " + str(inputFile) #+ " > /dev/null 2>&1"
-    os.system(cmd)
-    i = 0
-    if numSolutions > 1:
-        i = 0
 
-    f = open(inputFile + ".samples", "r")
-    lines = f.readlines()
-    f.close()
-    f = open(inputFile + ".samples.valid", "r")
-    validLines = f.readlines()
-    f.close()
-    solList = []
-    for j in range(len(lines)):
-        if validLines[j].strip() == "0":
-            continue
-        fields = lines[j].strip().split(":")
-        sol = []
+def getSolutionFromQuickSampler(inputFile, numSolutions, indVarList, seed, thread, outfp):
+    multiplier = 5
+    if numSolutions < 100 : multiplier = 10
+    # cmd ='approxmc -v 0 ' + inputFile + ' > checkherethenumber'
+    # os.system(cmd)
+    solreturnList = []
+    while True:
+        cmd = (
+            "./samplers/quicksampler"+ str(thread) +" -n "
+            + str(numSolutions * multiplier)
+            + " "
+            + str(inputFile)
+            #+ " > /dev/null 2>&1"
+            )
+        os.system(cmd)
+        cmd = "./samplers/z3"+ str(thread) +" " + str(inputFile) #+ " > /dev/null 2>&1"
+        os.system(cmd)
         i = 0
-        for x in list(fields[1].strip()):
-            if x == "0":
-                sol.append(-1*indVarList[i])
-            else:
-                sol.append(indVarList[i])
-            i += 1
-        solList.append(sol)
+        if numSolutions > 1:
+            i = 0
 
-    solreturnList = solList
-    if len(solList) > numSolutions:
-        solreturnList = random.sample(solList, numSolutions)
-    elif len(solreturnList) < numSolutions:
-        print("Did not find required number of solutions")
-        exit(1)
+        f = open(inputFile + ".samples", "r")
+        lines = f.readlines()
+        f.close()
+        f = open(inputFile + ".samples.valid", "r")
+        validLines = f.readlines()
+        f.close()
+        solList = []
+        print("lines:", len(lines), inputFile)
+        for j in range(len(lines)):
+            if validLines[j].strip() == "0":
+                continue
+            fields = lines[j].strip().split(":")
+            sol = []
+            i = 0
+            for x in list(fields[1].strip()):
+                if x == "0":
+                    sol.append(-1*indVarList[i])
+                else:  
+                    sol.append(indVarList[i])
+                i += 1
+                # if i >= len(indVarList) : break
+            solList.append(sol)
+
+        solreturnList += solList
+        if len(solreturnList) > numSolutions:
+            solreturnList = random.sample(solreturnList, numSolutions) # this should not be numsolutinos to fix
+            break
+        elif len(solreturnList) < numSolutions:
+            outfp.write(str(thread) + str(len(solList)) + str(numSolutions))
+            outfp.flush()
+            # print(solList[0])
+            outfp.write(str(thread) + "Did not find required number of solutions \n")
+            outfp.flush()
+            # exit(1)
 
     os.unlink(inputFile+'.samples')
     os.unlink(inputFile+'.samples.valid')
@@ -637,7 +658,7 @@ def constructNewFile(inputFile, tempFile, vars, indVarList):
     for var in vars:
         indVarList.remove(abs(var))
 
-    #---------------------------Old formula--------------------------#
+    #---------------------------Old formula--------------------------#5
     oldClauseStr = ""
     for line in lines:
         if line.strip().startswith("p cnf"):
@@ -721,6 +742,69 @@ def constructNewFile2(tempFile, var, indVarList):
     f.close()
     return indVarList
 
+# def addClique(inputFile, indVarList, newFile):
+    # f = open(inputFile, "r")
+    # lines = f.readlines()
+    # f.close()
+    
+    # #---------------------Old Clause---------------------#
+    # oldClauseStr = ""
+    # for line in lines:
+    #     if line.strip().startswith("p cnf"):
+    #         numVar = int(line.strip().split()[2])
+    #         numClause = int(line.strip().split()[3])
+    #     else:
+    #         if line.strip().startswith("w"):
+    #             oldClauseStr += line.strip()+"\n"
+    #         elif not (line.strip().startswith("c")):
+    #             oldClauseStr += line.strip()+"\n"
+    # indStr = "c ind "
+    # indIter = 1
+    # for i in indVarList:
+    #     if indIter % 10 == 0:
+    #         indStr += " 0\nc ind "
+    #     indStr += str(i) + " "
+    #     indIter += 1
+    # indStr += " 0\n"
+
+    # numVarOrig = numVar
+    # newClause = ""
+    # varCount = 1
+    # newVar = []
+
+    # #-----------------------new Clique Clause (NetRel problem)--------------------#
+    # for j in range(100):
+    #     node_1 = numVarOrig + varCount
+    #     node_2 = numVarOrig + varCount + 1
+    #     edge = numVarOrig + varCount + 2
+    #     varCount += 3
+    #     newClause += str(-node_1) + " " + str(-edge) + " " + str(node_2) + " 0\n"
+    #     newClause += str(node_1) + " " + str(-edge) + " " + str(-node_2) + " 0\n"    
+    #     numClause += 2
+    #     numVar += 3
+    #     newVar.append(edge)
+    # #------------------------------------------------------------------------------#
+    # indStr += "c ind "
+    # indIter = 1
+    # for i in newVar:
+    #     if indIter % 10 == 0:
+    #         indStr += " 0\nc ind "
+    #     indStr += str(i) + " "
+    #     indIter += 1
+    # indStr += " 0\n"
+
+    # headStr = "p cnf " + str(numVar) + " " + str(numClause-1) + "\n"
+    # writeStr = headStr + indStr
+    # writeStr += oldClauseStr
+    # writeStr += newClause
+    
+    # f = open(newFile, "w")
+    # f.write(writeStr)
+    # f.close()
+
+    # return indVarList + newVar
+
+
 def addClique(inputFile, indVarList, newFile):
     f = open(inputFile, "r")
     lines = f.readlines()
@@ -751,18 +835,47 @@ def addClique(inputFile, indVarList, newFile):
     varCount = 1
     newVar = []
 
-    #-----------------------new Clique Clause (NetRel problem)--------------------#
-    for j in range(18):
-        node_1 = numVarOrig + varCount
-        node_2 = numVarOrig + varCount + 1
-        edge = numVarOrig + varCount + 2
-        varCount += 3
-        newClause += str(-node_1) + " " + str(-edge) + " " + str(node_2) + " 0\n"
-        newClause += str(node_1) + " " + str(-edge) + " " + str(-node_2) + " 0\n"    
-        numClause += 2
-        numVar += 3
-        newVar.append(edge)
+    #-----------------------new Clique Clause (le problem)--------------------#
+    # for j in range(55):
+    #     edge12 = numVarOrig + varCount
+    #     edge23 = numVarOrig + varCount + 1
+    #     edge13 = numVarOrig + varCount + 2
+    #     # node_1 = numVarOrig + varCount
+    #     # node_2 = numVarOrig + varCount + 1
+    #     # edge = numVarOrig + varCount + 2
+    #     varCount += 3
+    #     newClause += str(-edge12) + " " + str(-edge23) + " " + str(edge13) + " 0\n"    
+    #     numClause += 1
+    #     numVar += 3
+    #     newVar+= [edge12, edge23, edge13]
+    fmt = open("empty.cnf", "r")
+    mtlines = fmt.readlines()
+    fmt.close()
+    
+    for line in mtlines:
+        if line.strip().startswith("p cnf"):
+            newnumVar = int(line.strip().split()[2])
+            newnumClause = int(line.strip().split()[3])
+        else:
+            if line.strip().startswith("w"):
+                newClause += line.strip()+"\n"
+            elif not (line.strip().startswith("c")):
+                newVarbuf = [int(_var) for _var in line.strip().split()]
+                for _var in newVarbuf:
+                    if _var > 0:
+                        newClause += str(abs(_var) + numVar) + ' '
+                    elif _var < 0:
+                        newClause += str( -1 * (abs(_var) + numVar)) + ' '
+                    newVar.append(abs(_var) + numVar)
+                newClause += '0\n' 
+                # newline = ' '.join(newVarbuf)
+                # newVar += newVarbuf
+                # newClause += newline+"\n"
+    
     #------------------------------------------------------------------------------#
+    newVar = set(newVar)
+    newVar.remove(numVar)
+    newVar = sorted(list(newVar))
     indStr += "c ind "
     indIter = 1
     for i in newVar:
@@ -772,7 +885,7 @@ def addClique(inputFile, indVarList, newFile):
         indIter += 1
     indStr += " 0\n"
 
-    headStr = "p cnf " + str(numVar) + " " + str(numClause) + "\n"
+    headStr = "p cnf " + str(numVar + newnumVar) + " " + str(numClause + newnumClause) + "\n"
     writeStr = headStr + indStr
     writeStr += oldClauseStr
     writeStr += newClause
@@ -784,7 +897,7 @@ def addClique(inputFile, indVarList, newFile):
     return indVarList + newVar
 
 
-def gbas(x, i, indVarList, tempfile, samplerType, seed, k, outfp):
+def gbas(x, i, indVarList, tempfile, samplerType, seed, k, outfp, thread):
     s, r = 0, 0
     k_ = int(k)
     k = k_
@@ -792,7 +905,7 @@ def gbas(x, i, indVarList, tempfile, samplerType, seed, k, outfp):
     nloops = 0
     while s < k:
         nloops += 1
-        sampSet = getSolutionFromSampler(tempfile, k_, samplerType, indVarList, seed)
+        sampSet = getSolutionFromSampler(tempfile, k_, samplerType, indVarList, seed, thread, outfp)
         for samp in sampSet:
             # print("##############################gbas gbas gbas", x[i], " and ", samp[i])
             if not (samp[i] > 0) ^ (x[i] > 0): 
@@ -810,13 +923,13 @@ def gbas(x, i, indVarList, tempfile, samplerType, seed, k, outfp):
 
     return (k - 1) / r
     
-def estimate(x, indVarList, tempFile, samplerType, seed, k, outfp, threadid):
-    n = len(x)
+def estimate(x, dim, indVarList, tempFile, samplerType, seed, k, outfp, threadid):
+    n = dim
     est = 1  
     outfp.write("\n " + str(threadid) + "##### estimating dimension " +  str(0) + " of " + str(n))
     outfp.flush()
     start_time = time.time()
-    est *= min(1, gbas(x, 0, indVarList, tempFile, samplerType, seed, k, outfp))
+    est *= min(1, gbas(x, 0, indVarList, tempFile, samplerType, seed, k, outfp, threadid))
     end_time = time.time()
     outfp.write("\n Thread " + str(threadid) + " estimated dimension " +  str(0) + " of " + str(n) + " : " + str(est) + "  | time taken : " + str(end_time - start_time))
     outfp.flush()
@@ -825,7 +938,7 @@ def estimate(x, indVarList, tempFile, samplerType, seed, k, outfp, threadid):
         outfp.write("\n " + str(threadid) + "###### estimating dimension " +  str(i) + " of " + str(n))
         outfp.flush()
         start_time = time.time()
-        est *= min(1, gbas(x, i, indVarList, tempFile, samplerType, seed, k, outfp))
+        est *= min(1, gbas(x, i, indVarList, tempFile, samplerType, seed, k, outfp, threadid))
         end_time = time.time()
         outfp.write("\n Thread " + str(threadid) + " estimated dimension " +  str(i) + " of " + str(n) + " : " + str(est) + "  | time taken : " + str(end_time - start_time))
         outfp.flush()
@@ -849,12 +962,12 @@ def bias(x, j, indVarList, tempFile, samplerType, nsamp, seed, bsize):
 #     return tempIndVarList
 
 
-def inthread(sampleSet, indVarList, inputFile, samplerType, seed, k, out, est, threadid):
+def inthread(sampleSet, dim, indVarList, inputFile, samplerType, seed, k, out, est, threadid):
     tempFile_th= "thread_" + str(threadid) + "_" + inputFile
     cmd = "cp " + inputFile + " ./" + tempFile_th 
     for x in sampleSet:
         os.system(cmd)
-        est.append(estimate(x, indVarList, tempFile_th, samplerType, seed, k, out, threadid))
+        est.append(estimate(x, dim, indVarList, tempFile_th, samplerType, seed, k, out, threadid))
 
 
 def flash():
@@ -904,6 +1017,7 @@ def flash():
     mcFile = "sampler_" + str(samplerType) + "_mc.out"
     cmd = "approxmc " + UserInputFile + " > "  + mcFile
     os.system(cmd)
+    print(cmd)
 
     with open(mcFile) as fp:
         lines = fp.readlines()
@@ -960,7 +1074,9 @@ def flash():
     # cmd = "approxmc " + UserInputFile
     # os.system(cmd)
     sampleSet = []
-    sampleSet = getSolutionFromSampler(UserInputFile, numSolutions, samplerType, UserIndVarList, seed)
+    sampleSet = getSolutionFromSampler(inputFile, numSolutions, samplerType, indVarList, seed, 1, f)
+
+    dim = len(UserIndVarList)
 
     val = 0
     out = open(outputFile, "a")
@@ -986,7 +1102,7 @@ def flash():
             # tempFile_th= "thread_" + str(i) + "_" + inputFile
             # cmd = "cp " + inputFile + " ./" + tempFile_th 
             # os.system(cmd)
-            t.append(threading.Thread(target=inthread, args=(sampleSet[eachthread[max(0, i-1)]: eachthread[i]], indVarList, inputFile, samplerType, seed, k, out, massarray, i)))
+            t.append(threading.Thread(target=inthread, args=(sampleSet[eachthread[max(0, i-1)]: eachthread[i]], dim, indVarList, inputFile, samplerType, seed, k, out, massarray, i)))
         
         for i in range(ncores):
             t[i].start()
@@ -1008,17 +1124,18 @@ def flash():
         for x in sampleSet:
             out.write(str(count) + " of " + str(len(sampleSet)) + "\t")
             out.flush()
-            est = estimate(x, indVarList, inputFile, samplerType, seed, k, out, 1)
+            est = estimate(x, dim, indVarList, inputFile, samplerType, seed, k, out, 1)
             val = val + abs(1 - 1 / (est * mc) )
             count += 1
-        
-    out.close()
+
+    out.write("\n dTV estimated : " + str(val / numSolutions))
 
     if val / numSolutions > K:
-        return "REJECTED"
+        out.write("REJECTED")
     else:
-        return "ACCEPTED"
+        out.write("ACCEPTED")
 
+    out.close()
 
 if __name__ == "__main__":
     flash()

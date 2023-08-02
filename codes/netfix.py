@@ -673,13 +673,13 @@ def flash():
 
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--eta", type=float, help="default = 0.9", default=0.9, dest="eta"
+        "--eta", type=float, help="default = 1.6", default=1.6, dest="eta"
     )
     parser.add_argument(
-        "--epsilon", type=float, help="default = 0.2", default=0.2, dest="epsilon"
+        "--epsilon", type=float, help="default = 0.1", default=0.1, dest="epsilon"
     )
     parser.add_argument(
-        "--delta", type=float, help="default = 0.2", default=0.2, dest="delta"
+        "--delta", type=float, help="default = 0.1", default=0.1, dest="delta"
     )
     parser.add_argument(
         "--sampler",
@@ -756,11 +756,14 @@ def flash():
     
     #----------------------------------------- parameter calculation----------------------------------------------
     n = len(UserIndVarList) 
-    numSolutions = math.ceil((4 * eta - 3 * epsilon) / (eta - 5 * epsilon / 2)**2 * math.log(2 / delta))
+    numSolutions = math.ceil(24 * (2 * eta + epsilon) / (eta - epsilon )**2 * math.log(2 / delta))
     delta_m = delta / (2 * numSolutions)
-    K = (epsilon + eta)
-    epsilon_ = epsilon / 1.107
+    K = (epsilon + eta) / 2
+    gamma = (eta - epsilon) / 2
+    epsilon_ = gamma / 1.107
     k = math.ceil(2 * n / epsilon_**2 * (1 /( 1 - 4 / 3 * epsilon_ / math.sqrt(n))) * math.log(2 * n / delta_m))
+    # print(k, numSolutions, n, epsilon, (eta - epsilon) / 2)
+    # exit(-1)
     #--------------------------------------------------------------------------------------------------------------
     
     f = open(outputFile, "w")
