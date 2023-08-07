@@ -1,5 +1,5 @@
 import os
-import argparse
+import argparse, re
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
@@ -14,10 +14,20 @@ fp = open(args.input, "r")
 lines = fp.readlines()
 fp.close()
 
+dims = lines[1].strip().split()[0]
+
 for line in lines:
     if line.startswith(" estimated"):
         estwgts = eval(line.strip().split(":")[1])
-
+        
+numsamp = 0
+for line in lines:
+    if re.search("nsolns", line):
+        try:
+            numsamp += int(line.strip().split(":")[-1])
+        except ValueError:
+            numsamp += int(line.strip().split(":")[-1].split(".")[0]) + 1
+            
 # get the model count [approxmc]
 inputFilePrefix = args.input.strip().split("/")[-1][10:-4]
 mcFile = inputFilePrefix + ".mc"
@@ -66,5 +76,5 @@ else:
     result = "REJECT"
 
 fp = open(args.output, "a")
-fp.write(str(dTV) + " " + result + "\n")
+fp.write(inputFilePrefix + " " + dims + " " + str(dTV) + " " + str(numsamp) + " " + result + "\n")
 fp.close()
