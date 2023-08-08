@@ -11,21 +11,10 @@ import threading
 
 from numpy.random import exponential as _exp
 
-cwd = os.getcwd()+"/codes/WAPS"
-sys.path.append(cwd)
-
-# from waps import sampler as samp
-# import weightcount.WeightCount as chainform
-
-
-SAMPLER_UNIGEN3 = 7
 SAMPLER_QUICKSAMPLER = 1
 SAMPLER_STS = 2
-SAMPLER_CMS = 4
-SAMPLER_APPMC3 = 5
-SAMPLER_CUSTOM = 6
 SAMPLER_SPUR = 3
-SAMPLER_WAPS = 8
+SAMPLER_CMS = 4
 
 
 def parseWeights(inputFile, indVarList):
@@ -122,35 +111,6 @@ def getSolutionFromSpur(seed, inputFile, numSolutions, indVarList):
     return solList
 
 
-def getSolutionFromUniGen3(inputFile, numSolutions, indVarList):
-    #inputFilePrefix = inputFile.split("/")[-1][:-4]
-    tempOutputFile = inputFile + ".txt"
-    f = open(tempOutputFile, "w")
-    f.close()
-
-    cmd = './samplers/unigen3  -v 0 --samples ' + str(numSolutions) + ' --multisample 1 --kappa 0.635'
-    cmd += ' --sampleout ' + str(tempOutputFile)
-    cmd += ' ' + inputFile + ' > /dev/null 2>&1'
-
-    print(cmd)
-    os.system(cmd)
-    f = open(tempOutputFile, "r")
-    lines = f.readlines()
-    f.close()
-    solList = []
-    for line in lines:
-        line = line.strip(" 0\n")
-        sample = line.split()
-        sample = [int(i) for i in sample]
-        solList.append(sample)
-
-    solreturnList = solList
-    if (len(solList) > numSolutions):
-        solreturnList = random.sample(solList, numSolutions)
-
-    os.unlink(str(tempOutputFile))
-    return solreturnList
-
 
 def getSolutionFromCMSsampler(inputFile, numSolutions, indVarList, newSeed):
     # inputFileSuffix = inputFile.split('/')[-1][:-4]
@@ -195,61 +155,9 @@ def getSolutionFromCMSsampler(inputFile, numSolutions, indVarList, newSeed):
     return solreturnList
 
 
-def getSolutionFromAppmc3(inputFile, numSolutions, indVarList):
-    #inputFilePrefix = inputFile.split("/")[-1][:-4]
-    tempOutputFile = inputFile + ".txt"
-    f = open(tempOutputFile, "w")
-    f.close()
-    cmd = (
-        "./samplers/approxmc3 "
-        + inputFile
-        + " --samples "
-        + str(numSolutions)
-        + " --sampleout "
-        + str(tempOutputFile)
-        #+ " > /dev/null 2>&1"
-    )
-    print(cmd)
-    os.system(cmd)
-    f = open(tempOutputFile, "r")
-    lines = f.readlines()
-    f.close()
-    solList = []
-    for line in lines:
-        line = line.strip()
-        freq = int(line.split(":")[0].strip())
-        for _ in range(freq):
-            sample = line.split(":")[1].strip()[:-2]
-            sample = sample.split()
-            sample = [int(i) for i in sample]
-            solList.append(sample)
-
-    solreturnList = solList
-    if (len(solList) > numSolutions):
-        solreturnList = random.sample(solList, numSolutions)
-
-    os.unlink(str(tempOutputFile))
-    return solreturnList
-
-
-
-# @CHANGE_HERE : please make changes in the below block of code
-""" this is the method where you could run your sampler for testing
-Arguments : input file, number of solutions to be returned, list of independent variables
-output : list of solutions """
-
-
-def getSolutionFromCustomSampler(inputFile, numSolutions, indVarList):
-    solreturnList = []
-    """ write your code here """
-
-    return solreturnList
-
 
 def getSolutionFromSampler(inputFile, numSolutions, samplerType, indVarList, seed, thread, outfp):
 
-    if samplerType == SAMPLER_UNIGEN3:
-        return getSolutionFromUniGen3(inputFile, numSolutions, indVarList)
     if samplerType == SAMPLER_QUICKSAMPLER:
         return getSolutionFromQuickSampler(inputFile, numSolutions, indVarList, seed, thread, outfp)
     if samplerType == SAMPLER_STS:
@@ -258,10 +166,6 @@ def getSolutionFromSampler(inputFile, numSolutions, samplerType, indVarList, see
         return getSolutionFromSpur(seed, inputFile, numSolutions, indVarList)
     if samplerType == SAMPLER_CMS:
         return getSolutionFromCMSsampler(inputFile, numSolutions, indVarList, seed)
-    if samplerType == SAMPLER_APPMC3:
-        return getSolutionFromAppmc3(inputFile, numSolutions, indVarList)
-    if samplerType == SAMPLER_CUSTOM:
-        return getSolutionFromCustomSampler(inputFile, numSolutions, indVarList)
     else:
         print("Error")
         return None
@@ -599,7 +503,6 @@ def gbas(x, ith, indVarList, tempfile, samplerType, seed, k, outfp, thread):
     cut_thresh = 40
     nloops = 0
     totsamples = 0
-    # print(ith, ";;;;;;;;;;;;")
     while s < k:
         nloops += 1
         sampSet = getSolutionFromSampler(tempfile, k_, samplerType, indVarList, seed, thread, outfp)
@@ -667,11 +570,14 @@ def inthread(sampleSet, dim, indVarList, inputFile, samplerType, seed, k, out, e
     
 
 
-def flash():
+def CubeProbe():
 
     start_time = time.time()
 
     parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--zeta", type=float, help="default = 0.15", default=0.15, dest="zeta"
+    )
     parser.add_argument(
         "--eta", type=float, help="default = 1.6", default=1.6, dest="eta"
     )
@@ -684,20 +590,20 @@ def flash():
     parser.add_argument(
         "--sampler",
         type=int,
-        help=str(SAMPLER_UNIGEN3)
-        + " for UniGen3;\n"
-        + str(SAMPLER_QUICKSAMPLER)
+        help=str(SAMPLER_QUICKSAMPLER)
         + " for QuickSampler;\n"
         + str(SAMPLER_STS)
-        + " for STS;\n",
+        + " for STS;\n"
+        + str(SAMPLER_CMS)
+        + " for CMSGen;\n",
         default=SAMPLER_QUICKSAMPLER,
         dest="samplertype",
     )
     parser.add_argument("--seed", type=int, dest="seed", default=420)
+    parser.add_argument("--thread", type=int, help="default use thread", default=20, dest="thread")
     parser.add_argument("--input", help="input file", dest="input", default="avgdeg_3_008_0.cnf")
     parser.add_argument("--output", help="output file", dest="output", default="outavgtmp")
-    parser.add_argument("--thread", help="default use thread", default=1)
-
+    
     args = parser.parse_args()
 
     samplerType = args.samplertype
@@ -729,6 +635,7 @@ def flash():
 
     # set up the parameters
     isthread = args.thread
+    zeta = args.zeta
     eta = args.eta
     epsilon = args.epsilon
     delta = args.delta
@@ -740,29 +647,25 @@ def flash():
 
     samplerString = ""
 
-    if samplerType == SAMPLER_UNIGEN3:
-        samplerString = "UniGen3"
     if samplerType == SAMPLER_QUICKSAMPLER:
         samplerString = "QuickSampler"
     if samplerType == SAMPLER_STS:
         samplerString = "STS"
-    if samplerType == SAMPLER_CUSTOM:
-        samplerString = "CustomSampler"
-    if samplerType == SAMPLER_APPMC3:
-        samplerString = "AppMC3"
     if samplerType == SAMPLER_CMS:
         samplerString = "CMSGen"
 
     
     #----------------------------------------- parameter calculation----------------------------------------------
     n = len(UserIndVarList) 
-    numSolutions = math.ceil(24 * (2 * eta + epsilon) / (eta - epsilon )**2 * math.log(2 / delta))
+    # numSolutions = math.ceil(24 * (2 * eta + epsilon) / (eta - epsilon )**2 * math.log(2 / delta))
+    numSolutions = math.ceil(1 / (2 * zeta ** 2) * math.log(4 / delta)) 
     delta_m = delta / (2 * numSolutions)
     K = (epsilon + eta) / 2
     gamma = min(1/3 , (eta - epsilon) / 2)
+    gamma = zeta / (1 + zeta)
     epsilon_ = gamma / 1.107
     k = math.ceil(2 * n / epsilon_**2 * (1 /( 1 - 4 / 3 * epsilon_ / math.sqrt(n))) * math.log(2 * n / delta_m))
-    print(k, numSolutions, n, epsilon, (eta - epsilon) / 2)
+    print(k, numSolutions, n, epsilon_)
     # exit(-1)
     #--------------------------------------------------------------------------------------------------------------
     
@@ -784,11 +687,10 @@ def flash():
     out = open(outputFile, "a")
     # print(UserIndVarList, indVarList)
     
-    if isthread == 1:
+    if isthread > 0:
         
-        t = []
-        total_cores = 22            # tofix
-        ncores = total_cores    # tofix
+        t = []          
+        ncores = isthread  
 
         eachthread = [numSolutions // ncores for i in range(ncores)]
         rem = numSolutions % ncores
@@ -801,11 +703,11 @@ def flash():
 
         massarray = []; nsamplesarray = []
 
-        for i in range(ncores):
-            # tempFile_th= "thread_" + str(i) + "_" + inputFile
-            # cmd = "cp " + inputFile + " ./" + tempFile_th 
-            # os.system(cmd)
-            t.append(threading.Thread(target=inthread, args=(sampleSet[eachthread[max(0, i-1)]: eachthread[i]], dim, indVarList, inputFile, samplerType, seed, k, out, massarray, nsamplesarray, i)))
+        eachthread = [0] + eachthread
+        
+        for i in range(1, ncores):
+            # print(len(sampleSet[eachthread[i-1]: eachthread[i]]))
+            t.append(threading.Thread(target=inthread, args=(sampleSet[eachthread[i-1]: eachthread[i]], dim, indVarList, inputFile, samplerType, seed, k, out, massarray, nsamplesarray, i)))
         
         for i in range(ncores):
             t[i].start()
@@ -816,7 +718,7 @@ def flash():
         out.flush()
 
         for est in massarray:
-            val += abs(1 - 1 /(est * mc))
+            val += max(0, 1 - 1 /(est * mc))
         for ns in nsamplesarray:
             nsamp += ns
         
@@ -829,7 +731,7 @@ def flash():
             out.write(str(count) + " of " + str(len(sampleSet)) + "\t")
             out.flush()
             est, ns = estimate(x, dim, indVarList, inputFile, samplerType, seed, k, out, 1)
-            val = val + abs(1 - 1 / (est * mc) )
+            val = val + max(0, 1 - 1 / (est * mc) )
             nsamp += ns
             count += 1
 
@@ -847,4 +749,4 @@ def flash():
     # os.unlink(inputFile)
 
 if __name__ == "__main__":
-    flash()
+    CubeProbe()

@@ -66,7 +66,7 @@ os.unlink(mcFile)
 
 dTV = 0
 for wgt in estwgts:
-    dTV += abs( 1 - 1 / (mc * wgt))
+    dTV += max(0, 1 - 1 / (mc * wgt))
 
 dTV /= len(estwgts)
 
