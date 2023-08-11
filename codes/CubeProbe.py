@@ -13,8 +13,8 @@ from numpy.random import exponential as _exp
 
 SAMPLER_QUICKSAMPLER = 1
 SAMPLER_STS = 2
-SAMPLER_SPUR = 3
-SAMPLER_CMS = 4
+SAMPLER_SPUR = 4
+SAMPLER_CMS = 3
 
 
 def parseWeights(inputFile, indVarList):
@@ -576,16 +576,16 @@ def CubeProbe():
 
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--zeta", type=float, help="default = 0.15", default=0.15, dest="zeta"
+        "--zeta", type=float, help="default = 0.15", default=0.3, dest="zeta"
     )
     parser.add_argument(
-        "--eta", type=float, help="default = 1.6", default=1.6, dest="eta"
+        "--eta", type=float, help="default = 0.65", default=0.65, dest="eta"
     )
     parser.add_argument(
-        "--epsilon", type=float, help="default = 0.1", default=0.1, dest="epsilon"
+        "--epsilon", type=float, help="default = 0.05", default=0.05, dest="epsilon"
     )
     parser.add_argument(
-        "--delta", type=float, help="default = 0.1", default=0.2, dest="delta"
+        "--delta", type=float, help="default = 0.2", default=0.2, dest="delta"
     )
     parser.add_argument(
         "--sampler",
@@ -658,7 +658,7 @@ def CubeProbe():
     #----------------------------------------- parameter calculation----------------------------------------------
     n = len(UserIndVarList) 
     # numSolutions = math.ceil(24 * (2 * eta + epsilon) / (eta - epsilon )**2 * math.log(2 / delta))
-    numSolutions = math.ceil(1 / (2 * zeta ** 2) * math.log(4 / delta)) 
+    numSolutions = math.ceil(2 / (zeta ** 2) * math.log(4 / delta)) 
     delta_m = delta / (2 * numSolutions)
     K = (epsilon + eta) / 2
     gamma = min(1/3 , (eta - epsilon) / 2)
@@ -666,7 +666,7 @@ def CubeProbe():
     epsilon_ = gamma / 1.107
     k = math.ceil(2 * n / epsilon_**2 * (1 /( 1 - 4 / 3 * epsilon_ / math.sqrt(n))) * math.log(2 * n / delta_m))
     print(k, numSolutions, n, epsilon_)
-    # exit(-1)
+    exit(-1)
     #--------------------------------------------------------------------------------------------------------------
     
     f = open(outputFile, "w")
