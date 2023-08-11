@@ -718,7 +718,10 @@ def CubeProbe():
         out.flush()
 
         for est in massarray:
-            val += max(0, 1 - 1 /(est * mc))
+            try:
+                val += max(0, 1 - 1 /(est * mc))
+            except ZeroDivisionError:
+                pass
         for ns in nsamplesarray:
             nsamp += ns
         
