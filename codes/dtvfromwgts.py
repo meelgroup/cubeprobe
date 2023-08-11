@@ -70,7 +70,7 @@ for wgt in estwgts:
 
 dTV /= len(estwgts)
 
-if dTV < 1.1:
+if dTV < 0.31:
     result = "ACCEPT"
 else:
     result = "REJECT"
