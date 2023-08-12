@@ -576,7 +576,7 @@ def CubeProbe():
 
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--zeta", type=float, help="default = 0.15", default=0.3, dest="zeta"
+        "--zeta", type=float, help="default = 0.3", default=0.3, dest="zeta"
     )
     parser.add_argument(
         "--eta", type=float, help="default = 0.65", default=0.65, dest="eta"
@@ -661,12 +661,11 @@ def CubeProbe():
     numSolutions = math.ceil(2 / (zeta ** 2) * math.log(4 / delta)) 
     delta_m = delta / (2 * numSolutions)
     K = (epsilon + eta) / 2
-    gamma = min(1/3 , (eta - epsilon) / 2)
+    # gamma = min(1/3 , (eta - epsilon) / 2)
     gamma = zeta / (1 + zeta)
     epsilon_ = gamma / 1.107
     k = math.ceil(2 * n / epsilon_**2 * (1 /( 1 - 4 / 3 * epsilon_ / math.sqrt(n))) * math.log(2 * n / delta_m))
     print(k, numSolutions, n, epsilon_)
-    exit(-1)
     #--------------------------------------------------------------------------------------------------------------
     
     f = open(outputFile, "w")
@@ -705,7 +704,7 @@ def CubeProbe():
 
         eachthread = [0] + eachthread
         
-        for i in range(1, ncores):
+        for i in range(1, ncores+1):
             # print(len(sampleSet[eachthread[i-1]: eachthread[i]]))
             t.append(threading.Thread(target=inthread, args=(sampleSet[eachthread[i-1]: eachthread[i]], dim, indVarList, inputFile, samplerType, seed, k, out, massarray, nsamplesarray, i)))
         
