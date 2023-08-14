@@ -117,11 +117,14 @@ def getSolutionFromCMSsampler(inputFile, numSolutions, indVarList, newSeed):
     # outputFile = tempfile.gettempdir()+'/'+inputFileSuffix+".out"
     tempOutputFile = inputFile + ".txt"
 
-    cmd = "./samplers/cryptominisat5 --restart fixed --maple 0 --verb 0 --nobansol"
-    cmd += " --scc 1 -n 1 --presimp 0 --polar rnd --freq 0.9999 --fixedconfl 100"
-    cmd += " --random " + str(newSeed) + " --maxsol " + str(numSolutions)
-    cmd += " --dumpresult " + tempOutputFile
-    cmd += " " + inputFile + " > /dev/null 2>&1"
+    # cmd = "./samplers/cryptominisat5 --restart fixed --maple 0 --verb 0 --nobansol"
+    # cmd += " --scc 1 -n 1 --presimp 0 --polar rnd --freq 0.9999 --fixedconfl 100"
+    # cmd += " --random " + str(newSeed) + " --maxsol " + str(numSolutions)
+    # cmd += " --dumpresult " + tempOutputFile
+    # cmd += " " + inputFile + " > /dev/null 2>&1"
+
+    cmd = "./samplers/cmsgen --samples " + str(numSolutions) + " -s " + str(newSeed)
+    cmd += " --samplefile " + tempOutputFile + " " + inputFile + " > /dev/null 2>&1"
 
     # if args.verbose:
     #     print("cmd: ", cmd)
