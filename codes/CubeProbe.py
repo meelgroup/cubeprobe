@@ -123,7 +123,7 @@ def getSolutionFromCMSsampler(inputFile, numSolutions, indVarList, newSeed):
     # cmd += " --dumpresult " + tempOutputFile
     # cmd += " " + inputFile + " > /dev/null 2>&1"
 
-    cmd = "./samplers/cmsgen --samples " + str(numSolutions) + " -s " + str(newSeed)
+    cmd = "cmsgen --samples " + str(numSolutions) + " -s " + str(newSeed)
     cmd += " --samplefile " + tempOutputFile + " " + inputFile + " > /dev/null 2>&1"
 
     # if args.verbose:
@@ -176,11 +176,11 @@ def getSolutionFromSampler(inputFile, numSolutions, samplerType, indVarList, see
 
 def getSolutionFromSTS(seed, inputFile, numSolutions, indVarList):
     kValue = 50
-
+    samplingRounds = int(numSolutions/kValue) + 1
+    inputFileSuffix = inputFile.split('/')[-1][:-4]
+    outputFile = tempfile.gettempdir()+'/'+inputFileSuffix+"sts.out"    
+    solList = []
     while True:
-        samplingRounds = int(numSolutions/kValue) + 1
-        inputFileSuffix = inputFile.split('/')[-1][:-4]
-        outputFile = tempfile.gettempdir()+'/'+inputFileSuffix+"sts.out"
         cmd = './samplers/STSnew -k='+str(kValue)+' -nsamples='+str(samplingRounds)+' -rnd-seed=' + str(seed) +' '+str(inputFile)
         cmd += ' > '+str(outputFile)
         #if args.verbose:
@@ -191,7 +191,6 @@ def getSolutionFromSTS(seed, inputFile, numSolutions, indVarList):
         with open(outputFile, 'r') as f:
             lines = f.readlines()
             
-        solList = []
         shouldStart = False
         for j in range(len(lines)):
             if(lines[j].strip() == 'Outputting samples:' or lines[j].strip() == 'start'):
@@ -220,17 +219,18 @@ def getSolutionFromSTS(seed, inputFile, numSolutions, indVarList):
                 solList.append(sol)
                 
         solreturnList = solList
+        # print(solList)
         if len(solList) > numSolutions:
             solreturnList = random.sample(solList, numSolutions)
             break
-        elif len(solList) < numSolutions:
-            print(len(solList), numSolutions)
-            # print(solList)
-            print("STS Did not find required number of solutions")
-            # sys.exit(1)
-            kValue = int(kValue / 5) + 1
-
-
+        seed += 1
+        # elif len(solList) < numSolutions:
+        #     print(len(solList), numSolutions)
+        #     # print(solList)
+        #     print("STS Did not find required number of solutions")
+        #     # sys.exit(1)
+        #     # kValue = int(kValue / 5) + 1
+    # print("break+++============")
     os.unlink(outputFile)
     return solreturnList
 
@@ -280,10 +280,11 @@ def getSolutionFromQuickSampler(inputFile, numSolutions, indVarList, seed, threa
 
         solreturnList += solList
         if len(solreturnList) > numSolutions:
-            solreturnList = random.sample(solreturnList, numSolutions) # this should not be numsolutinos to fix
+            solreturnList = random.sample(solreturnList, numSolutions) 
             break
         elif len(solreturnList) < numSolutions:
             print(str(thread) + " " + str(len(solList)) + " " + str(numSolutions))
+        seed += 1
         #     outfp.write(str(thread) + str(len(solList)) + str(numSolutions))
         #     outfp.flush()
         #     # print(solList[0])
@@ -617,7 +618,10 @@ def CubeProbe():
     # Current Working File
     inputFilePrefix = "sampler_" + str(samplerType) + "_" + UserInputFile.split("/")[-1][:-4]
     inputFile = inputFilePrefix + ".cnf"
-    indVarList = addClique(UserInputFile, UserIndVarList, inputFile)
+    # indVarList = addClique(UserInputFile, UserIndVarList, inputFile)
+    indVarList = UserIndVarList
+    cmd = 'cp ' + UserInputFile + ' ' + inputFile
+    os.system(cmd)
 
     # get the model count
     mcFile = inputFilePrefix + ".mc"
