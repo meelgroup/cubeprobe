@@ -1,0 +1,1678 @@
+numSolutions: 150 k : 9713
+10 150 0.015811388300841896 6.666666666666667e-05
+
+ Thread 4 estimated dimension 0 of 10 : 0.5510486904791195  | time taken : 64.00301933288574
+ Thread 3 estimated dimension 0 of 10 : 0.5495043181544815  | time taken : 65.7035014629364
+ Thread 5 estimated dimension 0 of 10 : 0.5491339581571059  | time taken : 65.88496661186218
+ Thread 7 estimated dimension 0 of 10 : 0.5465777069945565  | time taken : 65.53811478614807
+ Thread 6 estimated dimension 0 of 10 : 0.5518388830233308  | time taken : 66.76138830184937
+ Thread 2 estimated dimension 0 of 10 : 0.45270564968555055  | time taken : 74.69758868217468
+ Thread 8 estimated dimension 0 of 10 : 0.4559880951188067  | time taken : 78.90033793449402
+ Thread 1 estimated dimension 0 of 10 : 0.4563625305996372  | time taken : 80.56276559829712
+ Thread 7 estimated dimension 1 of 10 : 0.8136953062136588  | time taken : 41.7311806678772
+ Thread 2 estimated dimension 1 of 10 : 1  | time taken : 33.69295358657837
+ Thread 6 estimated dimension 1 of 10 : 0.8194831950877813  | time taken : 41.98694634437561
+ Thread 8 estimated dimension 1 of 10 : 0.9867465455149992  | time taken : 32.98338866233826
+ Thread 1 estimated dimension 1 of 10 : 1  | time taken : 33.48729681968689
+ Thread 2 estimated dimension 2 of 10 : 1  | time taken : 33.63970398902893
+ Thread 8 estimated dimension 2 of 10 : 1  | time taken : 33.87374758720398
+ Thread 1 estimated dimension 2 of 10 : 0.9996955036859211  | time taken : 33.84497117996216
+ Thread 7 estimated dimension 2 of 10 : 0.7265777580847462  | time taken : 48.37990760803223
+ Thread 6 estimated dimension 2 of 10 : 0.7161258343039892  | time taken : 48.09708905220032
+ Thread 7 estimated dimension 3 of 10 : 1  | time taken : 33.56597304344177
+ Thread 6 estimated dimension 3 of 10 : 1  | time taken : 32.789817094802856
+ Thread 2 estimated dimension 3 of 10 : 0.7185453096688729  | time taken : 49.44684624671936
+ Thread 8 estimated dimension 3 of 10 : 0.7066907560529678  | time taken : 47.996803283691406
+ Thread 1 estimated dimension 3 of 10 : 0.7156576816973378  | time taken : 49.562331199645996
+ Thread 2 estimated dimension 4 of 10 : 0.741100224500464  | time taken : 46.67377829551697
+ Thread 8 estimated dimension 4 of 10 : 0.7421590648275985  | time taken : 46.613890171051025
+ Thread 1 estimated dimension 4 of 10 : 0.7339961690120783  | time taken : 45.38827037811279exiting with current heads : 9707 out of 9713 | exp rv: 50107.97410789717
+
+ Thread 4 estimated dimension 1 of 10 : 0.19382144604543808  | time taken : 183.33778643608093exiting with current heads : 9707 out of 9713 | exp rv: 50190.83018417622
+
+ Thread 3 estimated dimension 1 of 10 : 0.19350148153281443  | time taken : 183.93593955039978exiting with current heads : 9710 out of 9713 | exp rv: 50020.77411494232
+
+ Thread 5 estimated dimension 1 of 10 : 0.19415933023513143  | time taken : 184.5833568572998
+ Thread 2 estimated dimension 5 of 10 : 0.46497385143592507  | time taken : 72.86211657524109
+ Thread 8 estimated dimension 5 of 10 : 0.4652155576467126  | time taken : 70.95736312866211
+ Thread 4 estimated dimension 2 of 10 : 0.5159512618505236  | time taken : 66.11211395263672
+ Thread 1 estimated dimension 5 of 10 : 0.46655135516751145  | time taken : 72.13709783554077
+ Thread 3 estimated dimension 2 of 10 : 0.5123139645109405  | time taken : 65.72861003875732
+ Thread 5 estimated dimension 2 of 10 : 0.507650979487386  | time taken : 67.26665163040161
+ Thread 6 estimated dimension 4 of 10 : 0.25934140003600104  | time taken : 134.9702184200287exiting with current heads : 9712 out of 9713 | exp rv: 37612.79267017769
+
+ Thread 7 estimated dimension 4 of 10 : 0.25821002139254656  | time taken : 137.99157524108887
+ Thread 2 estimated dimension 6 of 10 : 0.9844577626314245  | time taken : 30.42594814300537
+ Thread 8 estimated dimension 6 of 10 : 0.9949531981428048  | time taken : 29.552180290222168
+ Thread 4 estimated dimension 3 of 10 : 1  | time taken : 30.210031747817993
+ Thread 3 estimated dimension 3 of 10 : 1  | time taken : 30.080992221832275
+ Thread 1 estimated dimension 6 of 10 : 1  | time taken : 30.627859592437744
+ Thread 5 estimated dimension 3 of 10 : 0.9979214069186091  | time taken : 30.877974271774292
+ Thread 4 estimated dimension 4 of 10 : 1  | time taken : 31.61648416519165
+ Thread 6 estimated dimension 5 of 10 : 0.6391725195284337  | time taken : 50.46873688697815
+ Thread 3 estimated dimension 4 of 10 : 1  | time taken : 31.858261108398438
+ Thread 7 estimated dimension 5 of 10 : 0.6397968588619437  | time taken : 51.53890633583069
+ Thread 5 estimated dimension 4 of 10 : 0.9876560307690643  | time taken : 31.21725296974182
+ Thread 2 estimated dimension 7 of 10 : 0.7426283417498788  | time taken : 43.90701389312744
+ Thread 8 estimated dimension 7 of 10 : 0.7508488462544893  | time taken : 44.20496606826782
+ Thread 1 estimated dimension 7 of 10 : 0.7503099857510591  | time taken : 44.74129104614258
+ Thread 4 estimated dimension 5 of 10 : 0.9933376652973016  | time taken : 31.531963109970093
+ Thread 3 estimated dimension 5 of 10 : 1  | time taken : 31.557050704956055
+ Thread 5 estimated dimension 5 of 10 : 1  | time taken : 31.20693874359131
+ Thread 2 estimated dimension 8 of 10 : 0.658249574612764  | time taken : 50.32889366149902
+ Thread 8 estimated dimension 8 of 10 : 0.6654726786676921  | time taken : 49.82255816459656
+ Thread 1 estimated dimension 8 of 10 : 0.6654038129450052  | time taken : 49.48277950286865
+ Thread 6 estimated dimension 6 of 10 : 0.48943115495815426  | time taken : 69.57666850090027
+ Thread 7 estimated dimension 6 of 10 : 0.4855583728596975  | time taken : 67.63689064979553
+ Thread 4 estimated dimension 6 of 10 : 0.5156029902225303  | time taken : 63.7889769077301
+ Thread 3 estimated dimension 6 of 10 : 0.5088945573938873  | time taken : 64.40066313743591
+ Thread 5 estimated dimension 6 of 10 : 0.5058405444621562  | time taken : 64.62263321876526
+ Thread 6 estimated dimension 7 of 10 : 0.9999112373666414  | time taken : 30.761242866516113
+ Thread 7 estimated dimension 7 of 10 : 0.9901705378034051  | time taken : 31.307616472244263
+ Thread 2 estimated dimension 9 of 10 : 0.5031189177740429  | time taken : 64.15064525604248
+ Thread 2 nsolns: 145538
+ Thread 4 estimated dimension 7 of 10 : 1  | time taken : 30.93903160095215
+ Thread 8 estimated dimension 9 of 10 : 0.4894082747247962  | time taken : 66.41865038871765
+ Thread 8 nsolns: 145698
+ Thread 3 estimated dimension 7 of 10 : 1  | time taken : 31.051424503326416
+ Thread 6 estimated dimension 8 of 10 : 1  | time taken : 30.481817722320557
+ Thread 1 estimated dimension 9 of 10 : 0.4943693003851236  | time taken : 66.33487629890442
+ Thread 1 nsolns: 145599
+ Thread 5 estimated dimension 7 of 10 : 1  | time taken : 31.16104769706726
+ Thread 7 estimated dimension 8 of 10 : 0.9924749753952573  | time taken : 30.978497982025146
+ Thread 4 estimated dimension 8 of 10 : 1  | time taken : 31.11427068710327
+ Thread 3 estimated dimension 8 of 10 : 1  | time taken : 31.106987953186035
+ Thread 6 estimated dimension 9 of 10 : 0.9926172548773734  | time taken : 31.129721879959106
+ Thread 6 nsolns: 154527
+ Thread 5 estimated dimension 8 of 10 : 1  | time taken : 31.583616733551025
+ Thread 7 estimated dimension 9 of 10 : 1  | time taken : 31.17965006828308
+ Thread 7 nsolns: 154626
+ Thread 4 estimated dimension 9 of 10 : 0.9973415483492786  | time taken : 31.695514917373657
+ Thread 4 nsolns: 164155
+ Thread 2 estimated dimension 0 of 10 : 0.5507839108460759  | time taken : 65.2288670539856
+ Thread 3 estimated dimension 9 of 10 : 1  | time taken : 31.52490520477295
+ Thread 3 nsolns: 164410
+ Thread 5 estimated dimension 9 of 10 : 0.9984788950881944  | time taken : 31.16570520401001
+ Thread 5 nsolns: 164189
+ Thread 1 estimated dimension 0 of 10 : 0.5467047434235658  | time taken : 65.8909068107605
+ Thread 8 estimated dimension 0 of 10 : 0.44901598316412145  | time taken : 78.56686305999756
+ Thread 6 estimated dimension 0 of 10 : 0.5503258695281811  | time taken : 65.58289670944214
+ Thread 2 estimated dimension 1 of 10 : 0.8236277870444122  | time taken : 41.970614194869995
+ Thread 7 estimated dimension 0 of 10 : 0.5506278127207742  | time taken : 66.4147596359253
+ Thread 8 estimated dimension 1 of 10 : 1  | time taken : 33.36902928352356
+ Thread 1 estimated dimension 1 of 10 : 0.8161408043987298  | time taken : 41.97806262969971
+ Thread 4 estimated dimension 0 of 10 : 0.5500465064071368  | time taken : 65.7968065738678
+ Thread 6 estimated dimension 1 of 10 : 0.8155431412493482  | time taken : 41.552056550979614
+ Thread 3 estimated dimension 0 of 10 : 0.45280656107204775  | time taken : 78.86875510215759
+ Thread 8 estimated dimension 2 of 10 : 1  | time taken : 33.56895041465759
+ Thread 7 estimated dimension 1 of 10 : 0.8241486465007511  | time taken : 40.87032651901245
+ Thread 5 estimated dimension 0 of 10 : 0.4532616903620985  | time taken : 79.19148874282837
+ Thread 2 estimated dimension 2 of 10 : 0.7324886773318448  | time taken : 47.9248628616333
+ Thread 4 estimated dimension 1 of 10 : 0.8192957263831604  | time taken : 41.8482506275177
+ Thread 3 estimated dimension 1 of 10 : 0.9964245128599397  | time taken : 33.27380561828613
+ Thread 5 estimated dimension 1 of 10 : 0.9964823905990391  | time taken : 33.569313526153564
+ Thread 2 estimated dimension 3 of 10 : 0.9965670756709671  | time taken : 32.737868309020996
+ Thread 8 estimated dimension 3 of 10 : 0.7177511799377129  | time taken : 49.01374697685242
+ Thread 7 estimated dimension 2 of 10 : 0.7221436151780652  | time taken : 48.62474703788757
+ Thread 3 estimated dimension 2 of 10 : 0.9909593107922521  | time taken : 33.202396392822266
+ Thread 5 estimated dimension 2 of 10 : 0.9888662312633106  | time taken : 33.29024338722229
+ Thread 7 estimated dimension 3 of 10 : 1  | time taken : 32.8919563293457
+ Thread 8 estimated dimension 4 of 10 : 0.7316369989307954  | time taken : 47.60198736190796
+ Thread 1 estimated dimension 2 of 10 : 0.2636470685540341  | time taken : 136.65261054039001
+ Thread 3 estimated dimension 3 of 10 : 0.7264956177568489  | time taken : 47.88343048095703
+ Thread 5 estimated dimension 3 of 10 : 0.7213882856202092  | time taken : 48.71259045600891
+ Thread 6 estimated dimension 2 of 10 : 0.25676797591422235  | time taken : 133.56164169311523
+ Thread 1 estimated dimension 3 of 10 : 1  | time taken : 32.80414533615112
+ Thread 4 estimated dimension 2 of 10 : 0.26463840706128205  | time taken : 133.14366602897644
+ Thread 3 estimated dimension 4 of 10 : 0.7377700221660194  | time taken : 46.43318057060242
+ Thread 6 estimated dimension 3 of 10 : 1  | time taken : 31.374255657196045
+ Thread 5 estimated dimension 4 of 10 : 0.7347588482672988  | time taken : 46.29328203201294
+ Thread 8 estimated dimension 5 of 10 : 0.4622946263880573  | time taken : 72.81845784187317
+ Thread 2 estimated dimension 4 of 10 : 0.25738212461127896  | time taken : 130.67528629302979
+ Thread 1 estimated dimension 4 of 10 : 0.8256894670249882  | time taken : 40.03184652328491
+ Thread 4 estimated dimension 3 of 10 : 0.9866602808542738  | time taken : 32.041956186294556
+ Thread 8 estimated dimension 6 of 10 : 1  | time taken : 32.47071290016174
+ Thread 6 estimated dimension 4 of 10 : 0.8011292104162034  | time taken : 40.230385303497314
+ Thread 1 estimated dimension 5 of 10 : 0.9932917858278705  | time taken : 32.30595827102661
+ Thread 7 estimated dimension 4 of 10 : 0.2574720723501666  | time taken : 132.71366953849792
+ Thread 2 estimated dimension 5 of 10 : 0.6459370820848277  | time taken : 51.194459199905396
+ Thread 4 estimated dimension 4 of 10 : 0.8080549415429995  | time taken : 40.412577390670776
+ Thread 3 estimated dimension 5 of 10 : 0.4637401048914752  | time taken : 71.46106815338135
+ Thread 6 estimated dimension 5 of 10 : 1  | time taken : 31.828526735305786
+ Thread 5 estimated dimension 5 of 10 : 0.45955209371279726  | time taken : 74.64577913284302
+ Thread 1 estimated dimension 6 of 10 : 1  | time taken : 31.423279523849487
+ Thread 8 estimated dimension 7 of 10 : 0.7554305102163491  | time taken : 42.573803424835205
+ Thread 4 estimated dimension 5 of 10 : 1  | time taken : 31.62781047821045
+ Thread 3 estimated dimension 6 of 10 : 0.9960210239161572  | time taken : 32.030216217041016
+ Thread 7 estimated dimension 5 of 10 : 0.6304730565645875  | time taken : 50.6808807849884
+ Thread 6 estimated dimension 6 of 10 : 1  | time taken : 31.963066816329956
+ Thread 5 estimated dimension 6 of 10 : 0.9743106112402531  | time taken : 32.38907265663147
+ Thread 1 estimated dimension 7 of 10 : 0.7520862664201605  | time taken : 44.647846698760986
+ Thread 4 estimated dimension 6 of 10 : 1  | time taken : 32.04507279396057
+ Thread 2 estimated dimension 6 of 10 : 0.4888565518939858  | time taken : 71.71934294700623
+ Thread 8 estimated dimension 8 of 10 : 0.6732812716259196  | time taken : 50.42387247085571
+ Thread 3 estimated dimension 7 of 10 : 0.7512369982730457  | time taken : 43.591450691223145
+ Thread 6 estimated dimension 7 of 10 : 0.7427089218922938  | time taken : 44.19120121002197
+ Thread 5 estimated dimension 7 of 10 : 0.7549763848552418  | time taken : 43.11381006240845
+ Thread 2 estimated dimension 7 of 10 : 1  | time taken : 31.566271543502808
+ Thread 7 estimated dimension 6 of 10 : 0.4844852632190379  | time taken : 70.63991498947144
+ Thread 4 estimated dimension 7 of 10 : 0.7651024629592402  | time taken : 43.14238739013672
+ Thread 2 estimated dimension 8 of 10 : 1  | time taken : 30.971185207366943
+ Thread 3 estimated dimension 8 of 10 : 0.6654068954616055  | time taken : 50.32457375526428
+ Thread 8 estimated dimension 9 of 10 : 0.48781743684282897  | time taken : 66.07749938964844
+ Thread 8 nsolns: 145580
+ Thread 5 estimated dimension 8 of 10 : 0.6681898289271343  | time taken : 50.17115044593811
+ Thread 7 estimated dimension 7 of 10 : 1  | time taken : 30.8049955368042
+ Thread 1 estimated dimension 8 of 10 : 0.33788944632839846  | time taken : 99.95921182632446
+ Thread 2 estimated dimension 9 of 10 : 0.9811645706243465  | time taken : 31.002899408340454
+ Thread 2 nsolns: 154588
+ Thread 7 estimated dimension 8 of 10 : 0.9912528016430123  | time taken : 30.82966113090515
+ Thread 6 estimated dimension 8 of 10 : 0.3407113265528674  | time taken : 99.72561717033386
+ Thread 1 estimated dimension 9 of 10 : 1  | time taken : 31.04010844230652
+ Thread 1 nsolns: 158758
+ Thread 3 estimated dimension 9 of 10 : 0.4992941324149196  | time taken : 63.62884259223938
+ Thread 3 nsolns: 145386
+ Thread 8 estimated dimension 0 of 10 : 0.5505392501905073  | time taken : 64.41928219795227
+ Thread 7 estimated dimension 9 of 10 : 0.9899077647109299  | time taken : 30.496717929840088
+ Thread 7 nsolns: 154475
+ Thread 5 estimated dimension 9 of 10 : 0.4873771869173077  | time taken : 66.62253832817078
+ Thread 5 nsolns: 145758
+ Thread 4 estimated dimension 8 of 10 : 0.3409438929095915  | time taken : 100.29231929779053
+ Thread 6 estimated dimension 9 of 10 : 1  | time taken : 29.61851167678833
+ Thread 6 nsolns: 159129
+ Thread 2 estimated dimension 0 of 10 : 0.4563383456414597  | time taken : 79.72339844703674
+ Thread 8 estimated dimension 1 of 10 : 0.8184975086029689  | time taken : 41.8887505531311
+ Thread 4 estimated dimension 9 of 10 : 0.9880662905188073  | time taken : 31.114807844161987
+ Thread 4 nsolns: 158961
+ Thread 1 estimated dimension 0 of 10 : 0.5448944850442908  | time taken : 63.845789194107056
+ Thread 3 estimated dimension 0 of 10 : 0.5508722070256108  | time taken : 64.93713593482971
+ Thread 2 estimated dimension 1 of 10 : 1  | time taken : 33.13515615463257
+ Thread 7 estimated dimension 0 of 10 : 0.4535485569800899  | time taken : 79.81130290031433
+ Thread 5 estimated dimension 0 of 10 : 0.4565107079942094  | time taken : 80.30848169326782
+ Thread 8 estimated dimension 2 of 10 : 0.708191178854728  | time taken : 47.266862630844116
+ Thread 6 estimated dimension 0 of 10 : 0.45844056884956735  | time taken : 78.49838280677795
+ Thread 1 estimated dimension 1 of 10 : 0.8123863782250037  | time taken : 40.43069529533386
+ Thread 3 estimated dimension 1 of 10 : 0.8025985012958774  | time taken : 41.16602063179016
+ Thread 2 estimated dimension 2 of 10 : 0.9910849890172441  | time taken : 32.63587236404419
+ Thread 7 estimated dimension 1 of 10 : 0.9853504184666593  | time taken : 33.134472131729126
+ Thread 5 estimated dimension 1 of 10 : 0.9832359507384646  | time taken : 33.22031855583191
+ Thread 4 estimated dimension 0 of 10 : 0.45819980178320846  | time taken : 77.66350841522217
+ Thread 8 estimated dimension 3 of 10 : 0.9996646613912177  | time taken : 32.09404945373535
+ Thread 6 estimated dimension 1 of 10 : 1  | time taken : 33.28936314582825
+ Thread 7 estimated dimension 2 of 10 : 1  | time taken : 33.69500231742859
+ Thread 5 estimated dimension 2 of 10 : 1  | time taken : 33.83096361160278
+ Thread 4 estimated dimension 1 of 10 : 1  | time taken : 33.57328248023987
+ Thread 2 estimated dimension 3 of 10 : 0.71515058826735  | time taken : 49.33108830451965
+ Thread 6 estimated dimension 2 of 10 : 1  | time taken : 33.88267683982849
+ Thread 4 estimated dimension 2 of 10 : 1  | time taken : 33.13495397567749
+ Thread 7 estimated dimension 3 of 10 : 0.7131200617484411  | time taken : 48.68169689178467
+ Thread 5 estimated dimension 3 of 10 : 0.7196245945854449  | time taken : 48.937153339385986
+ Thread 2 estimated dimension 4 of 10 : 0.740226455438815  | time taken : 47.349252223968506
+ Thread 6 estimated dimension 3 of 10 : 0.7094250003520343  | time taken : 50.16250133514404
+ Thread 1 estimated dimension 2 of 10 : 0.26305463669008866  | time taken : 136.07713294029236
+ Thread 4 estimated dimension 3 of 10 : 0.708327320384213  | time taken : 47.34477472305298
+ Thread 3 estimated dimension 2 of 10 : 0.2605806512497987  | time taken : 134.4769639968872
+ Thread 7 estimated dimension 4 of 10 : 0.7300695312810352  | time taken : 46.29722619056702
+ Thread 5 estimated dimension 4 of 10 : 0.7351026887506955  | time taken : 45.87370681762695
+ Thread 8 estimated dimension 4 of 10 : 0.25576756442100235  | time taken : 134.31858801841736
+ Thread 6 estimated dimension 4 of 10 : 0.7252067635445785  | time taken : 45.521950006484985
+ Thread 1 estimated dimension 3 of 10 : 1  | time taken : 31.72977876663208
+ Thread 3 estimated dimension 3 of 10 : 1  | time taken : 31.565992832183838
+ Thread 2 estimated dimension 5 of 10 : 0.46204615577294383  | time taken : 72.27813959121704
+ Thread 4 estimated dimension 4 of 10 : 0.7433452060539205  | time taken : 46.7162606716156
+ Thread 1 estimated dimension 4 of 10 : 0.8137480839256048  | time taken : 40.69391059875488
+ Thread 8 estimated dimension 5 of 10 : 0.6398919312740713  | time taken : 50.967578172683716
+ Thread 3 estimated dimension 4 of 10 : 0.8107957501528689  | time taken : 40.07050347328186
+ Thread 2 estimated dimension 6 of 10 : 0.9947440968462595  | time taken : 31.969499349594116
+ Thread 7 estimated dimension 5 of 10 : 0.5364211227712895  | time taken : 64.59576797485352
+ Thread 5 estimated dimension 5 of 10 : 0.4665085699636121  | time taken : 72.81302738189697
+ Thread 6 estimated dimension 5 of 10 : 0.4638316710611644  | time taken : 74.6152617931366
+ Thread 1 estimated dimension 5 of 10 : 0.9905883735324816  | time taken : 31.677141427993774
+ Thread 3 estimated dimension 5 of 10 : 0.9902334545252479  | time taken : 31.543994188308716
+ Thread 5 estimated dimension 6 of 10 : 1  | time taken : 32.0599365234375
+ Thread 2 estimated dimension 7 of 10 : 0.7519251720240073  | time taken : 44.312817335128784
+ Thread 4 estimated dimension 5 of 10 : 0.4675801297130176  | time taken : 73.2713074684143
+ Thread 6 estimated dimension 6 of 10 : 1  | time taken : 31.90830659866333
+ Thread 1 estimated dimension 6 of 10 : 0.9853548213779633  | time taken : 32.323975563049316
+ Thread 3 estimated dimension 6 of 10 : 0.9929551059950527  | time taken : 32.01200866699219
+ Thread 8 estimated dimension 6 of 10 : 0.48793048000755734  | time taken : 68.42845416069031
+ Thread 4 estimated dimension 6 of 10 : 1  | time taken : 32.549349784851074
+ Thread 5 estimated dimension 7 of 10 : 0.7481804829984726  | time taken : 44.91192674636841
+ Thread 2 estimated dimension 8 of 10 : 0.6668375848190853  | time taken : 49.40243887901306
+ Thread 6 estimated dimension 7 of 10 : 0.7427800311540778  | time taken : 43.04977369308472
+ Thread 8 estimated dimension 7 of 10 : 0.9966471925977156  | time taken : 30.96356463432312
+ Thread 1 estimated dimension 7 of 10 : 0.7510678854203839  | time taken : 43.31358337402344
+ Thread 3 estimated dimension 7 of 10 : 0.757918128929254  | time taken : 44.51176571846008
+ Thread 4 estimated dimension 7 of 10 : 0.7591281218785573  | time taken : 44.16001534461975
+ Thread 8 estimated dimension 8 of 10 : 1  | time taken : 31.13125514984131
+ Thread 5 estimated dimension 8 of 10 : 0.6721564160990634  | time taken : 49.35395908355713
+ Thread 6 estimated dimension 8 of 10 : 0.6648989222113815  | time taken : 50.0036780834198
+ Thread 8 estimated dimension 9 of 10 : 1  | time taken : 31.1908757686615
+ Thread 8 nsolns: 154854
+ Thread 2 estimated dimension 9 of 10 : 0.4941292756786256  | time taken : 66.46565413475037
+ Thread 2 nsolns: 145676exiting with current heads : 9706 out of 9713 | exp rv: 47432.26083796684
+
+ Thread 7 estimated dimension 6 of 10 : 0.20475515668918093  | time taken : 169.5553593635559
+ Thread 4 estimated dimension 8 of 10 : 0.661769086160027  | time taken : 49.55006742477417
+ Thread 7 estimated dimension 7 of 10 : 1  | time taken : 30.554348468780518
+ Thread 1 estimated dimension 8 of 10 : 0.3398094941765382  | time taken : 100.2523934841156
+ Thread 5 estimated dimension 9 of 10 : 0.4930307325543393  | time taken : 65.22273302078247
+ Thread 5 nsolns: 145516
+ Thread 3 estimated dimension 8 of 10 : 0.3374157830711894  | time taken : 98.48561835289001
+ Thread 6 estimated dimension 9 of 10 : 0.4867953022664042  | time taken : 65.44326305389404
+ Thread 6 nsolns: 145673
+ Thread 2 estimated dimension 0 of 10 : 0.5558470624208203  | time taken : 66.75334095954895
+ Thread 7 estimated dimension 8 of 10 : 0.9950670963280922  | time taken : 29.97517418861389
+ Thread 1 estimated dimension 9 of 10 : 1  | time taken : 30.668712377548218
+ Thread 1 nsolns: 159067
+ Thread 3 estimated dimension 9 of 10 : 0.9967200590938199  | time taken : 30.942589282989502
+ Thread 3 nsolns: 159143
+ Thread 4 estimated dimension 9 of 10 : 0.49442099070566287  | time taken : 65.63226675987244
+ Thread 4 nsolns: 145436
+ Thread 8 estimated dimension 0 of 10 : 0.45833595258590626  | time taken : 77.92267894744873
+ Thread 7 estimated dimension 9 of 10 : 1  | time taken : 31.65060067176819
+ Thread 7 nsolns: 162358
+ Thread 2 estimated dimension 1 of 10 : 0.8184408010778069  | time taken : 42.13138222694397
+ Thread 8 estimated dimension 1 of 10 : 0.9939118268170588  | time taken : 34.010918617248535
+ Thread 6 estimated dimension 0 of 10 : 0.5482327288019374  | time taken : 64.65922451019287
+ Thread 5 estimated dimension 0 of 10 : 0.45094720199596594  | time taken : 80.2130823135376
+ Thread 8 estimated dimension 2 of 10 : 1  | time taken : 32.58226656913757
+ Thread 4 estimated dimension 0 of 10 : 0.543050906955031  | time taken : 67.04128956794739
+ Thread 1 estimated dimension 0 of 10 : 0.45255269872757575  | time taken : 78.63847470283508
+ Thread 5 estimated dimension 1 of 10 : 0.9998345910244648  | time taken : 32.50883150100708
+ Thread 3 estimated dimension 0 of 10 : 0.4533981537510345  | time taken : 79.52294611930847
+ Thread 2 estimated dimension 2 of 10 : 0.7224625974392073  | time taken : 47.42154145240784
+ Thread 6 estimated dimension 1 of 10 : 0.8231777679501271  | time taken : 41.31330323219299
+ Thread 7 estimated dimension 0 of 10 : 0.5499126185471993  | time taken : 63.248029470443726
+ Thread 1 estimated dimension 1 of 10 : 0.9968440287243847  | time taken : 33.2220139503479
+ Thread 5 estimated dimension 2 of 10 : 0.9885787265328472  | time taken : 33.58525109291077
+ Thread 2 estimated dimension 3 of 10 : 1  | time taken : 32.87835168838501
+ Thread 3 estimated dimension 1 of 10 : 0.998674918177136  | time taken : 33.516273021698
+ Thread 8 estimated dimension 3 of 10 : 0.7065083720018627  | time taken : 47.95120358467102
+ Thread 6 estimated dimension 2 of 10 : 0.7272536093682807  | time taken : 48.469552516937256
+ Thread 7 estimated dimension 1 of 10 : 0.8145779720179475  | time taken : 42.517422914505005
+ Thread 1 estimated dimension 2 of 10 : 1  | time taken : 32.6589560508728
+ Thread 3 estimated dimension 2 of 10 : 1  | time taken : 33.44385099411011
+ Thread 5 estimated dimension 3 of 10 : 0.7133699463642001  | time taken : 48.408182859420776
+ Thread 6 estimated dimension 3 of 10 : 0.996270323720329  | time taken : 33.493595600128174
+ Thread 8 estimated dimension 4 of 10 : 0.7391022451186456  | time taken : 48.20348906517029
+ Thread 1 estimated dimension 3 of 10 : 0.712510919155059  | time taken : 48.34574842453003
+ Thread 3 estimated dimension 3 of 10 : 0.708390855913771  | time taken : 49.114622592926025
+ Thread 6 estimated dimension 4 of 10 : 0.7343149033070645  | time taken : 47.271547079086304
+ Thread 1 estimated dimension 4 of 10 : 0.7309188528809343  | time taken : 47.04302787780762
+ Thread 8 estimated dimension 5 of 10 : 0.46016854962921216  | time taken : 74.27238726615906
+ Thread 3 estimated dimension 4 of 10 : 0.7285742591917709  | time taken : 47.0610511302948
+ Thread 2 estimated dimension 4 of 10 : 0.2574370686033286  | time taken : 134.80440950393677exiting with current heads : 9711 out of 9713 | exp rv: 50020.66338514206
+
+ Thread 4 estimated dimension 1 of 10 : 0.19415976004198324  | time taken : 184.67897367477417
+ Thread 7 estimated dimension 2 of 10 : 0.2650720156022981  | time taken : 130.7245967388153
+ Thread 8 estimated dimension 6 of 10 : 0.9837578443069338  | time taken : 30.185878038406372
+ Thread 6 estimated dimension 5 of 10 : 0.459239145666529  | time taken : 73.32204866409302
+ Thread 7 estimated dimension 3 of 10 : 0.9919849573101301  | time taken : 31.91392230987549
+ Thread 5 estimated dimension 4 of 10 : 0.2581797605348497  | time taken : 135.21158599853516
+ Thread 2 estimated dimension 5 of 10 : 0.6488662084699681  | time taken : 50.05197334289551
+ Thread 1 estimated dimension 5 of 10 : 0.46544161612712337  | time taken : 72.52187991142273
+ Thread 8 estimated dimension 7 of 10 : 0.7470980553281011  | time taken : 43.2094669342041
+ Thread 3 estimated dimension 5 of 10 : 0.45886201479690975  | time taken : 73.23621821403503
+ Thread 6 estimated dimension 6 of 10 : 0.9951117133109351  | time taken : 31.751938819885254
+ Thread 4 estimated dimension 2 of 10 : 0.51550516151395  | time taken : 66.50082111358643
+ Thread 7 estimated dimension 4 of 10 : 0.806042985437591  | time taken : 40.20734477043152
+ Thread 1 estimated dimension 6 of 10 : 0.9943900659593556  | time taken : 31.777788162231445
+ Thread 5 estimated dimension 5 of 10 : 0.6462929617577927  | time taken : 50.651209592819214
+ Thread 3 estimated dimension 6 of 10 : 1  | time taken : 32.25458335876465
+ Thread 4 estimated dimension 3 of 10 : 1  | time taken : 31.08565092086792
+ Thread 6 estimated dimension 7 of 10 : 0.7465721139784697  | time taken : 43.96957182884216
+ Thread 8 estimated dimension 8 of 10 : 0.673427947925642  | time taken : 48.72894287109375
+ Thread 2 estimated dimension 6 of 10 : 0.4911241813093461  | time taken : 67.531014919281
+ Thread 7 estimated dimension 5 of 10 : 1  | time taken : 31.544230699539185
+ Thread 4 estimated dimension 4 of 10 : 1  | time taken : 31.53768539428711
+ Thread 1 estimated dimension 7 of 10 : 0.7592539738665371  | time taken : 43.557942390441895
+ Thread 3 estimated dimension 7 of 10 : 0.7586451207456941  | time taken : 44.59552979469299
+ Thread 2 estimated dimension 7 of 10 : 1  | time taken : 31.26734471321106
+ Thread 7 estimated dimension 6 of 10 : 0.9970553918562975  | time taken : 32.20431566238403
+ Thread 5 estimated dimension 6 of 10 : 0.5086291685365597  | time taken : 63.64644694328308
+ Thread 4 estimated dimension 5 of 10 : 0.996284705270819  | time taken : 31.573810338974
+ Thread 8 estimated dimension 9 of 10 : 0.49302428719001706  | time taken : 66.40764307975769
+ Thread 8 nsolns: 145506
+ Thread 2 estimated dimension 8 of 10 : 0.9866963069679469  | time taken : 31.358741521835327
+ Thread 1 estimated dimension 8 of 10 : 0.6714929505582089  | time taken : 48.69013524055481
+ Thread 5 estimated dimension 7 of 10 : 0.9810147831677447  | time taken : 31.307134866714478
+ Thread 7 estimated dimension 7 of 10 : 0.7467839773463949  | time taken : 43.26800084114075
+ Thread 3 estimated dimension 8 of 10 : 0.6687860658367971  | time taken : 49.65861916542053
+ Thread 2 estimated dimension 9 of 10 : 1  | time taken : 30.61487627029419
+ Thread 2 nsolns: 154649
+ Thread 6 estimated dimension 8 of 10 : 0.3387336853329098  | time taken : 100.54235029220581
+ Thread 5 estimated dimension 8 of 10 : 1  | time taken : 31.548210859298706
+ Thread 4 estimated dimension 6 of 10 : 0.5070599229337245  | time taken : 63.54179668426514
+ Thread 6 estimated dimension 9 of 10 : 1  | time taken : 31.71467924118042
+ Thread 6 nsolns: 148178
+ Thread 8 estimated dimension 0 of 10 : 0.5400511325631274  | time taken : 66.36357426643372
+ Thread 1 estimated dimension 9 of 10 : 0.49172794253875907  | time taken : 66.1109721660614
+ Thread 1 nsolns: 145678
+ Thread 5 estimated dimension 9 of 10 : 0.9913523613662003  | time taken : 30.630388021469116
+ Thread 5 nsolns: 155551
+ Thread 3 estimated dimension 9 of 10 : 0.4992029793329368  | time taken : 65.07053399085999
+ Thread 4 estimated dimension 7 of 10 : 0.9981561458567038  | time taken : 30.998692750930786
+ Thread 3 nsolns: 145801
+ Thread 8 estimated dimension 1 of 10 : 0.8155886244981834  | time taken : 41.59633255004883
+ Thread 2 estimated dimension 0 of 10 : 0.45075893614221807  | time taken : 80.45511817932129
+ Thread 4 estimated dimension 8 of 10 : 0.9768781899460549  | time taken : 31.565950393676758
+ Thread 7 estimated dimension 8 of 10 : 0.3399179140373716  | time taken : 102.08770251274109
+ Thread 4 estimated dimension 9 of 10 : 1  | time taken : 31.532360315322876
+ Thread 4 nsolns: 164268
+ Thread 2 estimated dimension 1 of 10 : 0.9927720865289741  | time taken : 33.24414134025574
+ Thread 3 estimated dimension 0 of 10 : 0.5405463778958052  | time taken : 65.25910520553589
+ Thread 6 estimated dimension 0 of 10 : 0.45572218303622825  | time taken : 80.94651103019714
+ Thread 7 estimated dimension 9 of 10 : 1  | time taken : 30.606106519699097
+ Thread 7 nsolns: 158994
+ Thread 1 estimated dimension 0 of 10 : 0.4525178715014033  | time taken : 79.34504199028015
+ Thread 8 estimated dimension 2 of 10 : 0.7231796192554033  | time taken : 45.76949858665466
+ Thread 5 estimated dimension 0 of 10 : 0.45308807456873645  | time taken : 79.05553960800171
+ Thread 2 estimated dimension 2 of 10 : 0.9839502898601514  | time taken : 32.999130964279175
+ Thread 6 estimated dimension 1 of 10 : 1  | time taken : 32.88857579231262
+ Thread 1 estimated dimension 1 of 10 : 0.9940508745128617  | time taken : 33.01820135116577
+ Thread 8 estimated dimension 3 of 10 : 0.9896380134363185  | time taken : 33.1563675403595
+ Thread 3 estimated dimension 1 of 10 : 0.8222666137941046  | time taken : 41.73713755607605
+ Thread 5 estimated dimension 1 of 10 : 1  | time taken : 33.247655630111694
+ Thread 4 estimated dimension 0 of 10 : 0.5475324311131279  | time taken : 65.04789543151855
+ Thread 7 estimated dimension 0 of 10 : 0.5465001447203958  | time taken : 65.34997367858887
+ Thread 6 estimated dimension 2 of 10 : 0.9914086287507784  | time taken : 33.045140743255615
+ Thread 1 estimated dimension 2 of 10 : 1  | time taken : 33.19841766357422
+ Thread 5 estimated dimension 2 of 10 : 1  | time taken : 32.88538670539856
+ Thread 2 estimated dimension 3 of 10 : 0.7091018599198036  | time taken : 49.15422248840332
+ Thread 8 estimated dimension 4 of 10 : 0.7390575747999586  | time taken : 46.403143882751465
+ Thread 3 estimated dimension 2 of 10 : 0.7149752509715578  | time taken : 47.48080825805664
+ Thread 4 estimated dimension 1 of 10 : 0.8088957083541002  | time taken : 42.15932893753052
+ Thread 6 estimated dimension 3 of 10 : 0.720114172352807  | time taken : 49.20570206642151
+ Thread 1 estimated dimension 3 of 10 : 0.7120530944304558  | time taken : 48.10474944114685
+ Thread 3 estimated dimension 3 of 10 : 0.9843641494313898  | time taken : 32.92967128753662
+ Thread 5 estimated dimension 3 of 10 : 0.7203058282512506  | time taken : 47.81777358055115
+ Thread 2 estimated dimension 4 of 10 : 0.7293956935891039  | time taken : 47.38297414779663
+ Thread 4 estimated dimension 2 of 10 : 0.733840863709369  | time taken : 47.2763557434082
+ Thread 8 estimated dimension 5 of 10 : 0.4655067016419104  | time taken : 73.49442720413208
+ Thread 6 estimated dimension 4 of 10 : 0.7380709495206832  | time taken : 47.185224533081055
+ Thread 1 estimated dimension 4 of 10 : 0.7306357907110875  | time taken : 47.125672340393066
+ Thread 5 estimated dimension 4 of 10 : 0.7406327070859349  | time taken : 46.817819595336914
+ Thread 4 estimated dimension 3 of 10 : 1  | time taken : 32.943039894104004
+ Thread 8 estimated dimension 6 of 10 : 0.9809137820734163  | time taken : 31.669277667999268
+ Thread 2 estimated dimension 5 of 10 : 0.4642718340880398  | time taken : 73.2091429233551
+ Thread 4 estimated dimension 4 of 10 : 0.7380652067276102  | time taken : 46.72822546958923
+ Thread 2 estimated dimension 6 of 10 : 0.9981867244628067  | time taken : 31.981248140335083
+ Thread 6 estimated dimension 5 of 10 : 0.4628123325721446  | time taken : 73.1033022403717
+ Thread 8 estimated dimension 7 of 10 : 0.7567976133260218  | time taken : 43.84599947929382
+ Thread 1 estimated dimension 5 of 10 : 0.46535839919446886  | time taken : 73.34624195098877
+ Thread 5 estimated dimension 5 of 10 : 0.46076936591136464  | time taken : 72.77472066879272exiting with current heads : 9707 out of 9713 | exp rv: 50334.05687820101
+
+ Thread 7 estimated dimension 1 of 10 : 0.1929508687030974  | time taken : 185.72599697113037
+ Thread 3 estimated dimension 4 of 10 : 0.25651860173420615  | time taken : 133.71390056610107
+ Thread 6 estimated dimension 6 of 10 : 0.9926834390612619  | time taken : 30.984187602996826
+ Thread 1 estimated dimension 6 of 10 : 1  | time taken : 31.69200849533081
+ Thread 5 estimated dimension 6 of 10 : 1  | time taken : 31.17036271095276
+ Thread 2 estimated dimension 7 of 10 : 0.7451780083520686  | time taken : 43.848379135131836
+ Thread 4 estimated dimension 5 of 10 : 0.4587222168405908  | time taken : 73.27995228767395
+ Thread 3 estimated dimension 5 of 10 : 0.6369870682086424  | time taken : 51.35549211502075
+ Thread 6 estimated dimension 7 of 10 : 0.7492286626434835  | time taken : 44.65442132949829
+ Thread 1 estimated dimension 7 of 10 : 0.760305118931421  | time taken : 43.84915900230408
+ Thread 7 estimated dimension 2 of 10 : 0.5122433669056845  | time taken : 65.94421768188477
+ Thread 5 estimated dimension 7 of 10 : 0.7585268236364793  | time taken : 44.19925665855408
+ Thread 2 estimated dimension 8 of 10 : 0.6697276192735662  | time taken : 49.65264415740967
+ Thread 8 estimated dimension 8 of 10 : 0.3431875151322491  | time taken : 98.81485962867737
+ Thread 4 estimated dimension 6 of 10 : 0.9983219267220306  | time taken : 30.357674837112427
+ Thread 7 estimated dimension 3 of 10 : 1  | time taken : 31.02349591255188
+ Thread 6 estimated dimension 8 of 10 : 0.6725110518521406  | time taken : 48.545708656311035
+ Thread 1 estimated dimension 8 of 10 : 0.6709458304959708  | time taken : 49.228108167648315
+ Thread 8 estimated dimension 9 of 10 : 1  | time taken : 31.284146070480347
+ Thread 8 nsolns: 148021
+ Thread 5 estimated dimension 8 of 10 : 0.6623402553142115  | time taken : 48.822739124298096
+ Thread 3 estimated dimension 6 of 10 : 0.4863296847300919  | time taken : 68.4856915473938
+ Thread 7 estimated dimension 4 of 10 : 1  | time taken : 30.706863164901733
+ Thread 4 estimated dimension 7 of 10 : 0.7422376217216933  | time taken : 44.0994439125061
+ Thread 2 estimated dimension 9 of 10 : 0.4946707617003725  | time taken : 66.3677933216095
+ Thread 2 nsolns: 145582
+ Thread 3 estimated dimension 7 of 10 : 1  | time taken : 30.828906059265137
+ Thread 7 estimated dimension 5 of 10 : 1  | time taken : 32.02885866165161
+ Thread 6 estimated dimension 9 of 10 : 0.4951523795786519  | time taken : 65.61766982078552
+ Thread 6 nsolns: 145701
+ Thread 1 estimated dimension 9 of 10 : 0.4904565171732826  | time taken : 65.93037104606628
+ Thread 1 nsolns: 145665
+ Thread 5 estimated dimension 9 of 10 : 0.5025524074859953  | time taken : 66.40739393234253
+ Thread 5 nsolns: 145645
+ Thread 3 estimated dimension 8 of 10 : 0.9823290469156866  | time taken : 30.564605951309204
+ Thread 8 estimated dimension 0 of 10 : 0.454394805476016  | time taken : 78.38629460334778
+ Thread 2 estimated dimension 0 of 10 : 0.5587246737982985  | time taken : 66.72791004180908
+ Thread 3 estimated dimension 9 of 10 : 0.993276510228424  | time taken : 30.945760488510132
+ Thread 3 nsolns: 154842
+ Thread 7 estimated dimension 6 of 10 : 0.5104979275134686  | time taken : 64.12299299240112
+ Thread 8 estimated dimension 1 of 10 : 1  | time taken : 32.97479438781738
+ Thread 4 estimated dimension 8 of 10 : 0.3341248296508372  | time taken : 101.09989762306213
+ Thread 6 estimated dimension 0 of 10 : 0.5523410080666921  | time taken : 64.53494668006897
+ Thread 1 estimated dimension 0 of 10 : 0.5482251153044937  | time taken : 64.49766635894775
+ Thread 5 estimated dimension 0 of 10 : 0.5578334822104785  | time taken : 65.45008516311646
+ Thread 2 estimated dimension 1 of 10 : 0.826024551383464  | time taken : 41.563066720962524
+ Thread 7 estimated dimension 7 of 10 : 0.9957991076813364  | time taken : 30.014410257339478
+ Thread 8 estimated dimension 2 of 10 : 1  | time taken : 32.65196943283081
+ Thread 4 estimated dimension 9 of 10 : 0.9923174677126921  | time taken : 30.751421451568604
+ Thread 4 nsolns: 147997
+ Thread 7 estimated dimension 8 of 10 : 1  | time taken : 31.520899534225464
+ Thread 1 estimated dimension 1 of 10 : 0.8204428011825986  | time taken : 42.73240566253662
+ Thread 5 estimated dimension 1 of 10 : 0.8132821507704991  | time taken : 42.58848476409912
+ Thread 3 estimated dimension 0 of 10 : 0.4504794507506544  | time taken : 78.73338413238525
+ Thread 2 estimated dimension 2 of 10 : 0.7234061073725611  | time taken : 47.62287926673889
+ Thread 8 estimated dimension 3 of 10 : 0.7126395580941718  | time taken : 48.07443594932556
+ Thread 7 estimated dimension 9 of 10 : 0.9805245999769402  | time taken : 31.476842641830444
+ Thread 7 nsolns: 164471
+ Thread 3 estimated dimension 1 of 10 : 0.9959476349265117  | time taken : 33.48935890197754
+ Thread 2 estimated dimension 3 of 10 : 0.9953195094353615  | time taken : 33.086742877960205
+ Thread 1 estimated dimension 2 of 10 : 0.7286533198837338  | time taken : 48.328027963638306
+ Thread 4 estimated dimension 0 of 10 : 0.455976806427448  | time taken : 79.60378932952881
+ Thread 8 estimated dimension 4 of 10 : 0.732852382483011  | time taken : 47.06224274635315
+ Thread 3 estimated dimension 2 of 10 : 0.9964862722380722  | time taken : 32.94015645980835
+ Thread 1 estimated dimension 3 of 10 : 1  | time taken : 32.96748328208923
+ Thread 4 estimated dimension 1 of 10 : 0.9978708608030912  | time taken : 33.53316116333008
+ Thread 2 estimated dimension 4 of 10 : 0.744547338878332  | time taken : 46.738312005996704
+ Thread 7 estimated dimension 0 of 10 : 0.5496038998236482  | time taken : 65.83277606964111
+ Thread 4 estimated dimension 2 of 10 : 0.990590397941652  | time taken : 33.02598166465759
+ Thread 3 estimated dimension 3 of 10 : 0.7086050684397296  | time taken : 48.194064140319824
+ Thread 5 estimated dimension 2 of 10 : 0.26301473931525027  | time taken : 132.81642413139343exiting with current heads : 9708 out of 9713 | exp rv: 50613.78755616861
+
+ Thread 6 estimated dimension 1 of 10 : 0.19188447395331  | time taken : 185.40661668777466
+ Thread 7 estimated dimension 1 of 10 : 0.8063166928514552  | time taken : 41.903010845184326
+ Thread 8 estimated dimension 5 of 10 : 0.4599232081159771  | time taken : 72.54190921783447
+ Thread 2 estimated dimension 5 of 10 : 0.5285040618754605  | time taken : 65.02492070198059
+ Thread 4 estimated dimension 3 of 10 : 0.705810464029544  | time taken : 47.77506446838379
+ Thread 5 estimated dimension 3 of 10 : 0.9945843877604225  | time taken : 32.29989790916443
+ Thread 3 estimated dimension 4 of 10 : 0.7298667377323454  | time taken : 46.25715136528015
+ Thread 8 estimated dimension 6 of 10 : 0.9962179017914692  | time taken : 31.652100324630737
+ Thread 7 estimated dimension 2 of 10 : 0.717776457857526  | time taken : 48.31792449951172
+ Thread 2 estimated dimension 6 of 10 : 0.7877523160203421  | time taken : 40.92841601371765
+ Thread 6 estimated dimension 2 of 10 : 0.505450700810211  | time taken : 66.019287109375
+ Thread 5 estimated dimension 4 of 10 : 0.8176192689274064  | time taken : 41.18325734138489
+ Thread 1 estimated dimension 4 of 10 : 0.25835455020750175  | time taken : 131.7667875289917
+ Thread 4 estimated dimension 4 of 10 : 0.7378560277116134  | time taken : 46.5946683883667
+ Thread 8 estimated dimension 7 of 10 : 0.7501049326756107  | time taken : 42.91503953933716
+ Thread 7 estimated dimension 3 of 10 : 1  | time taken : 31.522218465805054
+ Thread 6 estimated dimension 3 of 10 : 0.9911465787511059  | time taken : 31.949297666549683
+ Thread 2 estimated dimension 7 of 10 : 0.7470043171659125  | time taken : 44.149060010910034
+ Thread 5 estimated dimension 5 of 10 : 0.9978079906623468  | time taken : 31.683687210083008
+ Thread 3 estimated dimension 5 of 10 : 0.4605406049625938  | time taken : 74.08151936531067
+ Thread 1 estimated dimension 5 of 10 : 0.641053738372311  | time taken : 50.70935654640198
+ Thread 8 estimated dimension 8 of 10 : 0.6675688917753997  | time taken : 49.562095403671265
+ Thread 7 estimated dimension 4 of 10 : 0.7386802676855763  | time taken : 47.10402536392212
+ Thread 6 estimated dimension 4 of 10 : 1  | time taken : 31.28650975227356
+ Thread 5 estimated dimension 6 of 10 : 1  | time taken : 31.44942569732666
+ Thread 3 estimated dimension 6 of 10 : 0.9884022128156248  | time taken : 31.95329260826111
+ Thread 4 estimated dimension 5 of 10 : 0.5362972133985676  | time taken : 64.66892910003662
+ Thread 2 estimated dimension 8 of 10 : 0.6698770549208197  | time taken : 48.624868631362915
+ Thread 6 estimated dimension 5 of 10 : 1  | time taken : 31.24722123146057
+ Thread 5 estimated dimension 7 of 10 : 0.7526010945450853  | time taken : 44.46751427650452
+ Thread 3 estimated dimension 7 of 10 : 0.7489681840860636  | time taken : 45.25323486328125
+ Thread 4 estimated dimension 6 of 10 : 0.8002742223842751  | time taken : 42.26527810096741
+ Thread 8 estimated dimension 9 of 10 : 0.4968490874399323  | time taken : 66.4198546409607
+ Thread 8 nsolns: 145688
+ Thread 1 estimated dimension 6 of 10 : 0.4857424823420705  | time taken : 67.57526183128357
+ Thread 7 estimated dimension 5 of 10 : 0.46515401247911997  | time taken : 73.20627117156982
+ Thread 2 estimated dimension 9 of 10 : 0.5109653619326331  | time taken : 65.81317973136902
+ Thread 2 nsolns: 143117
+ Thread 6 estimated dimension 6 of 10 : 0.5126265833801206  | time taken : 63.196505308151245
+ Thread 1 estimated dimension 7 of 10 : 0.9994365844948928  | time taken : 31.0875461101532
+ Thread 4 estimated dimension 7 of 10 : 0.7500593714419507  | time taken : 43.70318961143494
+ Thread 3 estimated dimension 8 of 10 : 0.665214648199784  | time taken : 49.56632423400879
+ Thread 7 estimated dimension 6 of 10 : 1  | time taken : 31.606937885284424
+ Thread 6 estimated dimension 7 of 10 : 1  | time taken : 31.428266048431396
+ Thread 1 estimated dimension 8 of 10 : 1  | time taken : 31.4329571723938
+ Thread 8 estimated dimension 0 of 10 : 0.5551752043539265  | time taken : 64.24561834335327
+ Thread 4 estimated dimension 8 of 10 : 0.6673253686705073  | time taken : 49.44158625602722
+ Thread 7 estimated dimension 7 of 10 : 0.7507351959985251  | time taken : 44.19934058189392
+ Thread 5 estimated dimension 8 of 10 : 0.33977789329785657  | time taken : 99.84728169441223
+ Thread 6 estimated dimension 8 of 10 : 1  | time taken : 30.514972448349
+ Thread 1 estimated dimension 9 of 10 : 0.9949149736006512  | time taken : 30.552985429763794
+ Thread 1 nsolns: 154467
+ Thread 2 estimated dimension 0 of 10 : 0.45230650067542033  | time taken : 77.31134533882141
+ Thread 3 estimated dimension 9 of 10 : 0.4977196625495408  | time taken : 66.35971736907959
+ Thread 3 nsolns: 145767
+ Thread 5 estimated dimension 9 of 10 : 0.9846167855724974  | time taken : 30.49248194694519
+ Thread 5 nsolns: 158871
+ Thread 6 estimated dimension 9 of 10 : 0.9897614036854427  | time taken : 31.199461698532104
+ Thread 6 nsolns: 164373
+ Thread 2 estimated dimension 1 of 10 : 0.9884310254562775  | time taken : 33.698259353637695
+ Thread 4 estimated dimension 9 of 10 : 0.5041897681174898  | time taken : 66.62778735160828
+ Thread 4 nsolns: 144855
+ Thread 2 estimated dimension 2 of 10 : 1  | time taken : 33.59707021713257
+ Thread 3 estimated dimension 0 of 10 : 0.5482457290318938  | time taken : 67.10999488830566
+ Thread 1 estimated dimension 0 of 10 : 0.45597334107907905  | time taken : 80.0079402923584
+ Thread 7 estimated dimension 8 of 10 : 0.34181195364988914  | time taken : 98.93612885475159
+ Thread 5 estimated dimension 0 of 10 : 0.45608171240873807  | time taken : 79.78659057617188
+ Thread 6 estimated dimension 0 of 10 : 0.4490903918636798  | time taken : 79.58441114425659
+ Thread 1 estimated dimension 1 of 10 : 1  | time taken : 32.88385891914368
+ Thread 7 estimated dimension 9 of 10 : 1  | time taken : 30.619162559509277
+ Thread 7 nsolns: 147893
+ Thread 4 estimated dimension 0 of 10 : 0.5420598515165218  | time taken : 64.70770812034607
+ Thread 2 estimated dimension 3 of 10 : 0.7113535549128212  | time taken : 46.78748321533203
+ Thread 5 estimated dimension 1 of 10 : 0.9866701766850919  | time taken : 32.852548122406006
+ Thread 6 estimated dimension 1 of 10 : 1  | time taken : 32.976311445236206
+ Thread 1 estimated dimension 2 of 10 : 0.9915029137414152  | time taken : 32.833653688430786exiting with current heads : 9710 out of 9713 | exp rv: 50192.486302261015
+
+ Thread 8 estimated dimension 1 of 10 : 0.19349509688589595  | time taken : 185.05594563484192
+ Thread 4 estimated dimension 1 of 10 : 0.8189912102885357  | time taken : 42.30466818809509
+ Thread 5 estimated dimension 2 of 10 : 1  | time taken : 32.803025245666504
+ Thread 2 estimated dimension 4 of 10 : 0.7367241079765999  | time taken : 47.38343405723572
+ Thread 6 estimated dimension 2 of 10 : 0.994660251971559  | time taken : 33.54798769950867
+ Thread 1 estimated dimension 3 of 10 : 0.7091748089200633  | time taken : 47.04267382621765
+ Thread 7 estimated dimension 0 of 10 : 0.45600786679613775  | time taken : 78.58468270301819
+ Thread 4 estimated dimension 2 of 10 : 0.729073681962872  | time taken : 48.14393377304077
+ Thread 5 estimated dimension 3 of 10 : 0.7151933790248861  | time taken : 47.45644235610962
+ Thread 8 estimated dimension 2 of 10 : 0.5055680794779495  | time taken : 66.25344610214233
+ Thread 6 estimated dimension 3 of 10 : 0.7062249696103392  | time taken : 47.91067171096802
+ Thread 7 estimated dimension 1 of 10 : 0.9882813694411466  | time taken : 33.09422850608826
+ Thread 1 estimated dimension 4 of 10 : 0.739980573696446  | time taken : 46.45695924758911
+ Thread 4 estimated dimension 3 of 10 : 0.996625879160843  | time taken : 32.087565898895264
+ Thread 2 estimated dimension 5 of 10 : 0.4601314414034283  | time taken : 75.27390718460083
+ Thread 8 estimated dimension 3 of 10 : 1  | time taken : 31.419018268585205
+ Thread 5 estimated dimension 4 of 10 : 0.7295838302540982  | time taken : 45.90597486495972
+ Thread 7 estimated dimension 2 of 10 : 1  | time taken : 32.618019342422485exiting with current heads : 9709 out of 9713 | exp rv: 50293.134478510496
+
+ Thread 3 estimated dimension 1 of 10 : 0.19310786851334136  | time taken : 187.21581888198853
+ Thread 6 estimated dimension 4 of 10 : 0.7261901733769994  | time taken : 46.58230543136597
+ Thread 2 estimated dimension 6 of 10 : 0.9905246710801743  | time taken : 30.3520770072937
+ Thread 8 estimated dimension 4 of 10 : 0.9944352257549257  | time taken : 30.349910259246826
+ Thread 1 estimated dimension 5 of 10 : 0.46381307223207935  | time taken : 72.85615420341492
+ Thread 7 estimated dimension 3 of 10 : 0.7173323990285029  | time taken : 48.15372276306152
+ Thread 8 estimated dimension 5 of 10 : 0.9978116538325023  | time taken : 31.643469095230103
+ Thread 2 estimated dimension 7 of 10 : 0.7566062744385947  | time taken : 44.52252435684204
+ Thread 3 estimated dimension 2 of 10 : 0.5065069484133233  | time taken : 66.37635064125061
+ Thread 5 estimated dimension 5 of 10 : 0.4605267758037878  | time taken : 71.45451593399048
+ Thread 1 estimated dimension 6 of 10 : 1  | time taken : 31.521824836730957
+ Thread 6 estimated dimension 5 of 10 : 0.45473326838696576  | time taken : 74.13289141654968
+ Thread 7 estimated dimension 4 of 10 : 0.7263930254033413  | time taken : 46.51487183570862
+ Thread 3 estimated dimension 3 of 10 : 1  | time taken : 31.501182794570923
+ Thread 5 estimated dimension 6 of 10 : 1  | time taken : 31.89560627937317
+ Thread 2 estimated dimension 8 of 10 : 0.6681924056440696  | time taken : 50.1737117767334
+ Thread 4 estimated dimension 4 of 10 : 0.25619363315941324  | time taken : 132.8954634666443
+ Thread 6 estimated dimension 6 of 10 : 0.9912294943468669  | time taken : 31.605676651000977
+ Thread 8 estimated dimension 6 of 10 : 0.5105340432242279  | time taken : 63.16665315628052
+ Thread 1 estimated dimension 7 of 10 : 0.7383623248918443  | time taken : 43.74290132522583
+ Thread 3 estimated dimension 4 of 10 : 0.9964140632208934  | time taken : 30.972113132476807
+ Thread 8 estimated dimension 7 of 10 : 1  | time taken : 31.65397548675537
+ Thread 5 estimated dimension 7 of 10 : 0.7617844240391426  | time taken : 43.83309888839722
+ Thread 6 estimated dimension 7 of 10 : 0.7500577449792452  | time taken : 44.5532169342041
+ Thread 3 estimated dimension 5 of 10 : 1  | time taken : 31.128068208694458
+ Thread 4 estimated dimension 5 of 10 : 0.6499333956337868  | time taken : 51.49689698219299
+ Thread 7 estimated dimension 5 of 10 : 0.46351441557390544  | time taken : 72.90040135383606
+ Thread 2 estimated dimension 9 of 10 : 0.4955545583060851  | time taken : 65.9372079372406
+ Thread 2 nsolns: 145742
+ Thread 1 estimated dimension 8 of 10 : 0.6694799440562215  | time taken : 49.49376130104065
+ Thread 8 estimated dimension 8 of 10 : 1  | time taken : 30.787733554840088
+ Thread 5 estimated dimension 8 of 10 : 0.6641919760009011  | time taken : 49.506571769714355
+ Thread 7 estimated dimension 6 of 10 : 0.9925974335197988  | time taken : 31.409852266311646
+ Thread 8 estimated dimension 9 of 10 : 0.9971072364687058  | time taken : 31.47003698348999
+ Thread 8 nsolns: 164309
+ Thread 6 estimated dimension 8 of 10 : 0.6613713209509022  | time taken : 50.291860818862915
+ Thread 3 estimated dimension 6 of 10 : 0.5124532502402528  | time taken : 64.98166632652283
+ Thread 4 estimated dimension 6 of 10 : 0.4930376318556116  | time taken : 69.47213840484619
+ Thread 2 estimated dimension 0 of 10 : 0.5453352277665234  | time taken : 65.75143694877625
+ Thread 1 estimated dimension 9 of 10 : 0.49205298637805645  | time taken : 67.44845747947693
+ Thread 1 nsolns: 145534
+ Thread 7 estimated dimension 7 of 10 : 0.7578237938714608  | time taken : 42.840961933135986
+ Thread 3 estimated dimension 7 of 10 : 0.9891928897401565  | time taken : 30.576242685317993
+ Thread 5 estimated dimension 9 of 10 : 0.4873455102223241  | time taken : 65.43160724639893
+ Thread 5 nsolns: 145678
+ Thread 4 estimated dimension 7 of 10 : 1  | time taken : 30.602030992507935
+ Thread 6 estimated dimension 9 of 10 : 0.48848328573788674  | time taken : 65.49275541305542
+ Thread 6 nsolns: 145808
+ Thread 2 estimated dimension 1 of 10 : 0.8104776020330264  | time taken : 42.00794005393982
+ Thread 8 estimated dimension 0 of 10 : 0.45356565567206114  | time taken : 78.86760830879211
+ Thread 3 estimated dimension 8 of 10 : 0.9851654973522749  | time taken : 30.83609938621521
+ Thread 7 estimated dimension 8 of 10 : 0.662883074518137  | time taken : 50.13944411277771
+ Thread 4 estimated dimension 8 of 10 : 1  | time taken : 31.12412714958191
+ Thread 1 estimated dimension 0 of 10 : 0.5506515496737534  | time taken : 63.63308358192444
+ Thread 8 estimated dimension 1 of 10 : 1  | time taken : 33.301910400390625
+ Thread 3 estimated dimension 9 of 10 : 0.9905448296099099  | time taken : 31.46225881576538
+ Thread 3 nsolns: 164150
+ Thread 5 estimated dimension 0 of 10 : 0.5501458697166122  | time taken : 65.6813178062439
+ Thread 4 estimated dimension 9 of 10 : 1  | time taken : 31.560388803482056
+ Thread 4 nsolns: 154579
+ Thread 6 estimated dimension 0 of 10 : 0.5465158301712286  | time taken : 63.79366970062256
+ Thread 8 estimated dimension 2 of 10 : 0.9938262156247621  | time taken : 33.21681809425354
+ Thread 7 estimated dimension 9 of 10 : 0.4926434116882643  | time taken : 66.85822367668152
+ Thread 7 nsolns: 145651
+ Thread 5 estimated dimension 1 of 10 : 0.8186517207660854  | time taken : 42.54661178588867
+ Thread 3 estimated dimension 0 of 10 : 0.5467196104787256  | time taken : 66.22377395629883
+ Thread 4 estimated dimension 0 of 10 : 0.5463506910125067  | time taken : 66.66030025482178
+ Thread 8 estimated dimension 3 of 10 : 0.7046821933311479  | time taken : 48.1134569644928
+ Thread 2 estimated dimension 2 of 10 : 0.26270006664428175  | time taken : 133.7574269771576
+ Thread 3 estimated dimension 1 of 10 : 0.8157464291791493  | time taken : 42.50052094459534
+ Thread 4 estimated dimension 1 of 10 : 0.818240720196388  | time taken : 41.76138782501221
+ Thread 7 estimated dimension 0 of 10 : 0.4521161874071678  | time taken : 78.25090980529785
+ Thread 2 estimated dimension 3 of 10 : 0.9797470804904874  | time taken : 32.19611048698425
+ Thread 8 estimated dimension 4 of 10 : 0.7308390266717929  | time taken : 47.44970226287842
+ Thread 7 estimated dimension 1 of 10 : 1  | time taken : 33.458810329437256
+ Thread 3 estimated dimension 2 of 10 : 0.7190569047533463  | time taken : 47.9229416847229
+ Thread 4 estimated dimension 2 of 10 : 0.7112262270872759  | time taken : 47.772722005844116
+ Thread 2 estimated dimension 4 of 10 : 0.807015313935658  | time taken : 39.89758014678955exiting with current heads : 9711 out of 9713 | exp rv: 50441.14099832878
+
+ Thread 1 estimated dimension 1 of 10 : 0.1925412432744489  | time taken : 186.39533233642578
+ Thread 5 estimated dimension 2 of 10 : 0.2625535436334891  | time taken : 133.78655576705933
+ Thread 7 estimated dimension 2 of 10 : 1  | time taken : 31.52476406097412
+ Thread 3 estimated dimension 3 of 10 : 1  | time taken : 31.559625387191772
+ Thread 4 estimated dimension 3 of 10 : 0.9987681990455397  | time taken : 31.396777153015137
+ Thread 2 estimated dimension 5 of 10 : 1  | time taken : 30.935588598251343
+ Thread 8 estimated dimension 5 of 10 : 0.4625327544580051  | time taken : 72.14252781867981exiting with current heads : 9712 out of 9713 | exp rv: 50301.207422683714
+
+ Thread 6 estimated dimension 1 of 10 : 0.19307687623459113  | time taken : 185.07758903503418
+ Thread 5 estimated dimension 3 of 10 : 1  | time taken : 31.815942525863647
+ Thread 2 estimated dimension 6 of 10 : 0.9983747393255419  | time taken : 31.793126106262207
+ Thread 7 estimated dimension 3 of 10 : 0.7052305389360396  | time taken : 48.28770899772644
+ Thread 8 estimated dimension 6 of 10 : 1  | time taken : 32.135334968566895
+ Thread 1 estimated dimension 2 of 10 : 0.5039262485818785  | time taken : 66.30953931808472
+ Thread 4 estimated dimension 4 of 10 : 0.738658362808591  | time taken : 46.4779577255249
+ Thread 5 estimated dimension 4 of 10 : 0.8240168319613761  | time taken : 40.811649560928345
+ Thread 1 estimated dimension 3 of 10 : 0.9951666604836465  | time taken : 31.17456841468811
+ Thread 6 estimated dimension 2 of 10 : 0.5088661254801992  | time taken : 66.0999584197998
+ Thread 2 estimated dimension 7 of 10 : 0.7381751289006929  | time taken : 44.290626525878906
+ Thread 8 estimated dimension 7 of 10 : 0.7462867761443  | time taken : 43.529542446136475
+ Thread 7 estimated dimension 4 of 10 : 0.7378040156276683  | time taken : 45.886452198028564
+ Thread 5 estimated dimension 5 of 10 : 1  | time taken : 31.404805183410645
+ Thread 1 estimated dimension 4 of 10 : 0.9927357511268471  | time taken : 31.99096369743347
+ Thread 6 estimated dimension 3 of 10 : 0.9971713472895505  | time taken : 31.61730718612671
+ Thread 4 estimated dimension 5 of 10 : 0.4591613670124366  | time taken : 74.57371830940247
+ Thread 5 estimated dimension 6 of 10 : 1  | time taken : 32.00145936012268
+ Thread 3 estimated dimension 4 of 10 : 0.256963055084422  | time taken : 134.4569709300995
+ Thread 8 estimated dimension 8 of 10 : 0.6649142302137646  | time taken : 49.345821142196655
+ Thread 1 estimated dimension 5 of 10 : 1  | time taken : 30.820677518844604
+ Thread 6 estimated dimension 4 of 10 : 1  | time taken : 30.870993852615356
+ Thread 4 estimated dimension 6 of 10 : 0.9996137712529408  | time taken : 31.423548698425293
+ Thread 7 estimated dimension 5 of 10 : 0.4651906067037123  | time taken : 73.01479387283325
+ Thread 6 estimated dimension 5 of 10 : 1  | time taken : 31.0379478931427
+ Thread 5 estimated dimension 7 of 10 : 0.7517532566143944  | time taken : 44.405399560928345
+ Thread 2 estimated dimension 8 of 10 : 0.34156060053825055  | time taken : 100.22604322433472
+ Thread 3 estimated dimension 5 of 10 : 0.6475812725279187  | time taken : 50.50069713592529
+ Thread 7 estimated dimension 6 of 10 : 0.9975574730950165  | time taken : 31.23705005645752
+ Thread 4 estimated dimension 7 of 10 : 0.7516172567261483  | time taken : 43.325833320617676
+ Thread 8 estimated dimension 9 of 10 : 0.489921937429697  | time taken : 66.04229283332825
+ Thread 8 nsolns: 145572
+ Thread 1 estimated dimension 6 of 10 : 0.5084331902157679  | time taken : 64.70933389663696
+ Thread 2 estimated dimension 9 of 10 : 0.9985861220073932  | time taken : 31.0107319355011
+ Thread 2 nsolns: 158885
+ Thread 6 estimated dimension 6 of 10 : 0.5169912889987962  | time taken : 63.6152400970459
+ Thread 1 estimated dimension 7 of 10 : 0.9855940400934456  | time taken : 31.38518214225769
+ Thread 7 estimated dimension 7 of 10 : 0.7505742848700393  | time taken : 43.95972561836243
+ Thread 3 estimated dimension 6 of 10 : 0.4896154626208174  | time taken : 67.5940625667572
+ Thread 6 estimated dimension 7 of 10 : 0.993915776994688  | time taken : 31.431915998458862
+ Thread 1 estimated dimension 8 of 10 : 0.986904879649196  | time taken : 31.184041500091553
+ Thread 5 estimated dimension 8 of 10 : 0.3401828349857236  | time taken : 100.09587669372559
+ Thread 2 estimated dimension 0 of 10 : 0.5511563338763691  | time taken : 64.582937002182
+ Thread 3 estimated dimension 7 of 10 : 1  | time taken : 30.32631826400757
+ Thread 8 estimated dimension 0 of 10 : 0.4607125392416251  | time taken : 79.65211009979248
+ Thread 7 estimated dimension 8 of 10 : 0.6666633375930828  | time taken : 48.80276346206665
+ Thread 6 estimated dimension 8 of 10 : 1  | time taken : 30.53763484954834
+ Thread 1 estimated dimension 9 of 10 : 0.9975365968597969  | time taken : 30.633782625198364
+ Thread 1 nsolns: 164332
+ Thread 4 estimated dimension 8 of 10 : 0.3399922229807731  | time taken : 99.21368670463562
+ Thread 5 estimated dimension 9 of 10 : 1  | time taken : 30.603416681289673
+ Thread 5 nsolns: 159178
+ Thread 3 estimated dimension 8 of 10 : 0.9885498722000731  | time taken : 30.893104791641235
+ Thread 8 estimated dimension 1 of 10 : 1  | time taken : 32.82245659828186
+ Thread 6 estimated dimension 9 of 10 : 1  | time taken : 31.66802430152893
+ Thread 6 nsolns: 164433
+ Thread 4 estimated dimension 9 of 10 : 1  | time taken : 31.664862155914307
+ Thread 4 nsolns: 147951
+ Thread 3 estimated dimension 9 of 10 : 0.9881430218274234  | time taken : 31.326268434524536
+ Thread 3 nsolns: 154630
+ Thread 8 estimated dimension 2 of 10 : 0.9955366677312579  | time taken : 33.62168645858765
+ Thread 7 estimated dimension 9 of 10 : 0.49011327703071234  | time taken : 66.37481760978699
+ Thread 7 nsolns: 145620
+ Thread 1 estimated dimension 0 of 10 : 0.548885616191735  | time taken : 66.46837067604065
+ Thread 5 estimated dimension 0 of 10 : 0.5543657349562281  | time taken : 66.4513168334961
+ Thread 4 estimated dimension 0 of 10 : 0.5477712077034035  | time taken : 65.78962397575378
+ Thread 8 estimated dimension 3 of 10 : 0.7006564403171344  | time taken : 48.60093021392822
+ Thread 1 estimated dimension 1 of 10 : 0.820231771485355  | time taken : 41.78852438926697
+ Thread 6 estimated dimension 0 of 10 : 0.4549814674714735  | time taken : 78.09756445884705
+ Thread 3 estimated dimension 0 of 10 : 0.5486587063428063  | time taken : 65.42188453674316
+ Thread 5 estimated dimension 1 of 10 : 0.8189605443969435  | time taken : 41.76579737663269
+ Thread 7 estimated dimension 0 of 10 : 0.551811586717281  | time taken : 65.48488783836365
+ Thread 4 estimated dimension 1 of 10 : 0.814410708673879  | time taken : 41.78677797317505
+ Thread 6 estimated dimension 1 of 10 : 0.9907823329420863  | time taken : 33.106297969818115
+ Thread 8 estimated dimension 4 of 10 : 0.7365031939017513  | time taken : 46.86138319969177
+ Thread 3 estimated dimension 1 of 10 : 0.8193910459310014  | time taken : 42.0840699672699
+ Thread 7 estimated dimension 1 of 10 : 0.8090007966430017  | time taken : 42.0013964176178exiting with current heads : 9712 out of 9713 | exp rv: 50310.00213168001
+
+ Thread 2 estimated dimension 1 of 10 : 0.19304312439860524  | time taken : 183.61566925048828
+ Thread 6 estimated dimension 2 of 10 : 1  | time taken : 32.67258858680725
+ Thread 3 estimated dimension 2 of 10 : 0.7183053812654646  | time taken : 48.00316643714905
+ Thread 7 estimated dimension 2 of 10 : 0.7259944787999418  | time taken : 47.51047348976135
+ Thread 8 estimated dimension 5 of 10 : 0.46316083026285554  | time taken : 73.1441581249237
+ Thread 6 estimated dimension 3 of 10 : 0.7027661050269105  | time taken : 49.64175462722778
+ Thread 2 estimated dimension 2 of 10 : 0.5113377205595857  | time taken : 67.79392051696777
+ Thread 3 estimated dimension 3 of 10 : 0.9931481243362158  | time taken : 32.835387229919434
+ Thread 7 estimated dimension 3 of 10 : 1  | time taken : 31.93056035041809
+ Thread 1 estimated dimension 2 of 10 : 0.26175801543586874  | time taken : 135.75799870491028
+ Thread 5 estimated dimension 2 of 10 : 0.26112663139765224  | time taken : 131.97705841064453
+ Thread 8 estimated dimension 6 of 10 : 1  | time taken : 31.028607845306396
+ Thread 2 estimated dimension 3 of 10 : 0.9975903491705777  | time taken : 31.106799125671387
+ Thread 6 estimated dimension 4 of 10 : 0.735060728392487  | time taken : 46.23750185966492
+ Thread 4 estimated dimension 2 of 10 : 0.2599119085821475  | time taken : 132.1743905544281
+ Thread 1 estimated dimension 3 of 10 : 1  | time taken : 31.921144247055054
+ Thread 5 estimated dimension 3 of 10 : 0.9993738221848886  | time taken : 32.07487440109253
+ Thread 2 estimated dimension 4 of 10 : 0.9820968788705002  | time taken : 31.336440563201904
+ Thread 8 estimated dimension 7 of 10 : 0.7504565652122103  | time taken : 44.037270069122314
+ Thread 4 estimated dimension 3 of 10 : 1  | time taken : 32.608394622802734
+ Thread 1 estimated dimension 4 of 10 : 0.8161252655674003  | time taken : 41.18506336212158
+ Thread 5 estimated dimension 4 of 10 : 0.8267772328383907  | time taken : 41.202733278274536
+ Thread 2 estimated dimension 5 of 10 : 0.9994979056073798  | time taken : 31.738969564437866
+ Thread 8 estimated dimension 8 of 10 : 0.6704193426448125  | time taken : 50.052226066589355
+ Thread 6 estimated dimension 5 of 10 : 0.46333308634968257  | time taken : 73.96706509590149
+ Thread 4 estimated dimension 4 of 10 : 0.8275510001605997  | time taken : 40.55868148803711
+ Thread 1 estimated dimension 5 of 10 : 1  | time taken : 31.60012173652649
+ Thread 5 estimated dimension 5 of 10 : 1  | time taken : 32.0308313369751
+ Thread 3 estimated dimension 4 of 10 : 0.25688585575088485  | time taken : 133.53083109855652
+ Thread 7 estimated dimension 4 of 10 : 0.2567712091937316  | time taken : 132.53877806663513
+ Thread 6 estimated dimension 6 of 10 : 1  | time taken : 31.100454330444336
+ Thread 4 estimated dimension 5 of 10 : 1  | time taken : 31.68966794013977
+ Thread 1 estimated dimension 6 of 10 : 1  | time taken : 31.728734016418457
+ Thread 5 estimated dimension 6 of 10 : 0.9983664936594987  | time taken : 32.036481618881226
+ Thread 2 estimated dimension 6 of 10 : 0.5112040551559326  | time taken : 63.31843590736389
+ Thread 4 estimated dimension 6 of 10 : 1  | time taken : 31.83551049232483
+ Thread 8 estimated dimension 9 of 10 : 0.49106852560886716  | time taken : 69.2053713798523
+ Thread 8 nsolns: 145504
+ Thread 3 estimated dimension 5 of 10 : 0.6320731604415392  | time taken : 51.13566327095032
+ Thread 2 estimated dimension 7 of 10 : 1  | time taken : 31.19313931465149
+ Thread 6 estimated dimension 7 of 10 : 0.7551409914708892  | time taken : 44.21861481666565
+ Thread 7 estimated dimension 5 of 10 : 0.6457039848609121  | time taken : 50.225107192993164
+ Thread 1 estimated dimension 7 of 10 : 0.7570307028883317  | time taken : 43.51485824584961
+ Thread 5 estimated dimension 7 of 10 : 0.754543473976046  | time taken : 43.98243451118469
+ Thread 2 estimated dimension 8 of 10 : 1  | time taken : 31.451935052871704
+ Thread 4 estimated dimension 7 of 10 : 0.7539537468172085  | time taken : 44.43368625640869
+ Thread 6 estimated dimension 8 of 10 : 0.6679221272084501  | time taken : 50.56074285507202
+ Thread 2 estimated dimension 9 of 10 : 1  | time taken : 30.964924812316895
+ Thread 2 nsolns: 164241
+ Thread 3 estimated dimension 6 of 10 : 0.4844834722826055  | time taken : 70.56085014343262
+ Thread 8 estimated dimension 0 of 10 : 0.45219886769148965  | time taken : 77.90553498268127
+ Thread 7 estimated dimension 6 of 10 : 0.48672859603131363  | time taken : 69.14787340164185
+ Thread 3 estimated dimension 7 of 10 : 1  | time taken : 31.092249393463135
+ Thread 1 estimated dimension 8 of 10 : 0.3373646962770164  | time taken : 99.09239172935486
+ Thread 7 estimated dimension 7 of 10 : 1  | time taken : 31.060810327529907
+ Thread 8 estimated dimension 1 of 10 : 0.9962152581531333  | time taken : 33.14167046546936
+ Thread 5 estimated dimension 8 of 10 : 0.3432233029223406  | time taken : 101.01847529411316
+ Thread 6 estimated dimension 9 of 10 : 0.48945817194677477  | time taken : 65.25961565971375
+ Thread 6 nsolns: 145623
+ Thread 2 estimated dimension 0 of 10 : 0.545050477671362  | time taken : 62.09697771072388
+ Thread 3 estimated dimension 8 of 10 : 0.99951043384139  | time taken : 30.291162729263306
+ Thread 4 estimated dimension 8 of 10 : 0.3363245550810386  | time taken : 99.42484664916992
+ Thread 7 estimated dimension 8 of 10 : 0.9969507938275451  | time taken : 30.403624057769775
+ Thread 1 estimated dimension 9 of 10 : 1  | time taken : 30.984940767288208
+ Thread 1 nsolns: 159165
+ Thread 8 estimated dimension 2 of 10 : 0.9955758919207645  | time taken : 32.41439509391785
+ Thread 5 estimated dimension 9 of 10 : 1  | time taken : 30.73342752456665
+ Thread 5 nsolns: 159083
+ Thread 3 estimated dimension 9 of 10 : 1  | time taken : 31.37232804298401
+ Thread 3 nsolns: 154837
+ Thread 4 estimated dimension 9 of 10 : 0.9906589727743458  | time taken : 31.496126413345337
+ Thread 4 nsolns: 159046
+ Thread 7 estimated dimension 9 of 10 : 1  | time taken : 30.894256114959717
+ Thread 7 nsolns: 154553
+ Thread 2 estimated dimension 1 of 10 : 0.8206566977774965  | time taken : 41.96445965766907
+ Thread 6 estimated dimension 0 of 10 : 0.5407133533782407  | time taken : 65.67033076286316
+ Thread 8 estimated dimension 3 of 10 : 0.7169913115194776  | time taken : 49.09574627876282
+ Thread 1 estimated dimension 0 of 10 : 0.557211505742194  | time taken : 65.22476124763489
+ Thread 5 estimated dimension 0 of 10 : 0.5501394899343455  | time taken : 65.79466414451599
+ Thread 4 estimated dimension 0 of 10 : 0.5464057277909117  | time taken : 65.21337962150574
+ Thread 8 estimated dimension 4 of 10 : 0.7329173469922778  | time taken : 46.055341720581055
+ Thread 3 estimated dimension 0 of 10 : 0.45155868653387843  | time taken : 79.93062353134155
+ Thread 1 estimated dimension 1 of 10 : 0.8111078268136246  | time taken : 42.40093111991882
+ Thread 7 estimated dimension 0 of 10 : 0.46093477354142176  | time taken : 78.01147174835205
+ Thread 5 estimated dimension 1 of 10 : 0.8108783729911888  | time taken : 42.04047989845276
+ Thread 4 estimated dimension 1 of 10 : 0.824717204358771  | time taken : 41.869510650634766
+ Thread 3 estimated dimension 1 of 10 : 0.9957559789387092  | time taken : 33.02237033843994
+ Thread 7 estimated dimension 1 of 10 : 1  | time taken : 33.21359968185425
+ Thread 5 estimated dimension 2 of 10 : 0.7222688586213705  | time taken : 48.10108995437622
+ Thread 8 estimated dimension 5 of 10 : 0.5302494609839532  | time taken : 63.78770923614502
+ Thread 2 estimated dimension 2 of 10 : 0.26136359099012013  | time taken : 133.09453749656677
+ Thread 3 estimated dimension 2 of 10 : 1  | time taken : 32.77196955680847
+ Thread 7 estimated dimension 2 of 10 : 0.9926062588361771  | time taken : 32.846784830093384
+ Thread 4 estimated dimension 2 of 10 : 0.7211563707793403  | time taken : 47.17935013771057
+ Thread 5 estimated dimension 3 of 10 : 1  | time taken : 33.100836992263794
+ Thread 2 estimated dimension 3 of 10 : 0.9945828604539921  | time taken : 32.88536477088928
+ Thread 8 estimated dimension 6 of 10 : 0.7933187341919491  | time taken : 41.43407702445984
+ Thread 4 estimated dimension 3 of 10 : 0.9908086412998028  | time taken : 32.71826934814453
+ Thread 3 estimated dimension 3 of 10 : 0.7184776713768248  | time taken : 48.288944482803345
+ Thread 7 estimated dimension 3 of 10 : 0.7123217898846744  | time taken : 48.307621002197266exiting with current heads : 9711 out of 9713 | exp rv: 49485.69217201431
+
+ Thread 6 estimated dimension 1 of 10 : 0.19625874821030465  | time taken : 185.52474570274353
+ Thread 2 estimated dimension 4 of 10 : 0.7963403505399755  | time taken : 40.44357919692993
+ Thread 1 estimated dimension 2 of 10 : 0.25906625405464867  | time taken : 132.61966013908386
+ Thread 8 estimated dimension 7 of 10 : 0.7552409502476938  | time taken : 42.71694564819336
+ Thread 3 estimated dimension 4 of 10 : 0.7288771282502233  | time taken : 46.01646709442139
+ Thread 7 estimated dimension 4 of 10 : 0.7442466387923421  | time taken : 46.99747562408447
+ Thread 2 estimated dimension 5 of 10 : 0.9990165402219666  | time taken : 31.996503591537476
+ Thread 1 estimated dimension 3 of 10 : 0.9939892806349045  | time taken : 31.979867458343506
+ Thread 8 estimated dimension 8 of 10 : 0.657163176484295  | time taken : 49.62959885597229
+ Thread 6 estimated dimension 2 of 10 : 0.5091225164298819  | time taken : 67.14849090576172
+ Thread 2 estimated dimension 6 of 10 : 1  | time taken : 32.30038595199585
+ Thread 1 estimated dimension 4 of 10 : 0.8185224319333376  | time taken : 41.284635066986084
+ Thread 5 estimated dimension 4 of 10 : 0.25463021446325634  | time taken : 133.26439929008484
+ Thread 6 estimated dimension 3 of 10 : 0.9955777283656232  | time taken : 31.084572315216064
+ Thread 3 estimated dimension 5 of 10 : 0.4661749647105262  | time taken : 72.09194803237915
+ Thread 7 estimated dimension 5 of 10 : 0.4583712200427672  | time taken : 72.89890480041504
+ Thread 1 estimated dimension 5 of 10 : 0.995598027420273  | time taken : 31.581369638442993
+ Thread 2 estimated dimension 7 of 10 : 0.746939309589578  | time taken : 43.76274013519287
+ Thread 4 estimated dimension 4 of 10 : 0.25750678155829143  | time taken : 131.89980816841125
+ Thread 6 estimated dimension 4 of 10 : 1  | time taken : 31.119173288345337
+ Thread 8 estimated dimension 9 of 10 : 0.5019707232446324  | time taken : 68.31275224685669
+ Thread 8 nsolns: 144932
+ Thread 3 estimated dimension 6 of 10 : 0.9926749083325143  | time taken : 31.15363597869873
+ Thread 7 estimated dimension 6 of 10 : 1  | time taken : 31.26870322227478
+ Thread 1 estimated dimension 6 of 10 : 1  | time taken : 31.46383237838745
+ Thread 5 estimated dimension 5 of 10 : 0.6500545968137581  | time taken : 50.21600413322449
+ Thread 6 estimated dimension 5 of 10 : 1  | time taken : 31.47727918624878
+ Thread 4 estimated dimension 5 of 10 : 0.6469574885713933  | time taken : 51.063690423965454
+ Thread 3 estimated dimension 7 of 10 : 0.7371917573569917  | time taken : 44.39618730545044
+ Thread 7 estimated dimension 7 of 10 : 0.7551661193757571  | time taken : 44.236820220947266
+ Thread 1 estimated dimension 7 of 10 : 0.7556088333635782  | time taken : 44.496129751205444
+ Thread 8 estimated dimension 0 of 10 : 0.4549389164617475  | time taken : 80.12847399711609
+ Thread 5 estimated dimension 6 of 10 : 0.48858597337091386  | time taken : 67.84246969223022
+ Thread 2 estimated dimension 8 of 10 : 0.3369034357383353  | time taken : 98.90716075897217
+ Thread 6 estimated dimension 6 of 10 : 0.511962377148162  | time taken : 63.20820665359497
+ Thread 3 estimated dimension 8 of 10 : 0.6762555110093679  | time taken : 49.333863496780396
+ Thread 7 estimated dimension 8 of 10 : 0.6686006724456264  | time taken : 48.75259494781494
+ Thread 4 estimated dimension 6 of 10 : 0.4888838065381335  | time taken : 67.80790615081787
+ Thread 5 estimated dimension 7 of 10 : 1  | time taken : 30.65670609474182
+ Thread 2 estimated dimension 9 of 10 : 0.9967956347537406  | time taken : 30.80324101448059
+ Thread 2 nsolns: 158858
+ Thread 8 estimated dimension 1 of 10 : 1  | time taken : 32.623616218566895
+ Thread 6 estimated dimension 7 of 10 : 1  | time taken : 30.682292461395264
+ Thread 4 estimated dimension 7 of 10 : 1  | time taken : 31.48723292350769
+ Thread 5 estimated dimension 8 of 10 : 0.990901592825853  | time taken : 31.59688949584961
+ Thread 8 estimated dimension 2 of 10 : 1  | time taken : 33.976975202560425
+ Thread 6 estimated dimension 8 of 10 : 0.9951156490736749  | time taken : 30.98747444152832
+ Thread 1 estimated dimension 8 of 10 : 0.3403924287267167  | time taken : 99.99696612358093
+ Thread 3 estimated dimension 9 of 10 : 0.4893679044874058  | time taken : 65.94553899765015
+ Thread 3 nsolns: 145513
+ Thread 4 estimated dimension 8 of 10 : 0.9786823463100006  | time taken : 30.959033250808716
+ Thread 7 estimated dimension 9 of 10 : 0.4949083628362451  | time taken : 66.07283163070679
+ Thread 7 nsolns: 145524
+ Thread 5 estimated dimension 9 of 10 : 0.9961673181200177  | time taken : 30.60189151763916
+ Thread 5 nsolns: 154685
+ Thread 2 estimated dimension 0 of 10 : 0.5415112280959726  | time taken : 65.29349970817566
+ Thread 6 estimated dimension 9 of 10 : 0.9943810083663177  | time taken : 30.75628900527954
+ Thread 6 nsolns: 164247
+ Thread 1 estimated dimension 9 of 10 : 1  | time taken : 30.65286350250244
+ Thread 1 nsolns: 159090
+ Thread 8 estimated dimension 3 of 10 : 0.7191681334081482  | time taken : 48.96945333480835
+ Thread 4 estimated dimension 9 of 10 : 1  | time taken : 30.74344229698181
+ Thread 4 nsolns: 154477
+ Thread 2 estimated dimension 1 of 10 : 0.8332272379828847  | time taken : 42.85299825668335
+ Thread 3 estimated dimension 0 of 10 : 0.5495135171438479  | time taken : 66.42958664894104
+ Thread 5 estimated dimension 0 of 10 : 0.5559424260681659  | time taken : 65.85271787643433
+ Thread 8 estimated dimension 4 of 10 : 0.7487867616239602  | time taken : 46.62393307685852
+ Thread 6 estimated dimension 0 of 10 : 0.5426713869970551  | time taken : 64.44237685203552
+ Thread 7 estimated dimension 0 of 10 : 0.45248329239693186  | time taken : 80.51091933250427
+ Thread 1 estimated dimension 0 of 10 : 0.550120326978296  | time taken : 65.76918840408325
+ Thread 4 estimated dimension 0 of 10 : 0.5449941061715465  | time taken : 64.69145655632019
+ Thread 2 estimated dimension 2 of 10 : 0.7147867045535204  | time taken : 47.054555892944336
+ Thread 3 estimated dimension 1 of 10 : 0.8132085241726658  | time taken : 41.71286725997925
+ Thread 5 estimated dimension 1 of 10 : 0.8309949765217706  | time taken : 41.530439615249634
+ Thread 7 estimated dimension 1 of 10 : 0.9897341371767613  | time taken : 33.32695460319519
+ Thread 6 estimated dimension 1 of 10 : 0.8107633968038436  | time taken : 42.06635522842407
+ Thread 1 estimated dimension 1 of 10 : 0.822109652537301  | time taken : 42.439173221588135
+ Thread 2 estimated dimension 3 of 10 : 1  | time taken : 32.746710777282715
+ Thread 4 estimated dimension 1 of 10 : 0.8097811096769689  | time taken : 42.58284091949463
+ Thread 8 estimated dimension 5 of 10 : 0.4636789467156621  | time taken : 72.9876937866211
+ Thread 7 estimated dimension 2 of 10 : 0.9970099205116907  | time taken : 33.46801161766052
+ Thread 3 estimated dimension 2 of 10 : 0.7423678478922164  | time taken : 47.52866506576538
+ Thread 6 estimated dimension 2 of 10 : 0.7185852108208758  | time taken : 48.55820989608765
+ Thread 8 estimated dimension 6 of 10 : 0.9941321317801256  | time taken : 31.762765169143677
+ Thread 2 estimated dimension 4 of 10 : 0.7380824153419837  | time taken : 46.919883728027344
+ Thread 4 estimated dimension 2 of 10 : 0.7195224594804543  | time taken : 47.52930212020874
+ Thread 3 estimated dimension 3 of 10 : 0.9955602200049309  | time taken : 32.53227734565735
+ Thread 7 estimated dimension 3 of 10 : 0.72157254802945  | time taken : 48.08064913749695
+ Thread 6 estimated dimension 3 of 10 : 0.9959804977851064  | time taken : 32.97931122779846
+ Thread 4 estimated dimension 3 of 10 : 0.9979864838542007  | time taken : 33.13821601867676
+ Thread 8 estimated dimension 7 of 10 : 0.7433968051853478  | time taken : 43.966552734375
+ Thread 7 estimated dimension 4 of 10 : 0.7398992205878271  | time taken : 47.261929512023926
+ Thread 5 estimated dimension 2 of 10 : 0.25991417804509853  | time taken : 134.2848105430603
+ Thread 2 estimated dimension 5 of 10 : 0.4619956059790241  | time taken : 73.14111161231995
+ Thread 1 estimated dimension 2 of 10 : 0.2634417754433062  | time taken : 132.72724533081055
+ Thread 8 estimated dimension 8 of 10 : 0.6640202813976421  | time taken : 49.24819278717041
+ Thread 5 estimated dimension 3 of 10 : 0.9913418247819693  | time taken : 32.089364767074585
+ Thread 2 estimated dimension 6 of 10 : 1  | time taken : 31.491225481033325
+ Thread 1 estimated dimension 3 of 10 : 1  | time taken : 32.833723068237305
+ Thread 7 estimated dimension 5 of 10 : 0.5379974235932199  | time taken : 63.73496723175049
+ Thread 5 estimated dimension 4 of 10 : 0.8181865910617455  | time taken : 40.33764338493347
+ Thread 3 estimated dimension 4 of 10 : 0.2577511217137249  | time taken : 140.03913569450378
+ Thread 2 estimated dimension 7 of 10 : 0.7459169166296125  | time taken : 43.572566747665405
+ Thread 1 estimated dimension 4 of 10 : 0.803362062248867  | time taken : 39.91708731651306
+ Thread 8 estimated dimension 9 of 10 : 0.49088292069993644  | time taken : 64.93883037567139
+ Thread 8 nsolns: 145725
+ Thread 6 estimated dimension 4 of 10 : 0.2566689063985127  | time taken : 137.25344944000244
+ Thread 7 estimated dimension 6 of 10 : 0.7936023867274841  | time taken : 40.52513551712036
+ Thread 5 estimated dimension 5 of 10 : 1  | time taken : 30.929391384124756
+ Thread 4 estimated dimension 4 of 10 : 0.25677051244226834  | time taken : 135.67616939544678
+ Thread 1 estimated dimension 5 of 10 : 1  | time taken : 31.145074605941772
+ Thread 2 estimated dimension 8 of 10 : 0.6604619824865063  | time taken : 49.13096237182617
+ Thread 3 estimated dimension 5 of 10 : 0.645118042704315  | time taken : 50.63501214981079
+ Thread 5 estimated dimension 6 of 10 : 0.9919477753970424  | time taken : 31.83411192893982
+ Thread 7 estimated dimension 7 of 10 : 0.7420806166215128  | time taken : 43.3825044631958
+ Thread 6 estimated dimension 5 of 10 : 0.6507189662934026  | time taken : 50.38069486618042
+ Thread 1 estimated dimension 6 of 10 : 1  | time taken : 32.0792601108551
+ Thread 4 estimated dimension 5 of 10 : 0.6417358412887378  | time taken : 50.62014675140381
+ Thread 8 estimated dimension 0 of 10 : 0.45420514043537724  | time taken : 79.61668252944946
+ Thread 5 estimated dimension 7 of 10 : 0.7475162872921874  | time taken : 43.95692992210388
+ Thread 7 estimated dimension 8 of 10 : 0.6702510678595963  | time taken : 49.67253232002258
+ Thread 1 estimated dimension 7 of 10 : 0.7429592194675321  | time taken : 45.10067081451416
+ Thread 2 estimated dimension 9 of 10 : 0.49666475405915556  | time taken : 66.93036460876465
+ Thread 2 nsolns: 143866
+ Thread 3 estimated dimension 6 of 10 : 0.4854742147957309  | time taken : 68.23061037063599
+ Thread 8 estimated dimension 1 of 10 : 0.9997838046173948  | time taken : 32.90480399131775
+ Thread 6 estimated dimension 6 of 10 : 0.4824115884583482  | time taken : 67.88212394714355
+ Thread 4 estimated dimension 6 of 10 : 0.4901502501011422  | time taken : 67.63340210914612
+ Thread 3 estimated dimension 7 of 10 : 1  | time taken : 31.254944801330566
+ Thread 8 estimated dimension 2 of 10 : 1  | time taken : 33.19364929199219
+ Thread 6 estimated dimension 7 of 10 : 0.9815618632480985  | time taken : 31.48911762237549
+ Thread 4 estimated dimension 7 of 10 : 0.988838176492035  | time taken : 31.144463777542114
+ Thread 3 estimated dimension 8 of 10 : 1  | time taken : 31.228935718536377
+ Thread 7 estimated dimension 9 of 10 : 0.5087118601134212  | time taken : 67.59857511520386
+ Thread 7 nsolns: 144837
+ Thread 2 estimated dimension 0 of 10 : 0.4545870077871012  | time taken : 78.48527646064758
+ Thread 6 estimated dimension 8 of 10 : 0.9934815240838274  | time taken : 29.676918745040894
+ Thread 5 estimated dimension 8 of 10 : 0.33708624073973464  | time taken : 101.33383774757385
+ Thread 8 estimated dimension 3 of 10 : 0.6994137961208324  | time taken : 47.81027293205261
+ Thread 4 estimated dimension 8 of 10 : 1  | time taken : 29.560913562774658
+ Thread 3 estimated dimension 9 of 10 : 1  | time taken : 30.088387489318848
+ Thread 3 nsolns: 154738
+ Thread 1 estimated dimension 8 of 10 : 0.3420317995938473  | time taken : 97.29140663146973
+ Thread 6 estimated dimension 9 of 10 : 1  | time taken : 30.706186294555664
+ Thread 6 nsolns: 154667
+ Thread 2 estimated dimension 1 of 10 : 1  | time taken : 32.80460286140442
+ Thread 5 estimated dimension 9 of 10 : 0.9983383845047143  | time taken : 30.685500860214233
+ Thread 5 nsolns: 159295
+ Thread 4 estimated dimension 9 of 10 : 0.9935576979725751  | time taken : 31.591205835342407
+ Thread 4 nsolns: 154435
+ Thread 1 estimated dimension 9 of 10 : 1  | time taken : 31.569984197616577
+ Thread 1 nsolns: 159108
+ Thread 8 estimated dimension 4 of 10 : 0.7381312412942184  | time taken : 46.71159482002258
+ Thread 2 estimated dimension 2 of 10 : 1  | time taken : 32.87919330596924
+ Thread 7 estimated dimension 0 of 10 : 0.4579412830276658  | time taken : 80.11377167701721
+ Thread 3 estimated dimension 0 of 10 : 0.5489752226684642  | time taken : 65.59613251686096
+ Thread 7 estimated dimension 1 of 10 : 0.9975898045259579  | time taken : 32.829010248184204
+ Thread 5 estimated dimension 0 of 10 : 0.5517249540845743  | time taken : 65.25473546981812
+ Thread 4 estimated dimension 0 of 10 : 0.5499623703484008  | time taken : 66.03981757164001
+ Thread 6 estimated dimension 0 of 10 : 0.4535650566744018  | time taken : 77.67870736122131
+ Thread 1 estimated dimension 0 of 10 : 0.5580905744833733  | time taken : 64.4411633014679
+ Thread 2 estimated dimension 3 of 10 : 0.704230626262642  | time taken : 48.60894274711609
+ Thread 3 estimated dimension 1 of 10 : 0.8116711763040791  | time taken : 42.27650594711304
+ Thread 8 estimated dimension 5 of 10 : 0.4569082500305457  | time taken : 72.52956891059875
+ Thread 7 estimated dimension 2 of 10 : 1  | time taken : 31.518362998962402
+ Thread 6 estimated dimension 1 of 10 : 0.9932761924413376  | time taken : 33.3229820728302
+ Thread 5 estimated dimension 1 of 10 : 0.8119870203000966  | time taken : 41.795411109924316
+ Thread 4 estimated dimension 1 of 10 : 0.8272529313553492  | time taken : 41.54389214515686
+ Thread 1 estimated dimension 1 of 10 : 0.8267584231487113  | time taken : 42.024529457092285
+ Thread 8 estimated dimension 6 of 10 : 1  | time taken : 32.28569269180298
+ Thread 2 estimated dimension 4 of 10 : 0.74067079557087  | time taken : 47.462886095047
+ Thread 6 estimated dimension 2 of 10 : 0.9948916744890585  | time taken : 33.26302719116211
+ Thread 7 estimated dimension 3 of 10 : 0.7230444829388766  | time taken : 49.65895056724548
+ Thread 1 estimated dimension 2 of 10 : 0.7115298674050933  | time taken : 48.135047912597656
+ Thread 8 estimated dimension 7 of 10 : 0.7550973486839342  | time taken : 43.75734734535217
+ Thread 6 estimated dimension 3 of 10 : 0.7124425152865216  | time taken : 49.830052852630615
+ Thread 7 estimated dimension 4 of 10 : 0.737945188818695  | time taken : 47.564656257629395
+ Thread 2 estimated dimension 5 of 10 : 0.46343732223270656  | time taken : 73.83670425415039
+ Thread 1 estimated dimension 3 of 10 : 0.9917410156917063  | time taken : 32.589049100875854
+ Thread 8 estimated dimension 8 of 10 : 0.6644470668935023  | time taken : 49.773531913757324
+ Thread 3 estimated dimension 2 of 10 : 0.2640037291145785  | time taken : 132.4608588218689
+ Thread 2 estimated dimension 6 of 10 : 0.9978402980745663  | time taken : 31.195775032043457
+ Thread 5 estimated dimension 2 of 10 : 0.2628331183451982  | time taken : 131.19274473190308
+ Thread 4 estimated dimension 2 of 10 : 0.26248198140550133  | time taken : 133.6630232334137
+ Thread 1 estimated dimension 4 of 10 : 0.7327113844547374  | time taken : 46.50852727890015
+ Thread 3 estimated dimension 3 of 10 : 0.990507059187188  | time taken : 31.98342275619507
+ Thread 7 estimated dimension 5 of 10 : 0.46230723172913807  | time taken : 74.18728637695312
+ Thread 5 estimated dimension 3 of 10 : 0.9958368122467659  | time taken : 31.819106340408325
+ Thread 2 estimated dimension 7 of 10 : 0.7533407475343812  | time taken : 44.26069784164429
+ Thread 4 estimated dimension 3 of 10 : 0.9891248191664846  | time taken : 32.07196235656738
+ Thread 8 estimated dimension 9 of 10 : 0.5012909865923316  | time taken : 65.91737008094788
+ Thread 8 nsolns: 145528
+ Thread 3 estimated dimension 4 of 10 : 0.81228994176065  | time taken : 40.10823178291321
+ Thread 7 estimated dimension 6 of 10 : 1  | time taken : 31.920488595962524
+ Thread 5 estimated dimension 4 of 10 : 0.8215946398348923  | time taken : 40.374922037124634
+ Thread 1 estimated dimension 5 of 10 : 0.5370900655520272  | time taken : 65.6462893486023
+ Thread 4 estimated dimension 4 of 10 : 0.8076336023723428  | time taken : 39.96654772758484
+ Thread 6 estimated dimension 4 of 10 : 0.25664803140342635  | time taken : 132.32412838935852
+ Thread 2 estimated dimension 8 of 10 : 0.6657768131610123  | time taken : 48.81253933906555
+ Thread 3 estimated dimension 5 of 10 : 0.9885553762255168  | time taken : 31.640589237213135
+ Thread 5 estimated dimension 5 of 10 : 0.9954796595439533  | time taken : 31.566792726516724
+ Thread 7 estimated dimension 7 of 10 : 0.7384780842565017  | time taken : 43.833749532699585
+ Thread 8 estimated dimension 0 of 10 : 0.545017176464603  | time taken : 66.4315938949585
+ Thread 4 estimated dimension 5 of 10 : 1  | time taken : 32.1789984703064
+ Thread 1 estimated dimension 6 of 10 : 0.7911089485951566  | time taken : 40.91486191749573
+ Thread 3 estimated dimension 6 of 10 : 1  | time taken : 31.736526489257812
+ Thread 6 estimated dimension 5 of 10 : 0.6426918167235232  | time taken : 51.05091905593872
+ Thread 5 estimated dimension 6 of 10 : 0.9962790835018658  | time taken : 32.21784710884094
+ Thread 4 estimated dimension 6 of 10 : 1  | time taken : 32.60276508331299
+ Thread 2 estimated dimension 9 of 10 : 0.48782674692559125  | time taken : 66.44410824775696
+ Thread 2 nsolns: 145643
+ Thread 8 estimated dimension 1 of 10 : 0.8021957892530007  | time taken : 41.68548607826233
+ Thread 7 estimated dimension 8 of 10 : 0.668765184341904  | time taken : 49.23102259635925
+ Thread 1 estimated dimension 7 of 10 : 0.7460320422420672  | time taken : 44.31703209877014
+ Thread 3 estimated dimension 7 of 10 : 0.7468017283035232  | time taken : 43.825589656829834
+ Thread 5 estimated dimension 7 of 10 : 0.7579192088263367  | time taken : 43.72927927970886
+ Thread 4 estimated dimension 7 of 10 : 0.739873592768691  | time taken : 44.14581084251404
+ Thread 6 estimated dimension 6 of 10 : 0.5098479828652466  | time taken : 62.80544328689575
+ Thread 1 estimated dimension 8 of 10 : 0.6644928505783748  | time taken : 49.801738262176514
+ Thread 2 estimated dimension 0 of 10 : 0.5485783470995386  | time taken : 64.96699571609497
+ Thread 7 estimated dimension 9 of 10 : 0.4912825693980009  | time taken : 66.72294235229492
+ Thread 7 nsolns: 145633
+ Thread 6 estimated dimension 7 of 10 : 0.9928089642341001  | time taken : 31.645994424819946
+ Thread 6 estimated dimension 8 of 10 : 0.9999076591762895  | time taken : 31.00455403327942
+ Thread 2 estimated dimension 1 of 10 : 0.8172867530107119  | time taken : 42.22982621192932
+ Thread 3 estimated dimension 8 of 10 : 0.3417127040755605  | time taken : 99.73569083213806
+ Thread 1 estimated dimension 9 of 10 : 0.5045206149834447  | time taken : 65.98040962219238
+ Thread 1 nsolns: 143104
+ Thread 5 estimated dimension 8 of 10 : 0.34285292551190755  | time taken : 99.30607962608337
+ Thread 8 estimated dimension 2 of 10 : 0.2623218429636645  | time taken : 133.35471081733704
+ Thread 4 estimated dimension 8 of 10 : 0.34012310501771564  | time taken : 100.27848887443542
+ Thread 6 estimated dimension 9 of 10 : 1  | time taken : 30.78259253501892
+ Thread 6 nsolns: 155501
+ Thread 3 estimated dimension 9 of 10 : 1  | time taken : 30.041959762573242
+ Thread 3 nsolns: 158719
+ Thread 7 estimated dimension 0 of 10 : 0.45928393719825433  | time taken : 78.29299736022949
+ Thread 2 estimated dimension 2 of 10 : 0.7178646584115103  | time taken : 46.57740616798401
+ Thread 5 estimated dimension 9 of 10 : 0.9816689251452875  | time taken : 29.72299575805664
+ Thread 5 nsolns: 158847
+ Thread 8 estimated dimension 3 of 10 : 0.9939502576626041  | time taken : 31.4339280128479
+ Thread 4 estimated dimension 9 of 10 : 0.9985921002640188  | time taken : 30.98534393310547
+ Thread 4 nsolns: 158805
+ Thread 7 estimated dimension 1 of 10 : 1  | time taken : 33.31528043746948
+ Thread 2 estimated dimension 3 of 10 : 0.9932932070382244  | time taken : 33.33995223045349
+ Thread 1 estimated dimension 0 of 10 : 0.45444599807530833  | time taken : 79.39363646507263
+ Thread 8 estimated dimension 4 of 10 : 0.817462674891707  | time taken : 40.54296088218689
+ Thread 7 estimated dimension 2 of 10 : 0.9979588785724958  | time taken : 33.387203216552734
+ Thread 6 estimated dimension 0 of 10 : 0.4566765968202993  | time taken : 80.2510404586792
+ Thread 3 estimated dimension 0 of 10 : 0.4538757481145783  | time taken : 80.53464269638062
+ Thread 5 estimated dimension 0 of 10 : 0.5565515725474909  | time taken : 65.34472107887268
+ Thread 1 estimated dimension 1 of 10 : 1  | time taken : 33.12445569038391
+ Thread 8 estimated dimension 5 of 10 : 0.9877399990189182  | time taken : 31.934940814971924
+ Thread 4 estimated dimension 0 of 10 : 0.44775121632847975  | time taken : 79.22649955749512
+ Thread 6 estimated dimension 1 of 10 : 0.9981154009076854  | time taken : 32.9676148891449
+ Thread 3 estimated dimension 1 of 10 : 0.9960737222801221  | time taken : 33.43238925933838
+ Thread 7 estimated dimension 3 of 10 : 0.7159844538298659  | time taken : 49.110321044921875
+ Thread 5 estimated dimension 1 of 10 : 0.8162312712653579  | time taken : 42.02058935165405
+ Thread 1 estimated dimension 2 of 10 : 1  | time taken : 33.475361824035645
+ Thread 8 estimated dimension 6 of 10 : 0.9786261705884197  | time taken : 32.236790895462036
+ Thread 4 estimated dimension 1 of 10 : 1  | time taken : 33.613317012786865
+ Thread 6 estimated dimension 2 of 10 : 1  | time taken : 32.999648571014404
+ Thread 3 estimated dimension 2 of 10 : 0.9851382707106543  | time taken : 33.18752980232239
+ Thread 7 estimated dimension 4 of 10 : 0.7450251333684642  | time taken : 47.559446573257446
+ Thread 5 estimated dimension 2 of 10 : 0.7281021931615561  | time taken : 47.88088655471802
+ Thread 8 estimated dimension 7 of 10 : 0.747724905618678  | time taken : 44.51559090614319
+ Thread 4 estimated dimension 2 of 10 : 0.9896885783370416  | time taken : 33.38748478889465
+ Thread 1 estimated dimension 3 of 10 : 0.7218117059814192  | time taken : 48.17516613006592
+ Thread 2 estimated dimension 4 of 10 : 0.255027707582207  | time taken : 134.32402110099792
+ Thread 6 estimated dimension 3 of 10 : 0.7090658166271167  | time taken : 48.80714249610901
+ Thread 3 estimated dimension 3 of 10 : 0.7112444158944232  | time taken : 47.585514307022095
+ Thread 5 estimated dimension 3 of 10 : 1  | time taken : 31.741909503936768
+ Thread 4 estimated dimension 3 of 10 : 0.7070043423856524  | time taken : 48.81875562667847
+ Thread 1 estimated dimension 4 of 10 : 0.7307563046216347  | time taken : 47.117249727249146
+ Thread 2 estimated dimension 5 of 10 : 0.6502505557801515  | time taken : 50.54175543785095
+ Thread 6 estimated dimension 4 of 10 : 0.7411889283077202  | time taken : 47.133811473846436
+ Thread 3 estimated dimension 4 of 10 : 0.7351939683646332  | time taken : 47.272940158843994
+ Thread 7 estimated dimension 5 of 10 : 0.46603410901969156  | time taken : 72.87807440757751
+ Thread 4 estimated dimension 4 of 10 : 0.7263498930679445  | time taken : 47.66318321228027
+ Thread 7 estimated dimension 6 of 10 : 0.999205741071213  | time taken : 31.211360692977905
+ Thread 8 estimated dimension 8 of 10 : 0.34140035721398204  | time taken : 99.93572235107422
+ Thread 1 estimated dimension 5 of 10 : 0.4594421349444376  | time taken : 72.58470964431763
+ Thread 2 estimated dimension 6 of 10 : 0.48561628579956007  | time taken : 67.86109781265259
+ Thread 8 estimated dimension 9 of 10 : 1  | time taken : 31.441312313079834
+ Thread 8 nsolns: 159032
+ Thread 6 estimated dimension 5 of 10 : 0.45944623741824453  | time taken : 73.76109647750854
+ Thread 3 estimated dimension 5 of 10 : 0.46189576963101875  | time taken : 73.40134644508362
+ Thread 7 estimated dimension 7 of 10 : 0.7526483703334286  | time taken : 43.62681245803833
+ Thread 1 estimated dimension 6 of 10 : 0.9960581411101561  | time taken : 30.9679536819458
+ Thread 2 estimated dimension 7 of 10 : 0.9926557715144042  | time taken : 31.329209089279175
+ Thread 5 estimated dimension 4 of 10 : 0.25664474597867293  | time taken : 133.09101009368896
+ Thread 4 estimated dimension 5 of 10 : 0.462932556950654  | time taken : 72.7960855960846
+ Thread 6 estimated dimension 6 of 10 : 1  | time taken : 31.756913423538208
+ Thread 3 estimated dimension 6 of 10 : 0.9945549003290209  | time taken : 32.31654477119446
+ Thread 2 estimated dimension 8 of 10 : 0.9905613478389523  | time taken : 30.274752616882324
+ Thread 7 estimated dimension 8 of 10 : 0.6631373491383987  | time taken : 49.33778238296509
+ Thread 1 estimated dimension 7 of 10 : 0.7424639245912262  | time taken : 43.65686750411987
+ Thread 4 estimated dimension 6 of 10 : 0.9971612184802523  | time taken : 32.477784395217896
+ Thread 8 estimated dimension 0 of 10 : 0.4587571209970938  | time taken : 80.3775577545166
+ Thread 5 estimated dimension 5 of 10 : 0.6445288792188376  | time taken : 49.698238372802734
+ Thread 6 estimated dimension 7 of 10 : 0.7496174553574066  | time taken : 43.75907349586487
+ Thread 3 estimated dimension 7 of 10 : 0.7490292012875229  | time taken : 44.320696115493774
+ Thread 2 estimated dimension 9 of 10 : 1  | time taken : 30.483082056045532
+ Thread 2 nsolns: 154935
+ Thread 8 estimated dimension 1 of 10 : 0.9908980397623519  | time taken : 32.13813924789429
+ Thread 4 estimated dimension 7 of 10 : 0.7483501786914053  | time taken : 42.51311230659485
+ Thread 1 estimated dimension 8 of 10 : 0.6727272063174361  | time taken : 51.811978340148926
+ Thread 7 estimated dimension 9 of 10 : 0.48971781472951276  | time taken : 66.42595076560974
+ Thread 7 nsolns: 145626
+ Thread 6 estimated dimension 8 of 10 : 0.6581081713583595  | time taken : 48.62698793411255
+ Thread 3 estimated dimension 8 of 10 : 0.6719860242317949  | time taken : 49.37080240249634
+ Thread 8 estimated dimension 2 of 10 : 1  | time taken : 33.40073204040527
+ Thread 5 estimated dimension 6 of 10 : 0.4844718081686999  | time taken : 67.6910789012909
+ Thread 2 estimated dimension 0 of 10 : 0.547058711561668  | time taken : 64.85512614250183
+ Thread 4 estimated dimension 8 of 10 : 0.6685621256827883  | time taken : 49.62540340423584
+ Thread 5 estimated dimension 7 of 10 : 0.9991628119650163  | time taken : 31.01139235496521
+ Thread 1 estimated dimension 9 of 10 : 0.49426945026300895  | time taken : 66.551584482193
+ Thread 1 nsolns: 145484
+ Thread 2 estimated dimension 1 of 10 : 0.8208032262771131  | time taken : 42.10587525367737
+ Thread 7 estimated dimension 0 of 10 : 0.5413061807432547  | time taken : 65.37905621528625
+ Thread 8 estimated dimension 3 of 10 : 0.7125039984117286  | time taken : 49.28690457344055
+ Thread 6 estimated dimension 9 of 10 : 0.4983946874266903  | time taken : 66.44897651672363
+ Thread 6 nsolns: 145543
+ Thread 3 estimated dimension 9 of 10 : 0.4923774107384846  | time taken : 66.27767205238342
+ Thread 3 nsolns: 145818
+ Thread 5 estimated dimension 8 of 10 : 1  | time taken : 30.184715032577515
+ Thread 4 estimated dimension 9 of 10 : 0.4919398079849975  | time taken : 65.9229097366333
+ Thread 4 nsolns: 145637
+ Thread 7 estimated dimension 1 of 10 : 0.8153283796241447  | time taken : 41.72372555732727
+ Thread 2 estimated dimension 2 of 10 : 0.722418761927066  | time taken : 46.796273946762085
+ Thread 5 estimated dimension 9 of 10 : 1  | time taken : 31.046101570129395
+ Thread 5 nsolns: 154583
+ Thread 8 estimated dimension 4 of 10 : 0.728293650121254  | time taken : 47.61013317108154
+ Thread 1 estimated dimension 0 of 10 : 0.5492970290427204  | time taken : 64.00911259651184
+ Thread 6 estimated dimension 0 of 10 : 0.5493950930579239  | time taken : 64.65085935592651
+ Thread 3 estimated dimension 0 of 10 : 0.5477713139071403  | time taken : 65.01061987876892
+ Thread 2 estimated dimension 3 of 10 : 1  | time taken : 32.237353801727295
+ Thread 7 estimated dimension 2 of 10 : 0.7281634065309921  | time taken : 47.30053424835205
+ Thread 1 estimated dimension 1 of 10 : 0.8142781186940393  | time taken : 41.796473026275635
+ Thread 4 estimated dimension 0 of 10 : 0.5521479391349625  | time taken : 64.67231011390686
+ Thread 7 estimated dimension 3 of 10 : 1  | time taken : 32.4150607585907
+ Thread 8 estimated dimension 5 of 10 : 0.4631286117840951  | time taken : 75.43854856491089
+ Thread 2 estimated dimension 4 of 10 : 0.7315846893385491  | time taken : 46.61906027793884
+ Thread 5 estimated dimension 0 of 10 : 0.45977079996654246  | time taken : 81.39273118972778
+ Thread 4 estimated dimension 1 of 10 : 0.8234511743255077  | time taken : 41.198078870773315
+ Thread 1 estimated dimension 2 of 10 : 0.713104708344288  | time taken : 47.33627939224243
+ Thread 8 estimated dimension 6 of 10 : 1  | time taken : 32.0886869430542
+ Thread 5 estimated dimension 1 of 10 : 1  | time taken : 33.49741172790527
+ Thread 1 estimated dimension 3 of 10 : 0.9993601905795401  | time taken : 33.37493705749512
+ Thread 4 estimated dimension 2 of 10 : 0.7272774383885203  | time taken : 48.59019136428833
+ Thread 5 estimated dimension 2 of 10 : 1  | time taken : 33.29523682594299
+ Thread 2 estimated dimension 5 of 10 : 0.4575317730630897  | time taken : 74.06889748573303
+ Thread 8 estimated dimension 7 of 10 : 0.7559609572634411  | time taken : 43.83171272277832
+ Thread 4 estimated dimension 3 of 10 : 1  | time taken : 32.664454221725464
+ Thread 2 estimated dimension 6 of 10 : 1  | time taken : 31.93501615524292
+ Thread 5 estimated dimension 3 of 10 : 0.7045390164823649  | time taken : 48.53723073005676
+ Thread 8 estimated dimension 8 of 10 : 0.6707236395693995  | time taken : 49.39371871948242
+ Thread 7 estimated dimension 4 of 10 : 0.2574225753854623  | time taken : 133.41527938842773exiting with current heads : 9711 out of 9713 | exp rv: 49930.20327631451
+
+ Thread 6 estimated dimension 1 of 10 : 0.19451152534376123  | time taken : 185.26829504966736exiting with current heads : 9706 out of 9713 | exp rv: 50192.63964761795
+
+ Thread 3 estimated dimension 1 of 10 : 0.1934945057319956  | time taken : 185.3249499797821
+ Thread 2 estimated dimension 7 of 10 : 0.753501825452882  | time taken : 42.11900305747986
+ Thread 5 estimated dimension 4 of 10 : 0.7360607415113363  | time taken : 45.84878659248352
+ Thread 7 estimated dimension 5 of 10 : 0.6336558554546967  | time taken : 50.97733449935913
+ Thread 1 estimated dimension 4 of 10 : 0.2563385009763336  | time taken : 132.7199695110321
+ Thread 8 estimated dimension 9 of 10 : 0.48855802376253665  | time taken : 65.87811160087585
+ Thread 8 nsolns: 145603
+ Thread 6 estimated dimension 2 of 10 : 0.5032114836382479  | time taken : 65.83534812927246
+ Thread 3 estimated dimension 2 of 10 : 0.5151416864371893  | time taken : 65.38862562179565
+ Thread 6 estimated dimension 3 of 10 : 1  | time taken : 30.968594312667847
+ Thread 3 estimated dimension 3 of 10 : 1  | time taken : 31.362550258636475
+ Thread 4 estimated dimension 4 of 10 : 0.2580747377587885  | time taken : 134.60732889175415
+ Thread 1 estimated dimension 5 of 10 : 0.6412386471386274  | time taken : 50.66790318489075
+ Thread 5 estimated dimension 5 of 10 : 0.4687276508328541  | time taken : 72.30608296394348
+ Thread 7 estimated dimension 6 of 10 : 0.4903185292094492  | time taken : 66.47474241256714
+ Thread 2 estimated dimension 8 of 10 : 0.34076065374549175  | time taken : 99.36492657661438
+ Thread 8 estimated dimension 0 of 10 : 0.5475677272041558  | time taken : 65.12949252128601
+ Thread 6 estimated dimension 4 of 10 : 1  | time taken : 29.825416088104248
+ Thread 3 estimated dimension 4 of 10 : 1  | time taken : 30.77325439453125
+ Thread 5 estimated dimension 6 of 10 : 0.9970544369025766  | time taken : 31.86098337173462
+ Thread 7 estimated dimension 7 of 10 : 1  | time taken : 30.98585319519043
+ Thread 2 estimated dimension 9 of 10 : 0.9920656881202486  | time taken : 31.207001209259033
+ Thread 2 nsolns: 147953
+ Thread 4 estimated dimension 5 of 10 : 0.6475105202367509  | time taken : 50.174211263656616
+ Thread 6 estimated dimension 5 of 10 : 1  | time taken : 31.325565814971924
+ Thread 3 estimated dimension 5 of 10 : 1  | time taken : 31.567068338394165
+ Thread 8 estimated dimension 1 of 10 : 0.8317451156722461  | time taken : 42.55507779121399
+ Thread 1 estimated dimension 6 of 10 : 0.4868779122037241  | time taken : 67.91867399215698
+ Thread 7 estimated dimension 8 of 10 : 1  | time taken : 31.047956228256226
+ Thread 5 estimated dimension 7 of 10 : 0.7560306263038434  | time taken : 43.75467348098755
+ Thread 1 estimated dimension 7 of 10 : 1  | time taken : 31.255698204040527
+ Thread 7 estimated dimension 9 of 10 : 0.9974047579535898  | time taken : 31.217223644256592
+ Thread 7 nsolns: 154662
+ Thread 2 estimated dimension 0 of 10 : 0.5492323106588043  | time taken : 66.515620470047
+ Thread 8 estimated dimension 2 of 10 : 0.7138956437992634  | time taken : 47.1622838973999
+ Thread 6 estimated dimension 6 of 10 : 0.5057689258303377  | time taken : 63.849846839904785
+ Thread 4 estimated dimension 6 of 10 : 0.4875225352512508  | time taken : 69.22795391082764
+ Thread 3 estimated dimension 6 of 10 : 0.5084623282332723  | time taken : 63.154977321624756
+ Thread 5 estimated dimension 8 of 10 : 0.6602866376399777  | time taken : 49.47019934654236
+ Thread 1 estimated dimension 8 of 10 : 1  | time taken : 29.065767288208008
+ Thread 8 estimated dimension 3 of 10 : 0.999034940242664  | time taken : 32.786107301712036
+ Thread 6 estimated dimension 7 of 10 : 1  | time taken : 30.987374305725098
+ Thread 4 estimated dimension 7 of 10 : 0.9799567727558823  | time taken : 31.26954746246338
+ Thread 3 estimated dimension 7 of 10 : 1  | time taken : 31.464012145996094
+ Thread 2 estimated dimension 1 of 10 : 0.8306006367232522  | time taken : 41.973857402801514
+ Thread 1 estimated dimension 9 of 10 : 1  | time taken : 31.05773901939392
+ Thread 1 nsolns: 154491
+ Thread 7 estimated dimension 0 of 10 : 0.5425292591255111  | time taken : 65.53927540779114
+ Thread 6 estimated dimension 8 of 10 : 0.998564619783285  | time taken : 31.320128679275513
+ Thread 4 estimated dimension 8 of 10 : 1  | time taken : 31.047365427017212
+ Thread 3 estimated dimension 8 of 10 : 1  | time taken : 31.563610553741455
+ Thread 5 estimated dimension 9 of 10 : 0.49216863274666506  | time taken : 66.79541969299316
+ Thread 5 nsolns: 145674
+ Thread 2 estimated dimension 2 of 10 : 0.7229636349309626  | time taken : 48.36506366729736
+ Thread 6 estimated dimension 9 of 10 : 0.9862877864568652  | time taken : 30.96803903579712
+ Thread 4 estimated dimension 9 of 10 : 1  | time taken : 30.89196276664734
+ Thread 6 nsolns: 164298
+ Thread 4 nsolns: 154881
+ Thread 7 estimated dimension 1 of 10 : 0.8111213473197773  | time taken : 41.720794439315796
+ Thread 3 estimated dimension 9 of 10 : 1  | time taken : 31.224851846694946
+ Thread 3 nsolns: 164400
+ Thread 2 estimated dimension 3 of 10 : 0.9965710439980028  | time taken : 33.01214575767517
+ Thread 1 estimated dimension 0 of 10 : 0.45224244378806877  | time taken : 78.62486624717712
+ Thread 5 estimated dimension 0 of 10 : 0.557402745028386  | time taken : 65.45804786682129
+ Thread 1 estimated dimension 1 of 10 : 1  | time taken : 33.103596925735474
+ Thread 6 estimated dimension 0 of 10 : 0.5513794299162743  | time taken : 65.44734859466553
+ Thread 4 estimated dimension 0 of 10 : 0.5504700701757081  | time taken : 66.15325951576233
+ Thread 8 estimated dimension 4 of 10 : 0.2569157408258452  | time taken : 135.11229729652405
+ Thread 3 estimated dimension 0 of 10 : 0.5436111689377019  | time taken : 65.5513083934784
+ Thread 5 estimated dimension 1 of 10 : 0.8043661748726284  | time taken : 41.81119966506958
+ Thread 1 estimated dimension 2 of 10 : 0.9935165998340841  | time taken : 32.973835945129395
+ Thread 6 estimated dimension 1 of 10 : 0.8284134606223088  | time taken : 42.530977725982666
+ Thread 4 estimated dimension 1 of 10 : 0.8156218361391362  | time taken : 42.50243592262268
+ Thread 3 estimated dimension 1 of 10 : 0.8050167240447765  | time taken : 42.74816632270813
+ Thread 8 estimated dimension 5 of 10 : 0.6478804892478023  | time taken : 51.417521476745605
+ Thread 7 estimated dimension 2 of 10 : 0.2599987523782309  | time taken : 134.48558068275452
+ Thread 1 estimated dimension 3 of 10 : 0.7119269062201506  | time taken : 48.209874391555786
+ Thread 6 estimated dimension 2 of 10 : 0.7133306012868585  | time taken : 47.502185583114624
+ Thread 2 estimated dimension 4 of 10 : 0.25693017989675965  | time taken : 132.50943279266357
+ Thread 4 estimated dimension 2 of 10 : 0.7181648769631926  | time taken : 47.35824179649353
+ Thread 3 estimated dimension 2 of 10 : 0.7219634387245327  | time taken : 46.37207341194153
+ Thread 7 estimated dimension 3 of 10 : 1  | time taken : 31.960463047027588
+ Thread 6 estimated dimension 3 of 10 : 1  | time taken : 32.561816692352295
+ Thread 4 estimated dimension 3 of 10 : 0.983628963176546  | time taken : 32.774996757507324
+ Thread 1 estimated dimension 4 of 10 : 0.7360731717953957  | time taken : 46.359697103500366
+ Thread 8 estimated dimension 6 of 10 : 0.485356138014704  | time taken : 70.60547685623169
+ Thread 3 estimated dimension 3 of 10 : 0.9875496260714286  | time taken : 32.892231941223145
+ Thread 2 estimated dimension 5 of 10 : 0.6488237940962875  | time taken : 50.863438844680786
+ Thread 7 estimated dimension 4 of 10 : 0.821990708483254  | time taken : 39.93074893951416
+ Thread 8 estimated dimension 7 of 10 : 1  | time taken : 31.293020248413086
+ Thread 5 estimated dimension 2 of 10 : 0.26309457048711293  | time taken : 133.03160524368286
+ Thread 6 estimated dimension 4 of 10 : 0.7274520843046098  | time taken : 45.805891275405884
+ Thread 7 estimated dimension 5 of 10 : 1  | time taken : 31.9755699634552
+ Thread 8 estimated dimension 8 of 10 : 1  | time taken : 30.95105481147766
+ Thread 5 estimated dimension 3 of 10 : 1  | time taken : 32.587647914886475
+ Thread 1 estimated dimension 5 of 10 : 0.46071493847736317  | time taken : 73.17312335968018
+ Thread 7 estimated dimension 6 of 10 : 0.9855665075590189  | time taken : 32.05280876159668
+ Thread 2 estimated dimension 6 of 10 : 0.484430929049251  | time taken : 68.53104710578918
+ Thread 8 estimated dimension 9 of 10 : 1  | time taken : 31.06708025932312
+ Thread 8 nsolns: 154653
+ Thread 1 estimated dimension 6 of 10 : 0.9899515692405811  | time taken : 32.20035409927368
+ Thread 5 estimated dimension 4 of 10 : 0.8115557360148983  | time taken : 41.00760269165039
+ Thread 2 estimated dimension 7 of 10 : 0.9893243916093423  | time taken : 31.771284103393555
+ Thread 6 estimated dimension 5 of 10 : 0.465228959035638  | time taken : 73.50814604759216
+ Thread 7 estimated dimension 7 of 10 : 0.7618173590137673  | time taken : 43.63714814186096
+ Thread 4 estimated dimension 4 of 10 : 0.25738924614515407  | time taken : 134.13845539093018
+ Thread 3 estimated dimension 4 of 10 : 0.2570768994261213  | time taken : 134.0967264175415
+ Thread 5 estimated dimension 5 of 10 : 0.9966567633271557  | time taken : 30.426534175872803
+ Thread 2 estimated dimension 8 of 10 : 1  | time taken : 30.27618384361267
+ Thread 6 estimated dimension 6 of 10 : 0.9953770982051172  | time taken : 31.218878030776978
+ Thread 1 estimated dimension 7 of 10 : 0.7505067303653069  | time taken : 44.11758995056152
+ Thread 5 estimated dimension 6 of 10 : 1  | time taken : 32.43054914474487
+ Thread 8 estimated dimension 0 of 10 : 0.4501441906865717  | time taken : 79.38959217071533
+ Thread 2 estimated dimension 9 of 10 : 1  | time taken : 31.306312561035156
+ Thread 2 nsolns: 154572
+ Thread 4 estimated dimension 5 of 10 : 0.6420321358318212  | time taken : 51.2944495677948
+ Thread 3 estimated dimension 5 of 10 : 0.6430005290908607  | time taken : 50.65414237976074
+ Thread 6 estimated dimension 7 of 10 : 0.7468591879183761  | time taken : 44.013155698776245
+ Thread 1 estimated dimension 8 of 10 : 0.6604788968791476  | time taken : 48.78634262084961
+ Thread 8 estimated dimension 1 of 10 : 0.9910701177185521  | time taken : 33.06258749961853
+ Thread 5 estimated dimension 7 of 10 : 0.740948532522368  | time taken : 44.66068077087402
+ Thread 7 estimated dimension 8 of 10 : 0.33925988173854654  | time taken : 97.68504023551941
+ Thread 8 estimated dimension 2 of 10 : 1  | time taken : 33.17994523048401
+ Thread 2 estimated dimension 0 of 10 : 0.5478276697516695  | time taken : 65.03108835220337
+ Thread 4 estimated dimension 6 of 10 : 0.4835786729299891  | time taken : 69.7076735496521
+ Thread 3 estimated dimension 6 of 10 : 0.48571470170305464  | time taken : 67.74923133850098
+ Thread 7 estimated dimension 9 of 10 : 0.9968417689549307  | time taken : 30.241901636123657
+ Thread 7 nsolns: 159201
+ Thread 1 estimated dimension 9 of 10 : 0.4873919257501903  | time taken : 65.34276270866394
+ Thread 1 nsolns: 145584
+ Thread 3 estimated dimension 7 of 10 : 0.9846251133918164  | time taken : 31.20998239517212
+ Thread 4 estimated dimension 7 of 10 : 1  | time taken : 31.253198385238647
+ Thread 2 estimated dimension 1 of 10 : 0.8111567569508287  | time taken : 41.77969288825989
+ Thread 8 estimated dimension 3 of 10 : 0.7097937963196559  | time taken : 48.10558223724365
+ Thread 6 estimated dimension 8 of 10 : 0.3430014932351558  | time taken : 99.73966264724731
+ Thread 5 estimated dimension 8 of 10 : 0.3404846142264543  | time taken : 99.62067937850952
+ Thread 3 estimated dimension 8 of 10 : 0.9811885866043261  | time taken : 30.659594535827637
+ Thread 4 estimated dimension 8 of 10 : 1  | time taken : 30.695489645004272
+ Thread 7 estimated dimension 0 of 10 : 0.5436630254256613  | time taken : 64.65046119689941
+ Thread 6 estimated dimension 9 of 10 : 0.9966888077566785  | time taken : 30.216560125350952
+ Thread 6 nsolns: 148087
+ Thread 1 estimated dimension 0 of 10 : 0.5485093466723711  | time taken : 65.03706192970276
+ Thread 8 estimated dimension 4 of 10 : 0.7348265568609149  | time taken : 45.954036712646484
+ Thread 5 estimated dimension 9 of 10 : 0.9820940817014887  | time taken : 31.225921154022217
+ Thread 5 nsolns: 159182
+ Thread 4 estimated dimension 9 of 10 : 0.9885725727581658  | time taken : 30.811509132385254
+ Thread 4 nsolns: 154793
+ Thread 3 estimated dimension 9 of 10 : 0.994164564578462  | time taken : 31.374807357788086
+ Thread 3 nsolns: 154625
+ Thread 7 estimated dimension 1 of 10 : 0.8127191106035939  | time taken : 41.502339363098145
+ Thread 1 estimated dimension 1 of 10 : 0.8272141893304007  | time taken : 42.312559604644775
+ Thread 6 estimated dimension 0 of 10 : 0.5445563823382816  | time taken : 66.88781070709229
+ Thread 8 estimated dimension 5 of 10 : 0.4704828520640778  | time taken : 72.95289063453674
+ Thread 7 estimated dimension 2 of 10 : 0.7116513686293272  | time taken : 47.34498381614685
+ Thread 4 estimated dimension 0 of 10 : 0.5452488287280776  | time taken : 64.81223201751709
+ Thread 3 estimated dimension 0 of 10 : 0.5477304084409675  | time taken : 65.05318641662598
+ Thread 1 estimated dimension 2 of 10 : 0.7229247743224978  | time taken : 46.5654718875885
+ Thread 2 estimated dimension 2 of 10 : 0.259610191866942  | time taken : 134.27272248268127
+ Thread 5 estimated dimension 0 of 10 : 0.45638725778699096  | time taken : 78.41188168525696
+ Thread 6 estimated dimension 1 of 10 : 0.8131309362977719  | time taken : 40.265881061553955
+ Thread 8 estimated dimension 6 of 10 : 1  | time taken : 31.182860612869263
+ Thread 7 estimated dimension 3 of 10 : 0.9934149981611535  | time taken : 32.58768272399902
+ Thread 1 estimated dimension 3 of 10 : 0.9873043065173224  | time taken : 32.618019104003906
+ Thread 2 estimated dimension 3 of 10 : 1  | time taken : 31.921467781066895
+ Thread 4 estimated dimension 1 of 10 : 0.8163188409438201  | time taken : 42.017436265945435
+ Thread 5 estimated dimension 1 of 10 : 1  | time taken : 33.94750928878784
+ Thread 6 estimated dimension 2 of 10 : 0.7208367615955168  | time taken : 48.03591227531433
+ Thread 8 estimated dimension 7 of 10 : 0.7524801895517587  | time taken : 44.420687675476074
+ Thread 2 estimated dimension 4 of 10 : 0.8082887300024483  | time taken : 41.24705243110657
+ Thread 5 estimated dimension 2 of 10 : 1  | time taken : 33.34360432624817
+ Thread 4 estimated dimension 2 of 10 : 0.7276658957126622  | time taken : 47.88526487350464
+ Thread 6 estimated dimension 3 of 10 : 1  | time taken : 32.98543930053711
+ Thread 2 estimated dimension 5 of 10 : 1  | time taken : 32.31195616722107
+ Thread 8 estimated dimension 8 of 10 : 0.6729050305346429  | time taken : 50.51561999320984
+ Thread 4 estimated dimension 3 of 10 : 0.994811190524866  | time taken : 33.2846302986145
+ Thread 5 estimated dimension 3 of 10 : 0.7095951750125112  | time taken : 49.17188835144043
+ Thread 2 estimated dimension 6 of 10 : 0.9963031108591738  | time taken : 31.775570154190063
+ Thread 7 estimated dimension 4 of 10 : 0.2598889693173375  | time taken : 134.6033866405487
+ Thread 1 estimated dimension 4 of 10 : 0.2571723064712666  | time taken : 135.4029655456543
+ Thread 5 estimated dimension 4 of 10 : 0.7429246211435542  | time taken : 45.99286150932312exiting with current heads : 9709 out of 9713 | exp rv: 50299.68101866328
+
+ Thread 3 estimated dimension 1 of 10 : 0.19308273538347973  | time taken : 184.7029092311859
+ Thread 8 estimated dimension 9 of 10 : 0.4889005176634068  | time taken : 65.44270491600037
+ Thread 8 nsolns: 145622
+ Thread 2 estimated dimension 7 of 10 : 0.7471223366361203  | time taken : 42.78158926963806
+ Thread 7 estimated dimension 5 of 10 : 0.6391104541076176  | time taken : 49.26648259162903
+ Thread 1 estimated dimension 5 of 10 : 0.6521657693037672  | time taken : 51.05742335319519
+ Thread 6 estimated dimension 4 of 10 : 0.2554537932411367  | time taken : 137.53312611579895
+ Thread 5 estimated dimension 5 of 10 : 0.46107021213474253  | time taken : 72.11665868759155
+ Thread 3 estimated dimension 2 of 10 : 0.5184950648967057  | time taken : 65.26006627082825
+ Thread 8 estimated dimension 0 of 10 : 0.549051973552435  | time taken : 64.33110976219177
+ Thread 4 estimated dimension 4 of 10 : 0.2583805048529115  | time taken : 131.93058133125305
+ Thread 5 estimated dimension 6 of 10 : 0.9879259093786695  | time taken : 31.701776266098022
+ Thread 7 estimated dimension 6 of 10 : 0.4835797719840342  | time taken : 68.32482933998108
+ Thread 3 estimated dimension 3 of 10 : 0.9978653044837807  | time taken : 31.180899381637573
+ Thread 6 estimated dimension 5 of 10 : 0.6407173791967387  | time taken : 50.23310399055481
+ Thread 2 estimated dimension 8 of 10 : 0.33983774674331835  | time taken : 99.36562824249268
+ Thread 1 estimated dimension 6 of 10 : 0.49030422893271475  | time taken : 65.60395789146423
+ Thread 8 estimated dimension 1 of 10 : 0.8209081731167752  | time taken : 41.06212067604065
+ Thread 4 estimated dimension 5 of 10 : 0.6406909481439929  | time taken : 50.5841007232666
+ Thread 7 estimated dimension 7 of 10 : 0.9996394308166873  | time taken : 30.62851047515869
+ Thread 3 estimated dimension 4 of 10 : 1  | time taken : 30.685465574264526
+ Thread 2 estimated dimension 9 of 10 : 1  | time taken : 30.888150215148926
+ Thread 2 nsolns: 159084
+ Thread 1 estimated dimension 7 of 10 : 0.9847553541017635  | time taken : 31.339924812316895
+ Thread 5 estimated dimension 7 of 10 : 0.7762037251724804  | time taken : 43.9173948764801
+ Thread 7 estimated dimension 8 of 10 : 0.9973438494493487  | time taken : 31.766952753067017
+ Thread 3 estimated dimension 5 of 10 : 0.9957109814468417  | time taken : 31.40587019920349
+ Thread 1 estimated dimension 8 of 10 : 0.9897742105514485  | time taken : 31.38489818572998
+ Thread 6 estimated dimension 6 of 10 : 0.4856370007962907  | time taken : 69.96108722686768
+ Thread 5 estimated dimension 8 of 10 : 0.6577470035524481  | time taken : 49.09630584716797
+ Thread 7 estimated dimension 9 of 10 : 0.9966859355884011  | time taken : 30.896313905715942
+ Thread 7 nsolns: 154326
+ Thread 4 estimated dimension 6 of 10 : 0.48893300340049206  | time taken : 69.52488994598389
+ Thread 1 estimated dimension 9 of 10 : 1  | time taken : 30.922868013381958
+ Thread 1 nsolns: 154439
+ Thread 6 estimated dimension 7 of 10 : 0.9955406220671986  | time taken : 30.68372869491577
+ Thread 2 estimated dimension 0 of 10 : 0.4546085119543855  | time taken : 79.21760106086731
+ Thread 4 estimated dimension 7 of 10 : 0.9814696347701265  | time taken : 30.873258590698242
+ Thread 3 estimated dimension 6 of 10 : 0.5063249611354527  | time taken : 63.518677949905396
+ Thread 6 estimated dimension 8 of 10 : 1  | time taken : 30.83112668991089
+ Thread 8 estimated dimension 2 of 10 : 0.2591646020472729  | time taken : 132.90024852752686
+ Thread 2 estimated dimension 1 of 10 : 0.9707086485053114  | time taken : 32.66004419326782
+ Thread 4 estimated dimension 8 of 10 : 1  | time taken : 30.848807334899902
+ Thread 3 estimated dimension 7 of 10 : 1  | time taken : 30.902183294296265
+ Thread 5 estimated dimension 9 of 10 : 0.4971288839564371  | time taken : 66.51260423660278
+ Thread 5 nsolns: 145451
+ Thread 6 estimated dimension 9 of 10 : 1  | time taken : 30.409417390823364
+ Thread 6 nsolns: 154665
+ Thread 1 estimated dimension 0 of 10 : 0.5470727300902113  | time taken : 65.54526615142822
+ Thread 7 estimated dimension 0 of 10 : 0.4539093596280018  | time taken : 79.89078092575073
+ Thread 8 estimated dimension 3 of 10 : 1  | time taken : 32.096766233444214
+ Thread 2 estimated dimension 2 of 10 : 1  | time taken : 32.681164026260376
+ Thread 4 estimated dimension 9 of 10 : 0.9972758906205134  | time taken : 30.571667194366455
+ Thread 4 nsolns: 154480
+ Thread 3 estimated dimension 8 of 10 : 0.9857750830753147  | time taken : 30.64372730255127
+ Thread 7 estimated dimension 1 of 10 : 0.9958505821558499  | time taken : 33.704978466033936
+ Thread 1 estimated dimension 1 of 10 : 0.8292961129239396  | time taken : 42.376423835754395
+ Thread 8 estimated dimension 4 of 10 : 0.8223650448665628  | time taken : 40.77193474769592
+ Thread 3 estimated dimension 9 of 10 : 0.9844875790361511  | time taken : 31.43218684196472
+ Thread 3 nsolns: 164140
+ Thread 5 estimated dimension 0 of 10 : 0.553596189860675  | time taken : 65.71083664894104
+ Thread 2 estimated dimension 3 of 10 : 0.712268236990137  | time taken : 48.2219672203064
+ Thread 7 estimated dimension 2 of 10 : 1  | time taken : 33.368507623672485
+ Thread 6 estimated dimension 0 of 10 : 0.4547162378004056  | time taken : 77.8732500076294
+ Thread 8 estimated dimension 5 of 10 : 0.9897524973512387  | time taken : 31.56269931793213
+ Thread 4 estimated dimension 0 of 10 : 0.5420678063337876  | time taken : 65.43010067939758
+ Thread 2 estimated dimension 4 of 10 : 0.7352718379078359  | time taken : 47.1266405582428
+ Thread 6 estimated dimension 1 of 10 : 0.994853316125056  | time taken : 33.0309202671051
+ Thread 8 estimated dimension 6 of 10 : 1  | time taken : 32.22274947166443
+ Thread 3 estimated dimension 0 of 10 : 0.5476089432705253  | time taken : 65.337477684021
+ Thread 7 estimated dimension 3 of 10 : 0.7087901565121578  | time taken : 48.8256630897522
+ Thread 4 estimated dimension 1 of 10 : 0.8089606246982135  | time taken : 42.692851543426514
+ Thread 6 estimated dimension 2 of 10 : 1  | time taken : 32.91497039794922
+ Thread 8 estimated dimension 7 of 10 : 0.7457114196613006  | time taken : 44.010388135910034
+ Thread 3 estimated dimension 1 of 10 : 0.8143359673197971  | time taken : 42.12406015396118
+ Thread 7 estimated dimension 4 of 10 : 0.7333636974353467  | time taken : 47.26033806800842
+ Thread 1 estimated dimension 2 of 10 : 0.26340982374460775  | time taken : 132.72240090370178
+ Thread 2 estimated dimension 5 of 10 : 0.4619054689862843  | time taken : 72.970938205719
+ Thread 6 estimated dimension 3 of 10 : 0.7075948777187802  | time taken : 47.35643219947815
+ Thread 1 estimated dimension 3 of 10 : 1  | time taken : 32.283472299575806
+ Thread 2 estimated dimension 6 of 10 : 0.9944319821983774  | time taken : 31.977213621139526
+ Thread 6 estimated dimension 4 of 10 : 0.73568896856355  | time taken : 46.48748540878296
+ Thread 7 estimated dimension 5 of 10 : 0.4616781458528599  | time taken : 72.69771957397461exiting with current heads : 9709 out of 9713 | exp rv: 50311.531845687154
+
+ Thread 5 estimated dimension 1 of 10 : 0.19303725495355872  | time taken : 185.83921480178833
+ Thread 1 estimated dimension 4 of 10 : 0.8035538413313424  | time taken : 40.132302045822144
+ Thread 8 estimated dimension 8 of 10 : 0.33397517955980144  | time taken : 99.42247366905212
+ Thread 2 estimated dimension 7 of 10 : 0.7521136898421414  | time taken : 43.28196382522583
+ Thread 4 estimated dimension 2 of 10 : 0.26056947776472145  | time taken : 133.41376185417175
+ Thread 7 estimated dimension 6 of 10 : 0.998356860939358  | time taken : 31.71894884109497
+ Thread 1 estimated dimension 5 of 10 : 0.9946523096364378  | time taken : 31.438392877578735
+ Thread 8 estimated dimension 9 of 10 : 1  | time taken : 30.89464497566223
+ Thread 8 nsolns: 159048
+ Thread 4 estimated dimension 3 of 10 : 1  | time taken : 32.42378258705139
+ Thread 3 estimated dimension 2 of 10 : 0.2590241890855288  | time taken : 133.22554993629456
+ Thread 2 estimated dimension 8 of 10 : 0.6756620742303523  | time taken : 48.687482595443726
+ Thread 5 estimated dimension 2 of 10 : 0.5068304963497815  | time taken : 65.19504618644714
+ Thread 6 estimated dimension 5 of 10 : 0.4590819005466359  | time taken : 71.37348508834839
+ Thread 1 estimated dimension 6 of 10 : 1  | time taken : 31.759382963180542
+ Thread 7 estimated dimension 7 of 10 : 0.7540725251875593  | time taken : 42.953810930252075
+ Thread 3 estimated dimension 3 of 10 : 0.991537213834125  | time taken : 32.344053983688354
+ Thread 4 estimated dimension 4 of 10 : 0.8152021489866538  | time taken : 40.93048882484436
+ Thread 5 estimated dimension 3 of 10 : 1  | time taken : 31.543825149536133
+ Thread 6 estimated dimension 6 of 10 : 1  | time taken : 31.682992935180664
+ Thread 1 estimated dimension 7 of 10 : 0.7590652374721517  | time taken : 44.492788314819336
+ Thread 4 estimated dimension 5 of 10 : 0.9969342298773003  | time taken : 31.801440000534058
+ Thread 8 estimated dimension 0 of 10 : 0.4590408987027265  | time taken : 78.32898759841919
+ Thread 7 estimated dimension 8 of 10 : 0.6672669919000481  | time taken : 49.743658781051636
+ Thread 3 estimated dimension 4 of 10 : 0.7995445060290581  | time taken : 41.07488417625427
+ Thread 5 estimated dimension 4 of 10 : 0.9967227403377712  | time taken : 30.60627055168152
+ Thread 2 estimated dimension 9 of 10 : 0.49062870091358957  | time taken : 67.14123201370239
+ Thread 2 nsolns: 145682
+ Thread 6 estimated dimension 7 of 10 : 0.7517438572257623  | time taken : 43.25456166267395
+ Thread 4 estimated dimension 6 of 10 : 0.9857515441853125  | time taken : 32.3059344291687
+ Thread 3 estimated dimension 5 of 10 : 1  | time taken : 31.924338817596436
+ Thread 8 estimated dimension 1 of 10 : 0.9834524318269259  | time taken : 32.956865549087524
+ Thread 5 estimated dimension 5 of 10 : 0.9949648897465111  | time taken : 31.50975751876831
+ Thread 3 estimated dimension 6 of 10 : 1  | time taken : 32.23696422576904
+ Thread 8 estimated dimension 2 of 10 : 1  | time taken : 33.35147786140442
+ Thread 7 estimated dimension 9 of 10 : 0.4936116130001025  | time taken : 66.58399081230164
+ Thread 7 nsolns: 145642
+ Thread 6 estimated dimension 8 of 10 : 0.6697600108741938  | time taken : 50.05185389518738
+ Thread 4 estimated dimension 7 of 10 : 0.746081808668  | time taken : 44.13798403739929
+ Thread 2 estimated dimension 0 of 10 : 0.45081357930123545  | time taken : 80.325110912323
+ Thread 1 estimated dimension 8 of 10 : 0.3364688630108858  | time taken : 99.53163528442383
+ Thread 5 estimated dimension 6 of 10 : 0.5095891097286704  | time taken : 63.46085524559021
+ Thread 3 estimated dimension 7 of 10 : 0.755508084871299  | time taken : 42.706111907958984
+ Thread 8 estimated dimension 3 of 10 : 0.7074009690093198  | time taken : 47.99636721611023
+ Thread 1 estimated dimension 9 of 10 : 0.9992955779757342  | time taken : 31.0343759059906
+ Thread 1 nsolns: 158964
+ Thread 2 estimated dimension 1 of 10 : 1  | time taken : 33.62009119987488
+ Thread 5 estimated dimension 7 of 10 : 0.9988784196749703  | time taken : 31.136554718017578
+ Thread 7 estimated dimension 0 of 10 : 0.5511911457022753  | time taken : 64.00817632675171
+ Thread 6 estimated dimension 9 of 10 : 0.4938032225496646  | time taken : 65.0608983039856
+ Thread 6 nsolns: 145546
+ Thread 2 estimated dimension 2 of 10 : 0.9940813741251989  | time taken : 33.15499496459961
+ Thread 8 estimated dimension 4 of 10 : 0.7296679490940841  | time taken : 46.433430194854736
+ Thread 5 estimated dimension 8 of 10 : 1  | time taken : 31.495721578598022
+ Thread 7 estimated dimension 1 of 10 : 0.816715970651294  | time taken : 42.078266859054565
+ Thread 4 estimated dimension 8 of 10 : 0.3401604763778887  | time taken : 101.14074802398682
+ Thread 5 estimated dimension 9 of 10 : 1  | time taken : 30.74165964126587
+ Thread 5 nsolns: 164556
+ Thread 6 estimated dimension 0 of 10 : 0.5545452839719706  | time taken : 65.60425472259521
+ Thread 1 estimated dimension 0 of 10 : 0.4529315324809333  | time taken : 79.23845100402832
+ Thread 2 estimated dimension 3 of 10 : 0.7141097801057131  | time taken : 47.865769386291504
+ Thread 4 estimated dimension 9 of 10 : 1  | time taken : 30.351186513900757
+ Thread 4 nsolns: 159076
+ Thread 3 estimated dimension 8 of 10 : 0.3364428929667802  | time taken : 101.97752618789673
+ Thread 7 estimated dimension 2 of 10 : 0.725904509519472  | time taken : 47.05455279350281
+ Thread 8 estimated dimension 5 of 10 : 0.46314951966023543  | time taken : 71.69168591499329
+ Thread 1 estimated dimension 1 of 10 : 1  | time taken : 32.65261387825012
+ Thread 3 estimated dimension 9 of 10 : 0.9858281012842659  | time taken : 31.4349627494812
+ Thread 6 estimated dimension 1 of 10 : 0.8162438114483451  | time taken : 41.67538380622864
+ Thread 3 nsolns: 159200
+ Thread 2 estimated dimension 4 of 10 : 0.738395092966907  | time taken : 46.684295892715454
+ Thread 7 estimated dimension 3 of 10 : 0.9756322079423257  | time taken : 32.361356258392334
+ Thread 5 estimated dimension 0 of 10 : 0.5464757425186859  | time taken : 65.2524926662445
+ Thread 8 estimated dimension 6 of 10 : 1  | time taken : 31.06874132156372
+ Thread 1 estimated dimension 2 of 10 : 1  | time taken : 33.360650300979614
+ Thread 4 estimated dimension 0 of 10 : 0.5459124565176658  | time taken : 66.10823893547058
+ Thread 6 estimated dimension 2 of 10 : 0.7207926002065506  | time taken : 47.94045066833496
+ Thread 5 estimated dimension 1 of 10 : 0.8188990596504196  | time taken : 42.16476106643677
+ Thread 8 estimated dimension 7 of 10 : 0.7407729342778563  | time taken : 44.02246618270874
+ Thread 3 estimated dimension 0 of 10 : 0.5596992906210541  | time taken : 66.27145266532898
+ Thread 1 estimated dimension 3 of 10 : 0.7088180111292938  | time taken : 48.21884274482727
+ Thread 4 estimated dimension 1 of 10 : 0.8080876088722925  | time taken : 41.250789642333984
+ Thread 6 estimated dimension 3 of 10 : 0.999007537526075  | time taken : 32.3896758556366
+ Thread 2 estimated dimension 5 of 10 : 0.4603078064205293  | time taken : 73.44102835655212
+ Thread 5 estimated dimension 2 of 10 : 0.7213294415692552  | time taken : 47.944695234298706
+ Thread 2 estimated dimension 6 of 10 : 1  | time taken : 32.05434536933899
+ Thread 8 estimated dimension 8 of 10 : 0.6681733312789637  | time taken : 50.25046157836914
+ Thread 1 estimated dimension 4 of 10 : 0.7524925616375492  | time taken : 46.98124599456787
+ Thread 4 estimated dimension 2 of 10 : 0.7254345792663502  | time taken : 47.69213342666626
+ Thread 5 estimated dimension 3 of 10 : 1  | time taken : 32.634665727615356
+ Thread 7 estimated dimension 4 of 10 : 0.25879728351457176  | time taken : 132.70878052711487
+ Thread 4 estimated dimension 3 of 10 : 0.9990705526906777  | time taken : 33.13094615936279
+ Thread 2 estimated dimension 7 of 10 : 0.7499074500488486  | time taken : 44.43472075462341
+ Thread 8 estimated dimension 9 of 10 : 0.49556820914769223  | time taken : 66.97912621498108
+ Thread 8 nsolns: 145470
+ Thread 1 estimated dimension 5 of 10 : 0.46848376470937714  | time taken : 72.79864072799683
+ Thread 7 estimated dimension 5 of 10 : 0.6474582566737522  | time taken : 49.43575429916382
+ Thread 2 estimated dimension 8 of 10 : 0.6720585925516097  | time taken : 46.68183755874634
+ Thread 6 estimated dimension 4 of 10 : 0.2586945424246043  | time taken : 130.787917137146
+ Thread 1 estimated dimension 6 of 10 : 1  | time taken : 27.42201018333435exiting with current heads : 9708 out of 9713 | exp rv: 50259.16788207705
+
+ Thread 3 estimated dimension 1 of 10 : 0.1932383763851252  | time taken : 176.41328263282776
+ Thread 7 estimated dimension 6 of 10 : 0.49114412795343265  | time taken : 59.29521179199219
+ Thread 6 estimated dimension 5 of 10 : 0.6379390597247604  | time taken : 44.26413297653198
+ Thread 1 estimated dimension 7 of 10 : 0.7571384657970546  | time taken : 37.63274335861206
+ Thread 2 estimated dimension 9 of 10 : 0.49728508961063694  | time taken : 56.99709749221802
+ Thread 2 nsolns: 145741
+ Thread 5 estimated dimension 4 of 10 : 0.25573774266490307  | time taken : 123.60493564605713
+ Thread 4 estimated dimension 4 of 10 : 0.25698130804897984  | time taken : 117.87153267860413
+ Thread 7 estimated dimension 7 of 10 : 1  | time taken : 25.413374662399292
+ Thread 1 estimated dimension 8 of 10 : 0.6680497946339345  | time taken : 41.91036605834961
+ Thread 3 estimated dimension 2 of 10 : 0.5140113990570934  | time taken : 59.685731172561646
+ Thread 7 estimated dimension 8 of 10 : 1  | time taken : 25.95781397819519
+ Thread 5 estimated dimension 5 of 10 : 0.6418700460712341  | time taken : 46.82024550437927
+ Thread 6 estimated dimension 6 of 10 : 0.49082915290475554  | time taken : 58.62683391571045
+ Thread 4 estimated dimension 5 of 10 : 0.6507745444906247  | time taken : 42.356650590896606
+ Thread 2 estimated dimension 0 of 10 : 0.5515668765008103  | time taken : 57.33527183532715
+ Thread 3 estimated dimension 3 of 10 : 1  | time taken : 26.808080911636353
+ Thread 7 estimated dimension 9 of 10 : 0.9960129486955621  | time taken : 26.664329290390015
+ Thread 7 nsolns: 154583
+ Thread 6 estimated dimension 7 of 10 : 0.9819438142269047  | time taken : 26.291712045669556
+ Thread 3 estimated dimension 4 of 10 : 0.9906249901059402  | time taken : 24.00318217277527
+ Thread 2 estimated dimension 1 of 10 : 0.8087503034559297  | time taken : 33.375383138656616
+ Thread 1 estimated dimension 9 of 10 : 0.4879818028003304  | time taken : 53.60247445106506
+ Thread 1 nsolns: 145791
+ Thread 6 estimated dimension 8 of 10 : 1  | time taken : 23.062058687210083
+ Thread 5 estimated dimension 6 of 10 : 0.48700576536708684  | time taken : 53.97074341773987
+ Thread 4 estimated dimension 6 of 10 : 0.49362481332175734  | time taken : 54.91212773323059
+ Thread 3 estimated dimension 5 of 10 : 1  | time taken : 22.071764945983887
+ Thread 6 estimated dimension 9 of 10 : 1  | time taken : 23.013750314712524
+ Thread 6 nsolns: 154656
+ Thread 5 estimated dimension 7 of 10 : 0.9928833405655006  | time taken : 23.235347032546997
+ Thread 2 estimated dimension 2 of 10 : 0.7223301829888135  | time taken : 35.16791915893555
+ Thread 4 estimated dimension 7 of 10 : 1  | time taken : 23.018227100372314
+ Thread 1 estimated dimension 0 of 10 : 0.5494557805235727  | time taken : 48.98189830780029
+ Thread 5 estimated dimension 8 of 10 : 0.9982151070545224  | time taken : 23.458927154541016
+ Thread 2 estimated dimension 3 of 10 : 1  | time taken : 24.491281747817993
+ Thread 4 estimated dimension 8 of 10 : 0.9996328356519115  | time taken : 23.19502902030945
+ Thread 3 estimated dimension 6 of 10 : 0.5145070863908969  | time taken : 48.72599267959595
+ Thread 5 estimated dimension 9 of 10 : 0.9964948755186077  | time taken : 23.056889533996582
+ Thread 5 nsolns: 154887
+ Thread 1 estimated dimension 1 of 10 : 0.8074754042983419  | time taken : 31.697520971298218
+ Thread 6 estimated dimension 0 of 10 : 0.5447173226154265  | time taken : 49.15366077423096
+ Thread 4 estimated dimension 9 of 10 : 0.9958776676649262  | time taken : 22.7332706451416
+ Thread 4 nsolns: 155049
+ Thread 3 estimated dimension 7 of 10 : 0.997979127735174  | time taken : 22.893957376480103
+ Thread 3 estimated dimension 8 of 10 : 0.989975787992427  | time taken : 23.534973621368408
+ Thread 5 estimated dimension 0 of 10 : 0.5458596901549676  | time taken : 49.846731185913086
+ Thread 4 estimated dimension 0 of 10 : 0.5569214580575204  | time taken : 49.58513116836548
+ Thread 3 estimated dimension 9 of 10 : 0.9959862009742076  | time taken : 22.336185932159424
+ Thread 3 nsolns: 164488
+ Thread 2 estimated dimension 4 of 10 : 0.25805726008345437  | time taken : 100.94429087638855
+ Thread 5 estimated dimension 1 of 10 : 0.8026711533152295  | time taken : 31.493608474731445
+ Thread 4 estimated dimension 1 of 10 : 0.8135937792915694  | time taken : 31.296598434448242
+ Thread 1 estimated dimension 2 of 10 : 0.26307751834823934  | time taken : 99.98381423950195
+ Thread 3 estimated dimension 0 of 10 : 0.5487066583186507  | time taken : 48.97699689865112
+ Thread 5 estimated dimension 2 of 10 : 0.7183157688758494  | time taken : 35.33878540992737
+ Thread 2 estimated dimension 5 of 10 : 0.6446994387173883  | time taken : 37.367122411727905
+ Thread 1 estimated dimension 3 of 10 : 0.994562593868543  | time taken : 23.698734998703003
+ Thread 5 estimated dimension 3 of 10 : 1  | time taken : 22.99100089073181
+ Thread 3 estimated dimension 1 of 10 : 0.8211912965203072  | time taken : 31.61540460586548exiting with current heads : 9709 out of 9713 | exp rv: 50291.546634767525
+
+ Thread 6 estimated dimension 1 of 10 : 0.19311396546484227  | time taken : 138.36206245422363
+ Thread 1 estimated dimension 4 of 10 : 0.8255150807111069  | time taken : 29.830364227294922
+ Thread 2 estimated dimension 6 of 10 : 0.49094154898571046  | time taken : 52.58119344711304
+ Thread 3 estimated dimension 2 of 10 : 0.7191691598055242  | time taken : 36.00220799446106
+ Thread 1 estimated dimension 5 of 10 : 1  | time taken : 23.431931257247925
+ Thread 4 estimated dimension 2 of 10 : 0.25902240420572703  | time taken : 101.81770634651184
+ Thread 6 estimated dimension 2 of 10 : 0.5127368757333969  | time taken : 48.51897048950195
+ Thread 2 estimated dimension 7 of 10 : 1  | time taken : 22.605026960372925
+ Thread 3 estimated dimension 3 of 10 : 0.9957510678623428  | time taken : 23.311012268066406
+ Thread 1 estimated dimension 6 of 10 : 1  | time taken : 23.14371156692505
+ Thread 6 estimated dimension 3 of 10 : 1  | time taken : 23.73045063018799
+ Thread 4 estimated dimension 3 of 10 : 0.9860462664116139  | time taken : 24.28822422027588
+ Thread 2 estimated dimension 8 of 10 : 0.9961429251833828  | time taken : 23.846062421798706
+ Thread 1 estimated dimension 7 of 10 : 0.7542375088788122  | time taken : 33.5707471370697
+ Thread 6 estimated dimension 4 of 10 : 0.9948381281552381  | time taken : 23.108225107192993
+ Thread 5 estimated dimension 4 of 10 : 0.26155593356038975  | time taken : 99.21081948280334
+ Thread 2 estimated dimension 9 of 10 : 1  | time taken : 23.180070400238037
+ Thread 2 nsolns: 154494
+ Thread 4 estimated dimension 4 of 10 : 0.8233457264840637  | time taken : 29.700286388397217
+ Thread 6 estimated dimension 5 of 10 : 0.9876910920128321  | time taken : 21.01653242111206
+ Thread 4 estimated dimension 5 of 10 : 0.995216441983592  | time taken : 20.079094171524048
+ Thread 5 estimated dimension 5 of 10 : 0.639443520060486  | time taken : 32.194660902023315
+ Thread 4 estimated dimension 6 of 10 : 1  | time taken : 19.56849455833435
+ Thread 3 estimated dimension 4 of 10 : 0.2571182095593042  | time taken : 93.55861282348633
+ Thread 6 estimated dimension 6 of 10 : 0.510694697285116  | time taken : 39.43872427940369
+ Thread 1 estimated dimension 8 of 10 : 0.33988759845123223  | time taken : 62.92768478393555
+ Thread 4 estimated dimension 7 of 10 : 0.7446282630834713  | time taken : 26.190266847610474
+ Thread 5 estimated dimension 6 of 10 : 0.48958283919445106  | time taken : 42.65667700767517
+ Thread 6 estimated dimension 7 of 10 : 0.9881410787210927  | time taken : 19.380622386932373
+ Thread 1 estimated dimension 9 of 10 : 0.9920815177497287  | time taken : 18.925472497940063
+ Thread 1 nsolns: 159034
+ Thread 3 estimated dimension 5 of 10 : 0.6405965178215905  | time taken : 28.945377588272095
+ Thread 5 estimated dimension 7 of 10 : 0.9980503587882291  | time taken : 16.833948612213135
+ Thread 6 estimated dimension 8 of 10 : 1  | time taken : 15.552664279937744
+ Thread 5 estimated dimension 8 of 10 : 1  | time taken : 16.019421577453613
+ Thread 6 estimated dimension 9 of 10 : 1  | time taken : 15.745779514312744
+ Thread 6 nsolns: 164291
+ Thread 3 estimated dimension 6 of 10 : 0.49629315975457083  | time taken : 32.875359773635864
+ Thread 4 estimated dimension 8 of 10 : 0.3366980327426068  | time taken : 48.12960863113403
+ Thread 5 estimated dimension 9 of 10 : 0.9992030140584098  | time taken : 9.707502126693726
+ Thread 5 nsolns: 154325
+ Thread 3 estimated dimension 7 of 10 : 1  | time taken : 8.030116558074951
+ Thread 4 estimated dimension 9 of 10 : 1  | time taken : 8.031334638595581
+ Thread 4 nsolns: 159052
+ Thread 3 estimated dimension 8 of 10 : 0.9966479220021252  | time taken : 5.7430031299591064
+ Thread 3 estimated dimension 9 of 10 : 0.9674465361858011  | time taken : 5.318784952163696
+ Thread 3 nsolns: 154557
+ estimated weights : [0.027139721740708025, 0.026711388490766836, 0.027596487585884934, 0.02607753383813899, 0.025473113690567987, 0.028148595189479323, 0.027721670944055997, 0.026943646972977207, 0.027045722991896184, 0.02640654504305531, 0.024517532212340692, 0.027626815649299124, 0.025289698981411823, 0.026061577858990957, 0.02336229508670394, 0.024506997608152215, 0.025389959006765855, 0.027264150827107193, 0.027464586756783472, 0.02630110556049629, 0.02360541059269031, 0.023411591093139894, 0.028019084330328115, 0.025429303075701674, 0.026711348611645595, 0.02660473972326413, 0.027748844501138195, 0.027260415257634323, 0.026244385203270954, 0.02716037871361796, 0.026774072553434034, 0.024029340279241695, 0.027629617255540136, 0.02605538456543608, 0.027524580783305164, 0.02724715157050523, 0.028120270698113528, 0.024254918824452572, 0.02703471142741532, 0.02692387545523934, 0.027052167218507724, 0.026337557859397443, 0.026217183518161574, 0.026100104335771347, 0.0243777062293318, 0.02693986724741805, 0.02542392522800794, 0.028046066504353477, 0.026753446800047105, 0.027432874592232946, 0.026765109358584904, 0.026664344629512508, 0.025022037731304403, 0.026431332023379238, 0.02648178885244344, 0.026737407514157405, 0.026103959789563917, 0.023076332865632376, 0.0260395331950677, 0.024918317625129863, 0.02751307628597367, 0.02751262128516615, 0.025522404033207772, 0.026772428407091278, 0.027084016304614565, 0.027234519685346074, 0.026635985110341442, 0.024563394147675728, 0.02532666657921396, 0.02521682913163136, 0.024104108872724964, 0.026074348232272584, 0.02469966195292298, 0.023203451252267072, 0.02658382588179917, 0.027781841809003862, 0.025721187096020393, 0.027249467550263376, 0.024393984606915147, 0.025665595751488416, 0.02736422337097368, 0.02690863795659987, 0.025752344649358022, 0.02666078372140765, 0.02474127604474538, 0.02430313149476833, 0.02514649445956878, 0.024322872598595863, 0.02694065521965985, 0.026828409503267984, 0.027341619221127492, 0.02535232488844542, 0.02665890071791298, 0.0238769594135271, 0.02437287695313632, 0.023972760855713114, 0.0229944427581774, 0.025314802958050636, 0.027828036320867847, 0.02708148050201032, 0.02706138766687677, 0.026514064790736206, 0.02585502720241971, 0.026484422883256167, 0.0270624031335817, 0.027658081828395725, 0.025636233570961276, 0.0255099123349434, 0.02737696889197627, 0.02678629403633035, 0.02639899304291254, 0.027762169405359693, 0.02624156025784695, 0.026259443881170727, 0.023880460835129368, 0.025944239984263665, 0.02802474435850518, 0.023639450983379842, 0.025055373738488467, 0.024060503747152275, 0.02710105616047926, 0.023588039059141936, 0.024931406950117373, 0.025957237486935635, 0.027815313192564087, 0.025257471871523735, 0.025525668002713244, 0.026771799107655835, 0.023678814427403605, 0.02646745269163555, 0.026898227164202645, 0.024377596845424964, 0.02687890867534608, 0.027340840141193264, 0.023231333139748508, 0.022946571324086878, 0.026472475832026308, 0.027260969257215446, 0.026132702930276037, 0.027935202908426052, 0.025925040969585186, 0.025486393881555346, 0.026275527567415826, 0.027881804635030417, 0.026216409606473604, 0.02437214326594677, 0.026744426056905878, 0.025700005997810808, 0.02377475592770277, 0.025432604754879053]
+
+ dTV estimated : 0.0
+ nsamples : 22946217
+ ACCEPTED
