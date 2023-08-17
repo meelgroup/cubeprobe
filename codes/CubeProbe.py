@@ -223,7 +223,7 @@ def getSolutionFromSTS(seed, inputFile, numSolutions, indVarList):
         if len(solList) > numSolutions:
             solreturnList = random.sample(solList, numSolutions)
             break
-        seed += 1
+        # seed += 1
         # elif len(solList) < numSolutions:
         #     print(len(solList), numSolutions)
         #     # print(solList)
@@ -284,7 +284,7 @@ def getSolutionFromQuickSampler(inputFile, numSolutions, indVarList, seed, threa
             break
         elif len(solreturnList) < numSolutions:
             print(str(thread) + " " + str(len(solList)) + " " + str(numSolutions))
-        seed += 1
+        # seed += 1
         #     outfp.write(str(thread) + str(len(solList)) + str(numSolutions))
         #     outfp.flush()
         #     # print(solList[0])
@@ -583,10 +583,10 @@ def CubeProbe():
         "--zeta", type=float, help="default = 0.3", default=0.3, dest="zeta"
     )
     parser.add_argument(
-        "--eta", type=float, help="default = 0.65", default=0.65, dest="eta"
+        "--eta", type=float, help="default = 0.605", default=0.605, dest="eta"
     )
     parser.add_argument(
-        "--epsilon", type=float, help="default = 0.05", default=0.05, dest="epsilon"
+        "--epsilon", type=float, help="default = 0.005", default=0.005, dest="epsilon"
     )
     parser.add_argument(
         "--delta", type=float, help="default = 0.2", default=0.2, dest="delta"
@@ -618,10 +618,10 @@ def CubeProbe():
     # Current Working File
     inputFilePrefix = "sampler_" + str(samplerType) + "_" + UserInputFile.split("/")[-1][:-4]
     inputFile = inputFilePrefix + ".cnf"
-    # indVarList = addClique(UserInputFile, UserIndVarList, inputFile)
-    indVarList = UserIndVarList
-    cmd = 'cp ' + UserInputFile + ' ' + inputFile
-    os.system(cmd)
+    indVarList = addClique(UserInputFile, UserIndVarList, inputFile)
+    # indVarList = UserIndVarList
+    # cmd = 'cp ' + UserInputFile + ' ' + inputFile
+    # os.system(cmd)
 
     # get the model count
     mcFile = inputFilePrefix + ".mc"
@@ -755,7 +755,7 @@ def CubeProbe():
 
     out.close()
 
-    # os.unlink(inputFile)
+    os.unlink(inputFile)
 
 if __name__ == "__main__":
     CubeProbe()
