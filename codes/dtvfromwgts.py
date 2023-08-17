@@ -28,41 +28,41 @@ for line in lines:
         except ValueError:
             numsamp += int(line.strip().split(":")[-1].split(".")[0]) + 1
             
-# get the model count [approxmc]
-inputFilePrefix = args.input.strip().split("/")[-1][10:-4]
-mcFile = inputFilePrefix + ".mc"
-cmd = "approxmc bench_Lext/" + inputFilePrefix + ".cnf > "  + mcFile
-os.system(cmd)
-
-with open(mcFile) as fp:
-    lines = fp.readlines()
-
-mc = 0
-for line in lines:
-    if line.strip().startswith('s mc') :
-        mc = line.strip().split(' ')[-1]
-mc = int(mc)
-print(mc)
-os.unlink(mcFile)
-
 # # get the model count [approxmc]
 # inputFilePrefix = args.input.strip().split("/")[-1][10:-4]
-# print(inputFilePrefix)
 # mcFile = inputFilePrefix + ".mc"
-# cmd = "./samplers/sharpSAT -decot 1 -decow 100 -tmpdir . -cs 3500 bench/" + inputFilePrefix + ".cnf > "  + mcFile
+# cmd = "approxmc bench_Lext/" + inputFilePrefix + ".cnf > "  + mcFile
 # os.system(cmd)
-# print(cmd)
 
 # with open(mcFile) as fp:
 #     lines = fp.readlines()
 
 # mc = 0
 # for line in lines:
-#     if line.strip().startswith('c s exact') :
+#     if line.strip().startswith('s mc') :
 #         mc = line.strip().split(' ')[-1]
 # mc = int(mc)
 # print(mc)
 # os.unlink(mcFile)
+
+# get the model count [sharpSAT]
+inputFilePrefix = args.input.strip().split("/")[-1][10:-4]
+print(inputFilePrefix)
+mcFile = inputFilePrefix + ".mc"
+cmd = "./samplers/sharpSAT -decot 1 -decow 100 -tmpdir . -cs 3500 bench/" + inputFilePrefix + ".cnf > "  + mcFile
+os.system(cmd)
+print(cmd)
+
+with open(mcFile) as fp:
+    lines = fp.readlines()
+
+mc = 0
+for line in lines:
+    if line.strip().startswith('c s exact') :
+        mc = line.strip().split(' ')[-1]
+mc = int(mc)
+print(mc)
+os.unlink(mcFile)
 
 dTV = 0
 for wgt in estwgts:
@@ -70,7 +70,7 @@ for wgt in estwgts:
 
 dTV /= len(estwgts)
 
-if dTV < 0.31:
+if dTV < 0.305:
     result = "ACCEPT"
 else:
     result = "REJECT"
