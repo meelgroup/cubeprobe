@@ -20,3 +20,5 @@ Here `ZETA` is the approximation parameter for the _Estimator_ mode. `ETA`, `EPS
 `SEED` has been set to 420 in all the experiments. `THREAD` the is the number of threads used by `CubeProbe`. The arguement `MODE` takes two values:
 1. `est` for _Estimator_ mode.
 2. `test` for _Tester_ mode.
+
+Corresponding paper available at [here](https://arxiv.org/abs/2312.10999).
